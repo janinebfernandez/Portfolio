@@ -12,7 +12,9 @@ body, html{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+/*******/
+/*GRID*/
+/*******/
 .wrapper_body{
     position: absolute;
     left: 0;
@@ -96,7 +98,7 @@ body, html{
 }
 
 .aboutme, .contact{
-    padding: 20px 0 0 0;
+    padding: 15px 0;
     width: 13em;
     text-align: center;
     vertical-align: baseline;
@@ -105,7 +107,11 @@ body, html{
 .aboutme{
     background-color: white;
     color: black;
-    border: solid 2px black;
+    border: solid 1.5px black;
+}
+
+.aboutme:hover{
+    background-color:rgb(211, 211, 211);
 }
 
 .contact{
@@ -113,6 +119,12 @@ body, html{
     margin-right: 15em;
     background-color: black;
     color: white;
+    border: 1.5px solid black;
+}
+
+.contact:hover{
+    background-color:rgb(211, 211, 211);
+    color: black;
 }
 
 .nav{
@@ -135,3 +147,38 @@ body, html{
 #video, #projects, #logo, #type, #animate, #sound{
     border-bottom:solid 2px black;
 }
+/*******/
+/*LINKS*/
+/*******/
+
+/* unvisited link */
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: rgb(0, 157, 248);
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover img{
+    color: grey;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: black;
+}
+
+.socialmedia a:hover{
+    opacity: .5;
+  }
