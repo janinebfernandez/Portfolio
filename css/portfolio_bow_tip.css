@@ -20,6 +20,8 @@
         top: 0;
         width: 100%;
         height: 100%;
+        background-size: 100%;
+        background-position-y: center;
     }
     
     #bodywrapper{
@@ -65,7 +67,7 @@
         grid-row: 2;
         grid-template-columns: 20% 20% 20% 20% 20%;
         display: grid;
-        margin-top: 35%;
+        margin-top: 30%;
     }
     
     .gridwrapper_info{
@@ -114,7 +116,7 @@
     
     .contact{
         grid-column: 2/3;
-        margin-right: 5em;
+        margin-right: 8em;
         background-color: black;
         color: white;
         border: 1.5px solid black;
@@ -128,7 +130,7 @@
     .nav{
         width: 100%;
         position: absolute;
-        bottom: 0;
+        bottom: 2em;
         padding: 2% 0;
         margin: auto;
         text-align: center;
@@ -138,7 +140,7 @@
     .nav li{
         display: inline;
         padding: 0 2em;
-        margin: 25px;
+        margin: 0 1em;
         font-weight: bold;
     }
     
