@@ -1,4 +1,46 @@
-/**--PORTFOLIO PAGE - Black on White - CSS--**/
+/**--PORTFOLIO PAGE - Black on White - CSS:DESKTOP-LAPTOP--**/
+
+/*******/
+/*LINKS*/
+/*******/
+
+/* unvisited link */
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: rgb(0, 157, 248);
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover img{
+    color: grey;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: black;
+}
+
+.socialmedia a:hover{
+    opacity: .5;
+  }
+
+/****************/
+/*DESKTOP-LAPTOP*/
+/****************/
+@media (min-width: 1025px){
+
 body, html{
     height: 100%;
     margin: 0;
@@ -12,6 +54,7 @@ body, html{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 /*******/
 /*GRID*/
 /*******/
@@ -67,7 +110,6 @@ body, html{
     grid-template-columns: 20% 20% 20% 20% 20%;
     display: grid;
     margin-top: 10%;
-
 }
 
 .gridwrapper_info{
@@ -147,38 +189,6 @@ body, html{
 #video, #projects, #logo, #type, #animate, #sound{
     border-bottom:solid 2px black;
 }
-/*******/
-/*LINKS*/
-/*******/
+}/*@Media (min-width: 1281px)*/
 
-/* unvisited link */
-a:link {
-    color: black;
-    text-decoration: none;
-}
 
-/* visited link */
-a:visited {
-    color: rgb(0, 157, 248);
-    text-decoration: none;
-}
-
-/* mouse over link */
-a:hover {
-    color: grey;
-    text-decoration: none;
-}
-
-a:hover img{
-    color: grey;
-    text-decoration: none;
-}
-
-/* selected link */
-a:active {
-    color: black;
-}
-
-.socialmedia a:hover{
-    opacity: .5;
-  }
