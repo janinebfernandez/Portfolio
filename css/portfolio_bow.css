@@ -189,6 +189,10 @@ body, html{
 #video, #projects, #logo, #type, #animate, #sound{
     border-bottom:solid 2px black;
 }
+
+button.dropbtn{
+    display: none;
+}
 }/*@Media (min-width: 1281px)*/
 
 

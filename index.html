@@ -13,9 +13,37 @@
     <link href="css/portfolio_bow_ml.css" type="text/css" rel="stylesheet">
     <link href="css/portfolio_bow_mp.css" type="text/css" rel="stylesheet">
 
-    <!--Responsive Stylesheet-->
+    <!--Icon for Mobile Nav-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
+<script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+        
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
 <body>
+
+
+
 <div class = "my_background"></div>
 <div class = "wrapper_body">
 <div id="bodywrapper">
@@ -50,19 +78,20 @@
                 </div><!--gridwrapper_info ends-->
     </div><!--gridwrapper ends-->
 </div><!--bodywrapper ends-->
-<div class="box nav">
-    <ul>
-        <li id = "video"><a href="url"></a></li>
+<div class="box nav dropdown">
+    <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars"></i></button>
+    <div id="myDropdown" class="dropdown-content">
+        <li id = "video"><a href="url">Video</a></li>
         <li id = "photo"><a href="url">Photography</a></li>
         <li id = "uxui"><a href="url">UX/UI</a></li>
         <li id = "wd"><a href="url">Web Design</a></li>
-        <li id = "projects"><a href="url"></a></li>
-        <li id = "logo"><a href="url"></a></li>
-        <li id = "type"><a href="url"></a></li>
-        <li id = "animate"><a href="url"></a></li>
-        <li id = "sound"><a href="url"></a></li>
-    </ul>
-    </div>
+        <li id = "projects"><a href="url">Projects</a></li>
+        <li id = "logo"><a href="url">Logo</a></li>
+        <li id = "type"><a href="url">Type</a></li>
+        <li id = "animate"><a href="url">Animate</a></li>
+        <li id = "sound"><a href="url">Sound</a></li>
+    </div><!--dropdown ends-->
+    </div><!--nav ends-->
 </div><!--wrapper_body ENDS-->
 </body>
 
