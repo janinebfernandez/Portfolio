@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 
+        <!--Javascript-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/toggle.js"></script>
+        
     <!--Stylesheet-->
     <link href="css/reset.css" type="text/css" rel="stylesheet">
     <link href="css/portfolio_bow.css" type="text/css" rel="stylesheet">
@@ -13,12 +17,16 @@
     <link href="css/portfolio_bow_ml.css" type="text/css" rel="stylesheet">
     <link href="css/portfolio_bow_mp.css" type="text/css" rel="stylesheet">
 
+    
+
     <!--Icon for Mobile Nav-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    
 </head>
 
+<body>
 <script>
+    /*NAVIGATION*/
         /* When the user clicks on the button, 
         toggle between hiding and showing the dropdown content */
         function myFunction() {
@@ -40,7 +48,7 @@
           }
         }
         </script>
-<body>
+
 
 
 
@@ -60,39 +68,62 @@
             </div>
         </div>
         </div><!--gridwrapper_content ends-->
+
             <div class = "gridwrapper_content">
                 <div class="box mylogo">
                     <p id = "logo_image">
                         <img src="images/j.ix-logo.png" alt="Janine Fernandez Logo">
                     </p> 
                     </div>
+                      
                 <div class = "gridwrapper_info">
                     <div class="box mytitle">designer & developer
                         </div>
                     <div class="box myname">Janine B. Fernandez
                         </div>
-                    <a href="url"><div class="box aboutme">About Me
+                    <a id="aboutme_button" href="#"><div class="box aboutme">About Me
                         </div></a>
-                    <a href="url"><div class="box contact">Say Hello
+                    <a id="contactme_button" href="#"><div class="box contact">Say Hello
                         </div></a>
+
                 </div><!--gridwrapper_info ends-->
+
+<!--ABOUT ME & SAY HELLO CONTENT-->
+<div id="aboutme_des">
+        <p id="header_contact">ABOUT ME</p>
+        <p id="aboutme_content">
+            <br>Janine B. Fernandez
+            <br>Resume
+            <br>San Diego State University
+            <br>Multimedia & Computer Science
+        </p>
+        <p id="close_about">X</p>
+</div>
+<div id="contactme_des">
+        <p id="header_contact">CONTACT ME</p>
+        <p id="contactme_content">janinebfernandez@gmail.com</p>
+        <p id="close_contact">X</p>
+</div>
+<!--ABOUT ME & SAY HELLO ENDS-->
     </div><!--gridwrapper ends-->
 </div><!--bodywrapper ends-->
-<div class="box nav dropdown">
-    <button onclick="myFunction()"><i class="fa fa-bars dropbtn"></i></button>
-    <div id="myDropdown" class="dropdown-content">
-        <li id = "video"><a href="url">Video</a></li>
-        <li id = "photo"><a href="url">Photography</a></li>
-        <li id = "uxui"><a href="url">UX/UI</a></li>
-        <li id = "wd"><a href="url">Web Design</a></li>
-        <li id = "projects"><a href="url">Projects</a></li>
-        <li id = "logo"><a href="url">Logo</a></li>
-        <li id = "type"><a href="url">Type</a></li>
-        <li id = "animate"><a href="url">Animate</a></li>
-        <li id = "sound"><a href="url">Sound</a></li>
-    </div><!--dropdown ends-->
-    </div><!--nav ends-->
 </div><!--wrapper_body ENDS-->
+
+<!--NAV DROPDOWN-->
+<div class="box nav dropdown">
+        <button onclick="myFunction()"><i class="fa fa-bars dropbtn"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+            <li id = "video"><!--<a href="url">Video</a>--></li>
+            <li id = "photo"><a href="url">Photography</a></li>
+            <li id = "uxui"><a href="url">UX/UI</a></li>
+            <li id = "wd"><a href="url">Web Design</a></li>
+            <li id = "projects"><a href="url">Projects</a></li>
+            <li id = "logo"><!--<a href="url">Logo</a>--></li>
+            <li id = "type"><!--<a href="url">Type</a>--></li>
+            <li id = "animate"><!--<a href="url">Animate</a>--></li>
+            <li id = "sound"><!--<a href="url">Sound</a>--></li>
+        </div><!--dropdown ends-->
+        </div><!--nav ends-->
 </body>
 
 </html>

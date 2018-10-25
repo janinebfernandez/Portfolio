@@ -1,0 +1,25 @@
+/*Portfolio Css*/
+
+/*ABOUT ME - CONTACT ME*/
+#contactme_des, #aboutme_des{
+    display: none;
+    width: 60%;
+    background-color: pink;
+    height: auto;
+    z-index: -1;
+    position: absolute;
+    margin: 20% 20%;
+    box-shadow: 1px 1px 10px 3px grey;
+}
+
+#header_contact, #contactme_content, #aboutme_content, #close_contact, #close_about, #header_aboutme,#close_aboutme{
+text-align: center;
+}
+
+#header_contact, #close_contact, #close_about{
+    width: 100%;
+    padding: 1em 0;
+    margin: 0;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.9);
+}

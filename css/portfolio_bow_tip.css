@@ -146,7 +146,7 @@
     .nav{
         width: 100%;
         position: absolute;
-        /*bottom: 2em;*/
+        bottom: 2em;
         padding: 2% 0;
         margin: auto;
         text-align: center;
@@ -159,8 +159,12 @@
         /*margin: 0 1em;*/
         font-weight: bold;
     }
+
+    button {
+        display: none;
+    }
     
-    #video, #projects, #logo, #type, #animate, #sound{
+    #video, #logo, #type, #animate, #sound{
         border-bottom:solid 2px black;
     }
 }/*@Media 768px-1024px*/
