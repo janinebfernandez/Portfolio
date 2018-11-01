@@ -22,7 +22,7 @@ a:visited {
 }
 
 /* mouse over link */
-a:hover {
+a:hover{
     color: grey;
     text-decoration: none;
 }
@@ -58,12 +58,8 @@ text-align: center;
 background-color: rgba(255, 255, 255,.95);
 }
 
-#aboutme_content{
-    height:200px;
-}
-
-#contactme_content{
-    height:100px;
+#aboutme_content,#contactme_content{
+    height:12em;
 }
 
 #header_contact, #close_contact, #close_about{
@@ -73,7 +69,6 @@ background-color: rgba(255, 255, 255,.95);
     color: white;
     background-color:rgba(0, 0, 0, 0.85);
 }
-
 
 
 /****************/
@@ -226,6 +221,14 @@ background-color: rgba(255, 255, 255,.95);
 
 button.dropbtn, button{
     display: none;
+}
+
+/**********************
+*****PHOTOGRAPHY*******
+**********************/
+
+#photos{
+    color: blue;
 }
 }/*@Media (min-width: 1281px)*/
 

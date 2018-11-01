@@ -18,6 +18,10 @@ body, html{
     background-size: cover;
 }
 
+li a:hover{
+    background-color:rgba(128, 128, 128,.5);
+    }
+
 /*******/
 /*GRID*/
 /*******/

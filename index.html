@@ -8,6 +8,7 @@
         <!--Javascript-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="js/toggle.js"></script>
+        <script src="js/nav_dropdown.js"></script>
         
     <!--Stylesheet-->
     <link href="css/reset.css" type="text/css" rel="stylesheet">
@@ -17,41 +18,12 @@
     <link href="css/portfolio_bow_ml.css" type="text/css" rel="stylesheet">
     <link href="css/portfolio_bow_mp.css" type="text/css" rel="stylesheet">
 
-    
-
     <!--Icon for Mobile Nav-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
 
 <body>
-<script>
-    /*NAVIGATION*/
-        /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-        
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
-          if (!event.target.matches('.dropbtn')) {
-        
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-              var openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-              }
-            }
-          }
-        }
-        </script>
-
-
-
-
 <div class = "my_background"></div>
 <div class = "wrapper_body">
 <div id="bodywrapper">
@@ -105,7 +77,7 @@
         <p id="close_contact">X</p>
 </div>
 <!--ABOUT ME & SAY HELLO ENDS-->
-    </div><!--gridwrapper ends-->
+</div><!--gridwrapper ends-->
 </div><!--bodywrapper ends-->
 </div><!--wrapper_body ENDS-->
 
