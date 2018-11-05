@@ -2,30 +2,167 @@
 <!--PORTFOLIO PAGE - PHOTOGRAPHY - HTML-->
 <!DOCTYPE html>
 <head>
-    <title>j.ix - Photography</title>
+    <title>Janine Fernandez Portfolio 2018</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 
-        <!--Stylesheet-->
-        <link href="../css/reset.css" type="text/css" rel="stylesheet">
-        <link href="../css/portfolio_bow.css" type="text/css" rel="stylesheet">
-        <link href="../css/portfolio_bow_tip.css" type="text/css" rel="stylesheet">
-        <link href="../css/portfolio_bow_til.css" type="text/css" rel="stylesheet">
-        <link href="../css/portfolio_bow_ml.css" type="text/css" rel="stylesheet">
-        <link href="../css/portfolio_bow_mp.css" type="text/css" rel="stylesheet">
+    <!--Javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/toggle.js"></script>
+    <script src="../js/nav_dropdown.js"></script>
+    <script src="../js/gallery_slideshow.js"></script>
+        
+    <!--Stylesheet-->
+    <link href="../css/reset.css" type="text/css" rel="stylesheet">
+    <link href="../css/portfolio_bow.css" type="text/css" rel="stylesheet">
+    <link href="../css/portfolio_bow_tip.css" type="text/css" rel="stylesheet">
+    <link href="../css/portfolio_bow_til.css" type="text/css" rel="stylesheet">
+    <link href="../css/portfolio_bow_ml.css" type="text/css" rel="stylesheet">
+    <link href="../css/portfolio_bow_mp.css" type="text/css" rel="stylesheet">
 
-        <!--Icon for Mobile Nav-->
+    <!--Icon for Mobile Nav-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 
 <body>
 <div class = "my_background"></div>
 <div class = "wrapper_body">
 <div id="bodywrapper">
+    <!--GRID CONTAINER-->
+    <div class = "gridwrapper">
+        <div class="box header_welcome">photography</div>
+        <div class="box header_pagename">
+            <a href="../index.html"><p>Janine B. Fernandez | <img src="../images/j.ix-logo.png" alt="Janine Fernandez Logo"> | Porfolio</p></a>
+            <!--Social media accounts-->
+            <div class = "socialmedia">
+                <a href="https://www.linkedin.com/in/janinebfernandez" target = "_blank"><img src="../images/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/j.ix_redefine9" target = "_blank"><img src="../images/instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+        </div><!--gridwrapper ends-->
+<!--GALLERY BEGINS-->
+<h2 class="page_title">Janine's Photos</h2>
 
+<div class="row">
+    <div class="column">
+        <img src="https://farm5.staticflickr.com/4846/31850406848_a613e5615f_q_d.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="https://farm5.staticflickr.com/4803/31850428788_0767f7ecf2_q_d.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="https://farm2.staticflickr.com/1909/45671424462_d6175a844e_q_d.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="https://farm2.staticflickr.com/1971/31850376608_dfb41f7a7e_q_d.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="https://farm2.staticflickr.com/1966/45721911251_bf254dc6c4_q_d.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="https://farm5.staticflickr.com/4813/45722139761_a5c9586623_q_d.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="https://farm5.staticflickr.com/4813/45722139761_a5c9586623_q_d.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="https://farm5.staticflickr.com/4853/44997209154_d0abb0ed2f_q_d.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="https://farm5.staticflickr.com/4815/31850480948_0baa8037c6_q_d.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="https://farm2.staticflickr.com/1969/44807998995_b378d1db08_q_d.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">Over the Fire</div>
+      <img src="https://farm5.staticflickr.com/4846/31850406848_ac0552d1c4_o_d.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+            <div class="numbertext">Pavillion</div>
+            <img src="https://farm5.staticflickr.com/4803/31850428788_307982a4f5_o_d.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">San Diego Sunset</div>
+        <img src="https://farm2.staticflickr.com/1909/45671424462_6afe2c2be4_o_d.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+            <div class="numbertext">Shelter Island 1</div>
+            <img src="https://farm2.staticflickr.com/1971/31850376608_9a389154c3_o_d.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">Shelter Island 2</div>
+        <img src="https://farm2.staticflickr.com/1966/45721911251_731446f4f9_o_d.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+            <div class="numbertext">Into the City</div>
+            <img src="https://farm5.staticflickr.com/4813/45722139761_8f50298324_o_d.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+            <div class="numbertext">Into the City</div>
+            <img src="https://farm5.staticflickr.com/4813/45722139761_8f50298324_o_d.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">Into the City</div>
+      <img src="https://farm5.staticflickr.com/4813/45722139761_8f50298324_o_d.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">Balboa Night</div>
+      <img src="https://farm5.staticflickr.com/4853/44997209154_7252ff3c38_o_d.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">Birds View</div>
+      <img src="https://farm5.staticflickr.com/4815/31850480948_ea3a968ef9_o_d.jpg" style="width:100%">
+    </div>
     
-</div><!--bodywrapper ENDS-->
+    <div class="mySlides">
+      <div class="numbertext">Bridge Point</div>
+      <img src="https://farm2.staticflickr.com/1969/44807998995_ac1996a13e_o_d.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+<!--GALLERY ENDS-->
+</div><!--gridwrapper ends-->
+</div><!--bodywrapper ends-->
 </div><!--wrapper_body ENDS-->
 
+<!--NAV DROPDOWN-->
+<div class="box nav dropdown">
+        <button onclick="myFunction()"><i class="fa fa-bars dropbtn"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+            <li id = "video"><!--<a href="url">Video</a>--></li>
+            <li id = "photo"><a href="photography.html">Photography</a></li>
+            <li id = "uxui"><a href="uxui.html">UX/UI</a></li>
+            <li id = "wd"><a href="webdesign.html">Web Design</a></li>
+            <li id = "projects"><a href="projects.html">Projects</a></li>
+            <li id = "logo"><!--<a href="url">Logo</a>--></li>
+            <li id = "type"><!--<a href="url">Type</a>--></li>
+            <li id = "animate"><!--<a href="url">Animate</a>--></li>
+            <li id = "sound"><!--<a href="url">Sound</a>--></li>
+        </div><!--dropdown ends-->
+        </div><!--nav ends-->
 </body>
+
 </html>

@@ -145,6 +145,15 @@ li a:hover{
     color: black;
 }
 
+.box.nav.dropdown {
+    padding: 0;
+}
+
+.fa{
+    font-size: large!important;
+    /*text-align: center!important;*/
+}
+
 /*
 .nav{
     width: 100%;
