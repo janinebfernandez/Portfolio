@@ -243,4 +243,17 @@ button {
 .dropdown li{
     list-style-type: none;
 }
+
+/**********************
+*****PHOTOGRAPHY*******
+**********************/
+
+#photos{
+    color: blue;
+}
+
+/*******GALLERY*******/
+.column{
+    width: 33%;
+}
 }/*@Media 320px-480px-landscape*/

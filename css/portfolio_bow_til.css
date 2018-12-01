@@ -4,5 +4,12 @@
 /*TABLET-IPAD(landscape)*/
 /************************/
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+/*******GALLERY*******/
+.column{
+    width: 20%;
+}
 
+.row{
+    height:30em;
+}
 }/*@Media 1024px-768px-landscape*/

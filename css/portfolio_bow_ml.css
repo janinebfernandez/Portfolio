@@ -243,4 +243,21 @@
     .dropdown li{
         list-style-type: none;
     }
+
+    /**********************
+*****PHOTOGRAPHY*******
+**********************/
+
+#photos{
+    color: blue;
+}
+
+/*******GALLERY*******/
+.column{
+    width: 20%;
+}
+
+.row{
+    height:10em;
+}
 }/*@Media 481px-767px-landscape*/

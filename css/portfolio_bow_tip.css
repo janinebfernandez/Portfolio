@@ -167,4 +167,13 @@
     #video, #logo, #type, #animate, #sound{
         border-bottom:solid 2px black;
     }
+
+/*******GALLERY*******/
+    .column{
+        width: 20%;
+    }
+    
+    .row{
+        height:50em;
+    }
 }/*@Media 768px-1024px*/
