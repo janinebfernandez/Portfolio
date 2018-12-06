@@ -4,12 +4,28 @@
 /*TABLET-IPAD(landscape)*/
 /************************/
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+/*******HEADER*******/
+.socialmedia img {
+    width: 2.5em;
+}
+
+/*******HOME*******/
+.gridwrapper_content {
+    margin-top: 5%;
+}
+
+#contactme_des, #aboutme_des{
+    top: 5em;
+}
+
 /*******GALLERY*******/
 .column{
     width: 20%;
 }
 
-.row{
-    height:30em;
+.row {
+    overflow: scroll;
+    height:10em;
 }
+
 }/*@Media 1024px-768px-landscape*/
