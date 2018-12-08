@@ -18,6 +18,10 @@
     top: 5em;
 }
 
+#aboutme_content, #contactme_content {
+    height: 10em;
+    padding: .5em;
+}
 /*******GALLERY*******/
 .column{
     width: 20%;
