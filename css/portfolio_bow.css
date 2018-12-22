@@ -93,7 +93,7 @@ background-color: rgba(255, 255, 255,.95);
   
   .row{
       overflow: scroll;
-      height: 25em;
+      height: 75%;
   }
   .column {
     float: left;
@@ -248,7 +248,7 @@ background-color: rgba(255, 255, 255,.95);
 
 #bodywrapper{
     padding:2.5em;
-    height: auto;
+    height: 95%;
 }
 
 .gridwrapper{

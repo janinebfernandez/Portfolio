@@ -35,7 +35,7 @@
     
     #bodywrapper{
         padding:1em;
-        height: auto;
+        height: 70%;
     }
     
     .gridwrapper{
@@ -258,6 +258,6 @@
 }
 
 .row{
-    height:10em;
+    height:75%;
 }
 }/*@Media 481px-767px-landscape*/

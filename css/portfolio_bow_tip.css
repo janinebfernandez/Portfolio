@@ -5,7 +5,7 @@
 /***********************/
 
 @media (min-width: 896px) and (max-width: 1024px){
-    #bodywrapper{height: 75%;}
+    #bodywrapper{height: 90%;}
     .gridwrapper_content{margin-top:20%;}
     .nav li {margin: 0 2em;}
     .myname{font-size: 3.3em;}
@@ -42,7 +42,6 @@
     
     #bodywrapper{
         padding:2.5em;
-        /*height: 80%;*/
     }
     
     .gridwrapper{
@@ -171,9 +170,5 @@
 /*******GALLERY*******/
     .column{
         width: 20%;
-    }
-    
-    .row{
-        height:50em;
     }
 }/*@Media 768px-1024px*/
