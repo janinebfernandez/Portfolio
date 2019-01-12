@@ -58,9 +58,9 @@ text-align: center;
 background-color: rgba(255, 255, 255,.95);
 }
 
-#aboutme_content,#contactme_content{
-    height:12em;
-    padding: 1em .5em;
+#aboutme_content, #contactme_content {  
+    line-height: 1.5em;
+    font-size: 15px;
 }
 
 #header_contact, #close_contact, #close_about{
@@ -94,6 +94,7 @@ background-color: rgba(255, 255, 255,.95);
   .row{
       overflow: scroll;
       height: 75%;
+      overflow-x: auto;
   }
   .column {
     float: left;
