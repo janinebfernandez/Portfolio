@@ -53,6 +53,7 @@ a:active {
     top:9em;
 }
 
+
 #header_contact, #contactme_content, #aboutme_content, #close_contact, #close_about, #header_aboutme,#close_aboutme{
 text-align: center;
 background-color: rgba(255, 255, 255,.95);
@@ -367,7 +368,7 @@ background-color: rgba(255, 255, 255,.95);
     font-weight: bold;
 }
 
-#video, #logo, #type, #animate, #sound, #projects{
+#video, #logo, #type, #animate, #sound{
     border-bottom:solid 2px black;
 }
 
@@ -375,6 +376,13 @@ button.dropbtn, button{
     display: none;
 }
 
+.section_title{
+    padding-bottom: 1em;
+}
+.description{
+    padding-bottom:2em;
+    font-size: 12px;
+}
 /**********************
 *****PHOTOGRAPHY*******
 **********************/
