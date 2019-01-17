@@ -195,9 +195,6 @@ background-color: rgba(255, 255, 255,.95);
     top: 0;
   }
   
-  /*img {
-    margin-bottom: -4px;
-  }*/
   
   .caption-container {
     text-align: center;
@@ -222,7 +219,102 @@ background-color: rgba(255, 255, 255,.95);
   .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-  
+
+/**PROJECT POP UP*/
+#container{
+    margin: auto;
+    width: 1000px;
+    height: auto;
+    background-color:pink;
+    padding:2em;
+}
+
+#car_icon{
+  width: 100px;
+  height: 100px;
+  -webkit-transition: all .2s ease-in-out;; /* For Safari 3.1 to 6.0 */
+  transition: all .2s ease-in-out;;
+}
+
+#car_icon:hover {
+    transform: scale(1.2);
+    cursor:pointer;
+}
+
+/* Popup box BEGIN */
+#slide_1{
+    overflow: scroll;
+    height: 35em;
+}
+
+.hover_bkgr_fricc{
+    background:rgba(0,0,0,.4);
+    display:none;
+    height:100%;
+    position:fixed;
+    text-align:center;
+    top:0;
+    width:100%;
+    z-index:10000;
+    left:0;
+}
+.hover_bkgr_fricc .helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+.hover_bkgr_fricc > div {
+    background-color: rgba(250, 250, 250, .9);
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    min-height: 100px;
+    vertical-align: middle;
+    width: 90%;
+    position: relative;
+    border-radius: 3px;
+}
+#header_contact{
+    width: 100%;
+    padding: 1em 0;
+    margin: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.popupCloseButton {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    /* font-weight: bold; */
+    position: absolute;
+    top: .3em;
+    right: -18px;
+    font-size: 15px;
+    line-height: 25px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.trigger_popup_fricc {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+/* Popup box BEGIN */
+
+.car_ads{
+    width:65%;
+    padding:.5em;
+    overflow: scroll;
+}
 /****************/
 /*DESKTOP-LAPTOP*/
 /****************/
