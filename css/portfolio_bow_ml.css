@@ -260,4 +260,11 @@
 .row{
     height:75%;
 }
+
+.numbertext{
+    display:none;
+}
+
+
+
 }/*@Media 481px-767px-landscape*/

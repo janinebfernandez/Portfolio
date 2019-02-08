@@ -256,4 +256,9 @@ button {
 .column{
     width: 33%;
 }
+
+.numbertext{
+    display:none;
+}
+
 }/*@Media 320px-480px-landscape*/

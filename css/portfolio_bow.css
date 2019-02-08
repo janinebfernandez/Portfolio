@@ -124,11 +124,12 @@ background-color: rgba(255, 255, 255,.95);
   /* Modal Content */
   .modal-content {
     position: relative;
-    background-color: #fefefe;
+    /*background-color: #fefefe;*/
     margin: auto;
     padding: 0;
     width: 90%;
     max-width: 1200px;
+    text-align:center;
   }
   
   /* The Close Button */
@@ -164,6 +165,7 @@ background-color: rgba(255, 255, 255,.95);
     top: 50%;
     width: auto;
     padding: 16px;
+    margin-left:-50%;
     margin-top: -50px;
     color: white;
     font-weight: bold;
@@ -190,7 +192,7 @@ background-color: rgba(255, 255, 255,.95);
   .numbertext {
     color: #f2f2f2;
     font-size: 12px;
-    padding: 8px 12px;
+    /*padding: 8px 12px;*/
     position: absolute;
     top: 0;
   }
@@ -220,7 +222,11 @@ background-color: rgba(255, 255, 255,.95);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-/**PROJECT POP UP*/
+/**PROJECT PAGE*/
+div#project_container {
+    text-align:center;
+}
+
 #container{
     margin: auto;
     width: 1000px;
@@ -247,7 +253,7 @@ background-color: rgba(255, 255, 255,.95);
     height: 35em;
 }
 
-.hover_bkgr_fricc{
+.hover_bkgr_fricc, .hover_bkgr_fricc_2{
     background:rgba(0,0,0,.4);
     display:none;
     height:100%;
@@ -258,12 +264,13 @@ background-color: rgba(255, 255, 255,.95);
     z-index:10000;
     left:0;
 }
-.hover_bkgr_fricc .helper{
+.hover_bkgr_fricc .helper,.hover_bkgr_fricc_2 .helper{
     display:inline-block;
     height:100%;
     vertical-align:middle;
 }
-.hover_bkgr_fricc > div {
+
+.hover_bkgr_fricc > div, .hover_bkgr_fricc_2 > div{
     background-color: rgba(250, 250, 250, .9);
     box-shadow: 10px 10px 60px #555;
     display: inline-block;
