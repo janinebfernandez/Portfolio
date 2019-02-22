@@ -154,6 +154,13 @@ li a:hover{
     /*text-align: center!important;*/
 }
 
+#aboutme_content, #contactme_content {
+    line-height: 1.5em;
+    overflow: scroll;
+    font-size: 15px;
+    height: 26em;
+}
+
 /*
 .nav{
     width: 100%;
@@ -218,7 +225,7 @@ button {
     opacity: .95;
     text-align: right;    
     overflow: scroll;
-    height: 400px;
+    height: auto;
 }
 
 .dropdown-content a {
@@ -261,4 +268,9 @@ button {
     display:none;
 }
 
+/**PROJECT PAGE*/
+#slide_1{
+    overflow: scroll;
+    height: 28em;
+}
 }/*@Media 320px-480px-landscape*/

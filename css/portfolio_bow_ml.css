@@ -154,6 +154,19 @@
         /*text-align: center!important;*/
     }
     
+/****About Me/Contact Me POPUP****/
+#aboutme_content, #contactme_content {  
+    line-height: 1.5em;
+    overflow: scroll;
+    font-size: 15px;
+    height: 7.5em;
+}
+
+#contactme_des, #aboutme_des{
+    margin: -5em 3em 0 3em;
+}
+
+
     /*
     .nav{
         width: 100%;
@@ -218,7 +231,7 @@
         opacity: .95;
         text-align: right;    
         overflow: scroll;
-        height: 400px;
+        height: auto;
     }
     
     .dropdown-content a {
@@ -265,6 +278,10 @@
     display:none;
 }
 
-
+/**PROJECT PAGE*/
+#slide_1{
+    overflow: scroll;
+    height: 12em;
+}
 
 }/*@Media 481px-767px-landscape*/

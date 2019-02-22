@@ -31,5 +31,9 @@
     overflow: scroll;
     height:70%;
 }
-
+/**PROJECT PAGE*/
+#slide_1{
+    overflow: scroll;
+    height: 35em;
+}
 }/*@Media 1024px-768px-landscape*/

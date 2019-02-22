@@ -171,4 +171,10 @@
     .column{
         width: 20%;
     }
+
+/**PROJECT PAGE*/
+#slide_1{
+    overflow: scroll;
+    height: 50em;
+}
 }/*@Media 768px-1024px*/

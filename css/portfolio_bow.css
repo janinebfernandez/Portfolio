@@ -103,7 +103,7 @@ background-color: rgba(255, 255, 255,.95);
 
 .page_title{
   text-align:center; 
-  padding:2em; 
+  padding:1em; 
   font-weight: bold;
 }
 
@@ -223,7 +223,7 @@ background-color: rgba(255, 255, 255,.95);
   }
 
 /**PROJECT PAGE*/
-div#project_container {
+.project_container {
     text-align:center;
 }
 
@@ -250,7 +250,7 @@ div#project_container {
 /* Popup box BEGIN */
 #slide_1{
     overflow: scroll;
-    height: 35em;
+    height: 45em;
 }
 
 .hover_bkgr_fricc, .hover_bkgr_fricc_2{
@@ -412,6 +412,7 @@ div#project_container {
 
 .mytitle{
     font-style: italic;
+    font-size: 12px;
 }
 
 .myname{
@@ -492,7 +493,7 @@ button.dropbtn, button{
 
 /*******GALLERY*******/
 .column{
-    width: 20%;
+    width: 15%;
 }
 }/*@Media (min-width: 1281px)*/
 
