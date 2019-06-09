@@ -57,6 +57,7 @@ a:active {
     animation-duration: 1s
 }
 
+
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {top:-10px; opacity:0} 
