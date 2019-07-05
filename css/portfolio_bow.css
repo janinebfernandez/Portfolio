@@ -490,7 +490,8 @@ background-color: rgba(255, 255, 255,.95);
     font-weight: bold;
 }
 
-#video, #logo, #type, #animate, #sound{
+/*REMOVED WHEN PAGE IS ESTABLISHED*/
+#video, #animate, #sound{
     border-bottom:solid 2px black;
 }
 

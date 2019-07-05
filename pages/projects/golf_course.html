@@ -1,0 +1,491 @@
+<!--PORTFOLIO PAGE - Black on White - HTML-->
+<!--PORTFOLIO PAGE - PROJECTS PAGE -  Golf Course - HTML-->
+<!DOCTYPE html>
+<head>
+    <title>Janine Fernandez Portfolio 2019</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <!--Javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!--Popup-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="../../js/toggle.js"></script>
+    <script src="../../js/nav_dropdown.js"></script>
+    <script src="../../js/project-popup.js"></script>
+    
+    <!--Stylesheet-->
+    <link href="../../css/reset.css" type="text/css" rel="stylesheet">
+    <link href="../../css/portfolio_bow.css" type="text/css" rel="stylesheet">
+    <link href="../../css/portfolio_bow_tip.css" type="text/css" rel="stylesheet">
+    <link href="../../css/portfolio_bow_til.css" type="text/css" rel="stylesheet">
+    <link href="../../css/portfolio_bow_ml.css" type="text/css" rel="stylesheet">
+    <link href="../../css/portfolio_bow_mp.css" type="text/css" rel="stylesheet">
+    
+    <!--Icon for Mobile Nav-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+/****************/
+/*****SLIDER*****/
+/****************/
+html {
+  border-top: 5px solid #fff;
+  background: #58DDAF;
+  color: #2a2a2a;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+}
+
+.w3-button{
+    display: block;
+}
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  width:99% !important;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  height: 430px;
+  /*background: #ccc;*/
+  text-align: center;
+  line-height: 300px;
+}
+
+.slider_content{
+  width:95%;
+  height:auto;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 2%;
+  width: auto;
+  height: auto;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.5;
+  cursor: pointer;
+  border-radius:2px;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+    
+/*COURSE SLIDESHOW*/
+    .large_slide{
+        border:5px solid rgb(255,255,255);
+    }
+    
+    .mySlides {
+        display:none;
+    }
+
+    .w3-center{
+        overflow:hidden;
+        margin:0 auto;
+    }
+
+    button.demo,.w3-button{
+        background-color:rgb(95,95,95);
+        color:rgb(255,255,255);
+        width:9.08%;
+        float:left;
+    }  
+
+    button.demo:hover{
+        background-color:rgba(201,171,126,.5);
+        color:rgb(0,0,0);
+    }
+
+    .mySlides p{
+        height:50px;
+        width:450px;
+    }
+
+    .mySlides-1{
+        width:18%;
+        float:right;
+    }
+
+    button.w3-button.demo.thumbnails{
+        width:100px;    
+        background-color: rgba(0,0,0,0);
+        border: none;
+        cursor: pointer;
+        margin-top:5em;
+    }
+
+    img.mySlides-2{
+        width:100%;
+    }
+
+/*****************/
+/*CONTENT COURSE*/
+/****************/
+    #course_map img{
+        border:5px solid rgba(201,171,126,.5);
+    }
+
+    #course_map a{
+        padding:0;
+        margin-top:10px;
+        font-size:20px;
+    }
+
+    /*content 1*/
+    #course-content-1 img{
+        width:55%;
+    }
+
+    /*content 2*/
+    .caption{
+        text-align:left;
+        line-height:1em;
+    }
+
+    #course-content-6 img{
+        width:50%;
+    }
+
+    .caption h2{
+        font-size: 22px;
+        padding: 1em 0;
+    }
+
+    .caption p{
+        font-size:12px;
+    }
+    /*content 4*/
+     
+    /*content 5*/
+    #merch{
+        background-color: black;
+        width: 75%;
+        height: 342px;
+        margin: auto;
+        border-radius: 5px;
+    }
+
+   #images_rowone{
+        height:10.5em;
+    }
+
+    #images_rowone span p, #images_rowtwo span p {
+        color: white;
+        position: absolute;
+        line-height: 5px;
+        display: inline-flex;
+        background-color: rgba(0,0,0,.6);
+        padding:15px;
+        margin-top: 0;
+    }
+
+    #merch img{
+        width:280px;
+        border-bottom-left-radius: 100px;
+        border: 5px solid black;
+    }
+
+</style>
+</head>
+
+<body>
+<div class = "my_background"></div>
+<div class = "wrapper_body">
+<div id="bodywrapper">
+    <!--GRID CONTAINER-->
+    <div class = "gridwrapper">
+        <div class="box header_welcome socialmedia"><a href="../../index.html" target = ""><img src="../../images/icons/home-icon.png" alt="j.ix Home"></a>
+                                                    <a href="../projects.html" target = ""><img src="../../images/icons/go-back-arrow.png" alt="go back"></a></div>
+        <div class="box header_pagename">
+            <a href="../../index.html"><p>Janine B. Fernandez | <!--<img src="../images/j.ix-logo.png" alt="Janine Fernandez Logo"> | -->Porfolio</p></a>
+            <!--Social media accounts-->
+            <div class = "socialmedia">
+                <a href="https://janinebfernandez.github.io/Portfolio/index.html#" target = ""><img style="width:3em" src="../../images/logo-2019-mini.png" alt="Janine Fernandez Logo"></a>
+                <a href="https://www.linkedin.com/in/janinebfernandez" target = "_blank"><img src="../../images/icons/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="https://www.youtube.com/channel/UCWjmkdK2poOYL6IYrYUskwQ/featured?disable_polymer=1" target = "_blank"><img src="../../images/icons/youtube-icon.png" alt="Flickr"></a>
+                <a href="https://www.instagram.com/j.ix.redefine9" target = "_blank"><img src="../../images/icons/instagram-icon.png" alt="Instagram"></a>
+                <a href="https://www.flickr.com/photos/janinebfernandez/" target = "_blank"><img src="../../images/icons/flickr-icon.png" alt="Flickr"></a>
+            </div>
+        </div>
+        </div><!--gridwrapper ends-->
+<!--CONTENT BEGINS-->
+<h2 class="page_title">Golf Course</h2>
+<div class="project_container">
+<h1>Golf Course</h1>
+<div id="slider">
+  <a href="#" class="control_next">></a>
+  <a href="#" class="control_prev"><</a>
+  <ul>
+
+<!--CONTENT #1 - MAP-->
+    <li><div class="slider_content" id="course-content-1">
+        <img src="../../images/projects/golf_course/holes/lmgc_course_map.jpg" alt="Course Map">
+    </div></li><!--CONTENT #1 ENDS-->
+<!--CONTENT #2 - MAP & INDIVIDUAL HOLE-->
+    <li><div class="slider_content" id="course-content-2"><!--SLIDESHOW CONTENT-->
+    <div class="w3-container">
+        
+    <div class="w3-center">
+    <div class="w3-section">
+        <button class="w3-button nav-button" onclick="plusDivs(-1)">Prev</button>
+        <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+        <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+        <button class="w3-button demo" onclick="currentDiv(3)">3</button>
+        <button class="w3-button demo" onclick="currentDiv(4)">4</button> 
+        <button class="w3-button demo" onclick="currentDiv(5)">5</button> 
+        <button class="w3-button demo" onclick="currentDiv(6)">6</button> 
+        <button class="w3-button demo" onclick="currentDiv(7)">7</button> 
+        <button class="w3-button demo" onclick="currentDiv(8)">8</button> 
+        <button class="w3-button demo" onclick="currentDiv(9)">9</button>
+        <button class="w3-button nav-button" onclick="plusDivs(1)">Next</button>
+        </div>
+    </div>
+        
+
+    <div class="w3-content w3-content-mobile">
+        <div class="mySlides">
+            <img class="mySlides-1 large_slide" src="../../images/projects/golf_course/holes/hole_1.jpg">
+            <div class="caption"><h2>Hole 1</h2><p>Start the course with an easy hole. This is our widest green and one of the shortest. It may be an easy shot but don't get distacted by the crowd waiting for some good play.</p></div>
+        </div>
+        <div class="mySlides">
+            <img class="mySlides-1 large_slide" src="https://c1.staticflickr.com/3/2945/33443057006_052a7f3a2a_b.jpg">
+            <div class="caption"><h2>Hole 2</h2><p>After an easy is one of our hardest green. This is the longest green with 575 for our longest tee. Aim straight and avoid the breeze if you want to make this one!</p></div>
+        </div>
+        <div class="mySlides">
+            <img class="mySlides-1 large_slide" src="https://c1.staticflickr.com/4/3780/32670070593_bc3f12738c_b.jpg">
+            <div class="caption"><h2>Hole 3</h2><p>This green is played like a mini course. Create an angled shot and make sure to hit strong enough for the ball to pass the incline. Hit too soft and the ball might just come back to where it started.</p></div>
+        </div>
+        <div class="mySlides">
+            <img class="mySlides-1 large_slide" src="https://c1.staticflickr.com/4/3947/33484119405_3b71c1cf3a_b.jpg">
+            <div class="caption"><h2>Hole 4</h2><p>Curve the shot! This green is very tricky. Angle your shot carefully or else you'll find yourself on a bunker!</p></div>
+        </div>
+        <div class="mySlides">
+            <img class="mySlides-1 large_slide" src="https://c1.staticflickr.com/4/3817/33328171942_dce2e09b14_b.jpg">
+            <div class="caption"><h2>Hole 5</h2><p>This is our second longest tee. All you have to do is aim straight but be very careful with the wind. You are up on a hit with this shot and anything can happen.</p></div>
+        </div>
+        <div class="mySlides">
+            <img class="mySlides-1 large_slide" src="https://c1.staticflickr.com/3/2837/33328173652_61f1773721_b.jpg">
+            <div class="caption"><h2>Hole 6</h2><p>A simple tee but watch out for that curve.</p></div>
+        </div>
+        <div class="mySlides">
+            <img class="mySlides-1 large_slide" src="https://c1.staticflickr.com/4/3814/33355932081_fc4d9b51e4_b.jpg">
+            <div class="caption"><h2>Hole 7</h2><p>This is our shortest tee. Aim straight and hit lightly and your on your way to the hole!</p></div>
+        </div>
+        <div class="mySlides">
+            <img class="mySlides-1 large_slide" src="https://c1.staticflickr.com/4/3762/32670069523_ac0721950a_b.jpg">
+            <div class="caption"><h2>Hole 8</h2><p>Very similar to our fourth tee but much more narrow. Becareful you dont hit people that are jogging.</p></div>
+        </div>
+        <div class="mySlides">
+            <img class="mySlides-1 large_slide" src="https://c1.staticflickr.com/4/3911/33100621660_c55df84202_b.jpg">
+            <div class="caption"><h2>Hole 9</h2><p>Finish string with our easiest tee! Short and sweet hit should take the ball home.</p></div>
+        </div>
+    </div>
+
+    <div class="w3-section">  
+        <button class="w3-button demo thumbnails" onclick="currentDiv(1)"> 
+            <img class="mySlides-2" src="../../images/projects/golf_course/holes/hole_1.jpg"></button> 
+        <button class="w3-button demo thumbnails" onclick="currentDiv(2)">
+            <img class="mySlides-2" src="https://c1.staticflickr.com/3/2945/33443057006_052a7f3a2a_b.jpg"></button> 
+        <button class="w3-button demo thumbnails" onclick="currentDiv(3)">
+            <img class="mySlides-2" src="https://c1.staticflickr.com/4/3780/32670070593_bc3f12738c_b.jpg"></button>
+        <button class="w3-button demo thumbnails" onclick="currentDiv(4)">
+            <img class="mySlides-2" src="https://c1.staticflickr.com/4/3947/33484119405_3b71c1cf3a_b.jpg"></button> 
+        <button class="w3-button demo thumbnails" onclick="currentDiv(5)">
+            <img class="mySlides-2" src="https://c1.staticflickr.com/4/3817/33328171942_dce2e09b14_b.jpg"></button> 
+        <button class="w3-button demo thumbnails" onclick="currentDiv(6)">
+            <img class="mySlides-2" src="https://c1.staticflickr.com/3/2837/33328173652_61f1773721_b.jpg"></button> 
+        <button class="w3-button demo thumbnails" onclick="currentDiv(7)">
+            <img class="mySlides-2" src="https://c1.staticflickr.com/4/3814/33355932081_fc4d9b51e4_b.jpg"></button> 
+        <button class="w3-button demo thumbnails" onclick="currentDiv(8)">
+            <img class="mySlides-2" src="https://c1.staticflickr.com/4/3762/32670069523_ac0721950a_b.jpg"></button> 
+        <button class="w3-button demo thumbnails" onclick="currentDiv(9)">
+            <img class="mySlides-2" src="https://c1.staticflickr.com/4/3911/33100621660_c55df84202_b.jpg"></button>
+        </div>
+    </div><!--SLIDESHOW CONTAINER ENDS-->
+</div></li><!--CONTENT #2 ENDS-->
+
+<!--CONTENT #3 -  GOLF COURSE TEETIMES-->  
+<!--<li><div class="slider_content" id="course-content-3">Content #3</div></li>--><!--CONTENT #3 ENDS-->
+
+<!--CONTENT #4 -  GOLF COURSE EVENTS-->    
+    <!--<li><div class="slider_content" id="course-content-4">content #4</div></li>--><!--CONTENT #4 ENDS-->
+<!--CONTENT #5 -  GOLF COURSE IMAGES-->
+    <li><div class="slider_content" id="course-content-5">
+            <div id="merch">
+                <div id="images_rowone">
+                    <span><p>Professional Clubs</p><img src="../../images/projects/golf_course/proshop-club-2.jpg" alt="Proshop Club 2"></span>
+                    <span><p>Golf Bundles</p><img src="../../images/projects/golf_course/proshop-bundle.jpg" alt="Proshop Bundle"></span>
+                    <span><p>Practice/Range Balls</p><img src="../../images/projects/golf_course/proshop-balls.jpg" alt="Proshop Balls"></span>
+                </div>
+                
+                <div id="images_rowtwo">
+                    <span><p>Golf Clubs</p><img src="../../images/projects/golf_course/proshop-club-1.jpg" alt="Bike Tools"><span>
+                    <span><p>Rentals</p><img src="../../images/projects/golf_course/proshop-tools.jpg" alt="Proshop Club 1"></span>
+                    <span><p>Merchandise</p><img src="../../images/projects/golf_course/proshop-clubs.jpg" alt="Proshop Collection"></span>
+                </div>
+            
+            </div><!--merch ends-->
+    </div></li><!--CONTENT #5 ENDS-->
+        <li><div class="slider_content" id="course-content-6"><img src="../../images/projects/golf_course/holes/scorecard.jpg" alt="Scorecard">
+        </div></li><!--CONTENT #6 ENDS-->
+  </ul>  
+</div>
+</div><!--project container ends-->          
+</div><!--gridwrapper ends-->
+</div><!--bodywrapper ends-->
+</div><!--wrapper_body ENDS-->
+
+<!--NAV DROPDOWN-->
+<div class="box nav dropdown">
+        <button onclick="myFunction()"><i class="fa fa-bars dropbtn"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+            <li id = "video"><!--<a href="url">Video</a>--></li>
+            <li id = "photo"><a href="../photography.html">Photography</a></li>
+            <li id = "wd"><a href="../webdesign.html">Web Design</a></li>
+            <li id = "graphics"><a href="../graphics.html">Graphics</a></li>
+            <li id = "projects"><a href="../projects.html">Projects</a></li>
+            <li id = "logo"><a href="../logo.html">Logo</a></li>
+            <li id = "type"><a href="../type.html">Type</a></li>
+            <li id = "animate"><!--<a href="url">Animate</a>--></li>
+            <li id = "sound"><!--<a href="url">Sound</a>--></li>
+        </div><!--dropdown ends-->
+        </div><!--nav ends-->
+</body>
+
+<!--JAVASCRIPT STARTS - SLIDER-->
+<script>
+
+jQuery(document).ready(function ($) {
+
+  $('#checkbox').change(function(){
+    setInterval(function () {
+        moveRight();
+    }, 3000);
+  });
+  
+	var slideCount = $('#slider ul li').length;
+	var slideWidth = $('#slider ul li').width();
+	var slideHeight = $('#slider ul li').height();
+	var sliderUlWidth = slideCount * slideWidth;
+	
+	$('#slider').css({ width: slideWidth, height: slideHeight });
+	
+	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+	
+    $('#slider ul li:last-child').prependTo('#slider ul');
+
+    function moveLeft() {
+        $('#slider ul').animate({
+            left: + slideWidth
+        }, 350, function () {
+            $('#slider ul li:last-child').prependTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    function moveRight() {
+        $('#slider ul').animate({
+            left: - slideWidth
+        }, 350, function () {
+            $('#slider ul li:first-child').appendTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    $('a.control_prev').click(function () {
+        moveLeft();
+    });
+
+    $('a.control_next').click(function () {
+        moveRight();
+    });
+
+});    
+
+</script>
+
+
+<!--JAVASCRIPT STARTS - COURSE - content 2-->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script> 
+</html>

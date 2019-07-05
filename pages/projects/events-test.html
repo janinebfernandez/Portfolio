@@ -1,0 +1,319 @@
+<!-----Lake Miramar Golf Course -- PROSHOP.html Page------>
+
+<html>
+  
+<head>
+    <title>LMGC Events</title>
+    <!--Sets viewport to device's native width at 100%.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Google Font - Nunito-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        
+    <!--External Stylesheets----!!change location in GITHUB!!-->
+    <link href="../../css/reset.css" type="text/css" rel="stylesheet">
+    
+    <!--Font Awesome Files-->
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    
+    <!--Javascript Stylesheets-->
+    <script src="../../js/jquery.js"></script>
+    <script src="../js/includes.js"></script>
+    <script src="../js/content.js"></script>
+
+
+<style>
+/************************/
+/*********EVENTS*********/
+/************************/
+    #tournaments{
+        width:100%;
+        height:auto;
+        padding-bottom:20px;
+    }
+
+    #tournament_list{
+        padding:10px 0;
+    }
+
+    #tournaments li, #tournament_list li{
+        display:inline-block;
+        padding: 0 5px;
+        min-width:230px;
+        text-align:center;
+    }
+
+    .tournament_list{
+        color:white;
+        padding:5px;
+        background-color:slategrey;
+        box-shadow: inset 2px 2px 2px rgba(230, 243, 255, .5), inset -2px -2px 10px rgba(0, 0, 0, .5);
+    }
+
+    #tournaments ul:hover{
+        background-color:lightsteelblue;
+    }
+    
+#tour_button{
+    width:150px;
+    background-color:white;
+    color:black;
+    border-radius:5px;
+    padding:10px;
+    margin:0;
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+}
+
+    #tour_button:hover{
+        background: -webkit-gradient(linear, left top, left bottom, from(#DFBE85), to(#CF9C42));
+    }  
+
+    #tournaments p{
+        padding:3px 0;
+        text-align:center;
+        font-size:12px;
+    }
+
+/*EVENT HANDLER*/
+    .description2{
+        display:none;
+        color:white;
+        width:97.9%;
+        background: -webkit-gradient(linear, left top, left bottom, from(#7A7A7A), to(#494949));
+    }
+    
+    ul.tournament_list.row{
+        padding:5px;
+    }
+    /*EVENT HANDLER ENDS*/
+    
+    #events{
+        width:auto;
+        height:auto;
+        overflow:hidden;
+        padding:10px;
+    }
+
+    #events h1{
+        background-color: rgba(255,255,255,.8);
+        width: 90px;
+        padding: 5px;
+        margin-top:35px;
+        position: absolute;
+    }
+
+    #events img{
+        width:550px;
+    }
+
+    #events_list{
+        width: auto;
+        height: auto;
+        float: right;
+        background-color: rgba(230, 243, 255,.9);
+        padding-left:10px;
+        position: relative;
+        margin-top: -376px;
+        border-radius:10px;
+    }
+
+    #events ul{
+        padding:5px 0;
+    }
+
+    #events li{
+        display:inline-block;
+        width:250px;
+    }
+
+    #events .fa{
+        width:20px;
+    }
+    </style>
+
+</head>
+
+    
+
+<body>
+<!--------------------HEAD STARTS----------------------->
+<div id="headerContent"></div>
+<!---------------------HEAD ENDS------------------------>
+
+<!-----------------------SECTION------------------------>
+<div id="index_wrapper">
+    <h1>Tournaments</h1>
+    
+    <!--Tournament Label-->
+    <ul id="tournament_list">
+            <li><ul>NAME</ul></li>
+            <li><ul>PLAYERS</ul></li>
+            <li><ul>HOLES</ul></li>
+            </ul>
+    
+    <!--Tournament Block Beginds-->
+    <div id="tournaments">
+        
+        <div class="tournament current">
+            <ul class="tournament_list row">
+                <li><ul>PROFESSIONAL</ul>       
+                    <ul>Apr.01.2017</ul>
+                    <ul><strong>7:00am</strong></ul></li>
+                <li class="li-players"><ul>2-8</ul>     
+                    <ul>Players</ul><br></li>
+                <li class="li-holes"><ul>9-hole<br><br></ul></li>
+                <li><button id="tour_button">BOOK NOW!</button></li>
+            </ul>
+            <div class="description2 row">
+                <p> Weekly Professional Tournament with complete package. Please Register before tournament day.</p>
+                <p>FEE: $250.00</p><p>Admit: $50</p>
+            </div>
+        </div>   
+        
+        <div class="tournament current">
+            <ul class="tournament_list row">
+                <li><ul>LOCAL</ul>       
+                    <ul>Apr.01.2017</ul>
+                    <ul><strong>11:30am</strong></ul></li>
+                <li class="li-players" style="margin-top:-20px;"><ul>2-10</ul>     
+                    <ul>Players</ul><br></li>
+                <li class="li-holes"><ul>9-hole<br><br></ul></li>
+                <li><button id="tour_button">BOOK NOW!</button></li>
+            </ul>
+            <div class="description2 row">
+                <p class="description"> Local Tournament with free cart. Day of tournament admission accepted.</p>
+                <p>FEE: $220.00</p><p>Admit: $35.00</p>
+            </div>
+        </div> 
+        
+        <div class="tournament current">
+            <ul class="tournament_list row">
+                <li><ul>LOCAL</ul>       
+                    <ul>Apr.01.2017</ul>
+                    <ul><strong>4:00pm</strong></ul></li>
+                <li class="li-players"><ul>2-10</ul>     
+                    <ul>Players</ul><br></li>
+                <li class="li-holes"><ul>9-hole<br><br></ul></li>
+                <li><button id="tour_button">BOOK NOW!</button></li>
+            </ul>
+            <div class="description2 row">
+                <p class="description">Local Tournament with free cart. Day of tournament admission accepted.</p>
+                <p>FEE: $220.00</p><p>Admit: $35.00</p>
+            </div>
+        </div> 
+        
+        <div class="tournament current">
+            <ul class="tournament_list row">
+                <li><ul>PROFESSIONAL</ul>       
+                    <ul>Apr.02.2017</ul>
+                    <ul><strong>7:00am</strong></ul></li>
+                <li class="li-players"><ul>2-8</ul>     
+                    <ul>Players</ul><br></li>
+                <li class="li-holes"><ul>9-hole<br><br></ul></li>
+                <li><button id="tour_button">BOOK NOW!</button></li>
+            </ul>
+            <div class="description2 row">
+                <p class="description">Weekly Professional Tournament with complete package. Please Register before tournament day.</p>
+                <p>FEE: $250.00</p><p>Admit: $50.00</p>
+            </div>
+        </div> 
+        
+        <div class="tournament current">
+            <ul class="tournament_list row">
+                <li><ul>KIDDIE RACE</ul>       
+                    <ul>Apr.02.2017</ul>
+                    <ul><strong>11:30am</strong></ul></li>
+                <li class="li-players"><ul>Limited</ul>     
+                    <ul>Space</ul><br></li>
+                <li class="li-holes"><ul>9-hole<br><br></ul></li>
+                <li><button id="tour_button">BOOK NOW!</button></li>
+            </ul>
+            <div class="description2 row">
+                <p class="description">Range competition: Hit the targets. Includes a bucket of balls and space.</p>
+                <p>FEE: $110.00</p><p>Admit: $15.00</p>
+            </div>
+        </div> 
+        
+        <div class="tournament current">
+            <ul class="tournament_list row">
+                <li><ul>REJOICE</ul>       
+                    <ul>Apr.02.2017</ul>
+                    <ul><strong>2:30pm</strong></ul></li>
+                <li class="li-players"><ul>Unlimited</ul>
+                    <ul>Space</ul><br></li>
+                <li class="li-holes"><ul>9-hole<br><br></ul></li>
+                <li><button id="tour_button">BOOK NOW!</button></li>
+            </ul>
+            <div class="description2 row">
+                <p class="description">Charity for Rejoice: Enjoy a day in the sun for a cause.Please call for more information.</p>
+                <p>FEE: $150.00</p><p>Admit: Free</p>
+                <p>Registration must be done one 2 weeks prior to the event.</p>
+            </div>
+        </div> 
+        
+        <div class="tournament current">
+            <ul class="tournament_list row">
+                <li><ul>LOCAL</ul>       
+                    <ul>Apr.02.2017</ul>
+                    <ul><strong>4:30pm</strong></ul></li>
+                <li class="li-players"><ul>2-10</ul>
+                    <ul>Players</ul><br></li>
+                <li class="li-holes"><ul>9-hole<br><br></ul></li>
+                <li><button id="tour_button">BOOK NOW!</button></li>
+            </ul>
+            <div class="description2 row">
+                <p class="description">Last tournament until the week starts again. Enjoy the course at disscounted pirce!</p>
+                <p>FEE: $180.00</p><p>Admit: $20.00</p>
+            </div>
+        </div> 
+         
+
+        <p>Range access available for play throughout tournaments and events for discounted price. **RANGE NOT AVAILABLE DURING KIDDIE RACE.</p>
+    </div><!--Tournament Content Ends-->
+    
+    
+        
+    </div><!--Events Container Ends-->
+</div><!--INDEX_WRAPPER ENDS-->
+<!--------------------SECTION  ENDS--------------------->
+
+
+<!-------------------FOOTER STARTS---------------------->
+<div id="footerContent"></div>
+<!--------------------FOOTER ENDS----------------------->
+
+<script>    
+     var main = function(){
+        $('.tournament').click(function(){
+            $('.tournament').removeClass('current');
+            /*hides the description of the current event*/
+            $('.description2').slideUp();
+            
+            /*.children allows you to search through elements nested directly under the current element*/
+            $(this).addClass('current');
+            $(this).children('.description2').slideDown();
+            });
+        
+        /*using 0(111) & n(011) to navigate through*/
+        $(document).keypress(function(event){
+            /*if you press 0 then toggle through the description*/
+            if (event.which===111) {
+                $('.current').children('.description2').toggle();
+            }
+            /*if you press n - move to next article*/
+            else if (event.which===110) {
+                $('.description2').hide('.current');
+                var currentArticle = $('.current');
+                var nextArticle = currentArticle.next();
+                currentArticle.removeClass('current');
+                nextArticle.addClass('current');
+            }   
+        });
+    }/*Main Ends*/
+     
+     $(document).ready(main);
+    </script>
+    
+    
+</body>
+</html>
