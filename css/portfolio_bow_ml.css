@@ -162,7 +162,19 @@
 }
 
 #contactme_des, #aboutme_des{
-    margin: -5em 3em 0 3em;
+    /*margin: -5em 3em 0 3em;*/
+    top:0;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-10px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-10px; opacity:0}
+    to {top:0; opacity:1}
 }
 
 #aboutme_content, #contactme_content {

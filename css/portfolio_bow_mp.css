@@ -162,6 +162,21 @@ li a:hover{
     padding: 1em;
 }
 
+#contactme_des, #aboutme_des{
+    top:0;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-10px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-10px; opacity:0}
+    to {top:0; opacity:1}
+}
+
 #aboutme_content{
     height:13em;
 }
