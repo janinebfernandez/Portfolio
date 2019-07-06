@@ -75,9 +75,9 @@
     
     .gridwrapper_content{
         grid-row: 2;
-        /*grid-template-columns: 20% 20% 20% 20% 20%;*/
-        /*display: grid;*/
-        /*margin-top: 10%;*/
+        height: 100%;
+        overflow-x: auto;
+        overflow: scroll;
     }
     
     .gridwrapper_info{
