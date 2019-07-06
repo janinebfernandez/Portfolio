@@ -50,7 +50,7 @@ a:active {
     position: absolute;
     margin: 0 12.5% 0 7.5%;
     box-shadow: 1px 1px 10px 3px grey;
-    top:9em;
+    top:10em;
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 1s;
     animation-name: animatetop;
@@ -61,12 +61,12 @@ a:active {
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {top:-10px; opacity:0} 
-    to {top:9em; opacity:1}
+    to {top:10em; opacity:1}
 }
 
 @keyframes animatetop {
     from {top:-10px; opacity:0}
-    to {top:9em; opacity:1}
+    to {top:10em; opacity:1}
 }
 
 
@@ -78,7 +78,8 @@ background-color: rgba(255, 255, 255,.95);
 #aboutme_content, #contactme_content {  
     line-height: 1.5em;
     font-size: 15px;
-    padding: 0;
+    height:10em;
+    padding:2em;
 }
 
 

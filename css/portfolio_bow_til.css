@@ -36,4 +36,49 @@
     overflow: scroll;
     height: 35em;
 }
+
+
+/*ABOUT ME - CONTACT ME*/
+#contactme_des, #aboutme_des{
+    display: none;
+    width: 80%;
+    /*background-color: pink;*/
+    height: auto;
+    z-index: 0;
+    position: absolute;
+    margin: 0 12.5% 0 7.5%;
+    box-shadow: 1px 1px 10px 3px grey;
+    top:11em;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 1s;
+    animation-name: animatetop;
+    animation-duration: 1s
+}
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-10px; opacity:0} 
+    to {top:11em; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-10px; opacity:0}
+    to {top:11em; opacity:1}
+}
+
+#aboutme_content, #contactme_content {  
+    line-height: 1.5em;
+    font-size: 15px;
+}
+
+#aboutme_content{
+    height:10em;
+    padding: 2em;
+}
+
+#contactme_content{
+    padding-bottom:2em;
+}
+
 }/*@Media 1024px-768px-landscape*/

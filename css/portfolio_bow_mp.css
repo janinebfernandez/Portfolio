@@ -159,7 +159,11 @@ li a:hover{
     line-height: 1.5em;
     overflow: scroll;
     font-size: 15px;
-    padding: 1em 1em;
+    padding: 1em;
+}
+
+#aboutme_content{
+    height:166px;
 }
 
 /*
