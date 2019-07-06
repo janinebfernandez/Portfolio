@@ -163,7 +163,7 @@ li a:hover{
 }
 
 #aboutme_content{
-    height:166px;
+    height:13em;
 }
 
 /*
@@ -273,9 +273,17 @@ button {
     display:none;
 }
 
-/**PROJECT PAGE*/
+/**PROJECT PAGE SLIDER*/
 #slide_1{
     overflow: scroll;
     height: 28em;
+}
+
+.row{
+    height:27em;
+}
+
+.modal{
+    padding-top:9em;
 }
 }/*@Media 320px-480px-landscape*/

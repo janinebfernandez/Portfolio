@@ -261,7 +261,7 @@
         list-style-type: none;
     }
 
-    /**********************
+/**********************
 *****PHOTOGRAPHY*******
 **********************/
 
@@ -282,10 +282,14 @@
     display:none;
 }
 
-/**PROJECT PAGE*/
+/**PROJECT PAGE SLIDER*/
 #slide_1{
     overflow: scroll;
     height: 12em;
+}
+
+.modal{
+    padding-top:3em;
 }
 
 }/*@Media 481px-767px-landscape*/
