@@ -8,6 +8,7 @@ body, html{
     height: 100%;
     margin: 0;
     font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+    overflow:hidden;
 }
 
 .my_background{
@@ -158,6 +159,7 @@ li a:hover{
     line-height: 1.5em;
     overflow: scroll;
     font-size: 15px;
+    padding: 1em 1em;
 }
 
 /*

@@ -230,7 +230,7 @@
         opacity: .95;
         text-align: right;    
         overflow: scroll;
-        height: auto;
+        height: 20em;
     }
     
     .dropdown-content a {
@@ -270,7 +270,7 @@
 }
 
 .row{
-    height:75%;
+    height:100%;
 }
 
 .numbertext{

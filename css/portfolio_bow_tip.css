@@ -163,7 +163,7 @@
         display: none;
     }
     
-    #video, #logo, #type, #animate, #sound{
+    #video,#animate, #sound{
         border-bottom:solid 2px black;
     }
 

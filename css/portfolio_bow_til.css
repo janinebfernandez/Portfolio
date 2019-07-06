@@ -15,11 +15,11 @@
 }
 
 #contactme_des, #aboutme_des{
-    top: 5em;
+    top: 2em;
 }
 
 #aboutme_content, #contactme_content {
-    height: 10em;
+    height: auto;
     padding: .5em;
 }
 /*******GALLERY*******/

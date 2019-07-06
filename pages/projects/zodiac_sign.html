@@ -17,12 +17,12 @@
     <!--Stylesheet-->
     <link href="../../css/reset.css" type="text/css" rel="stylesheet">
     <link href="../../css/portfolio_bow.css" type="text/css" rel="stylesheet">
-    <!--
+
     <link href="../../css/portfolio_bow_tip.css" type="text/css" rel="stylesheet">
     <link href="../../css/portfolio_bow_til.css" type="text/css" rel="stylesheet">
     <link href="../../css/portfolio_bow_ml.css" type="text/css" rel="stylesheet">
     <link href="../../css/portfolio_bow_mp.css" type="text/css" rel="stylesheet">
-    -->
+    
     <!--Icon for Mobile Nav-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -31,12 +31,20 @@ body{
     font-size:12px;
 }
 
-.my_background img{
+.zodiac_background img{
     width: 100%;
 }
 
+.zodiac_background_pattern{
+    display:none;
+}
+
+.zodiac_background_title{
+    display:none;
+}
+
 .mySlides{
-    background-color: pink;
+    /*background-color: pink;*/
     width: 35%;
     padding: 5px;
     position: absolute;
@@ -121,11 +129,130 @@ body{
     margin: 6.5% 0 0 44.5%;
 }
 
+/*TABLE + MOBILE*/
+@media (min-width: 320px) and (max-width: 1024px) {
+    .zodiac_background{
+        display:none;
+    }
+
+    .zodiac_background_pattern{
+        display: block;
+        width:100%;
+    }
+
+    .zodiac_background_pattern img{
+        width:100%;
+    }
+
+    .zodiac_background_title{
+        display:block;
+        width:100%;
+        text-align:center;
+    }
+
+    .zodiac_background_title img{
+        width:20%;
+    }
+
+
+
+}/*TABLE + MOBILE ENDS*/
+/*TABLET PORTRAIT*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .wrapper_body{
+        background-image:none;
+    }
+
+   .mySlides{
+        /*background-color: pink;*/
+        width: 50%;
+        padding: 5px;
+        position: absolute;
+        margin: 30% 0 0 20%;
+    }
+
+    .zodiac-button{
+        height: 9em;
+        border-radius: 50%;
+        background-color: rgb(236,161,103);
+    }
+
+    #aqu_text{margin: 0 0 0 5%;}
+    #pis_text{margin: 0 0 0 20%;}
+    #ari_text{margin: 0 0 0 35%;}
+    #tau_text{margin: 0 0 0 50%;}
+    #gem_text{margin: 0 0 0 65%;}
+    #can_text{margin: 0 0 0 80%;}
+    #leo_text{margin: 15% 0 0 5%;}
+    #vir_text{margin: 15% 0 0 20%;}
+    #lib_text{margin: 15% 0 0 35%;}
+    #sco_text{margin: 15% 0 0 50%;}
+    #sag_text{margin: 15% 0 0 65%;}
+    #cap_text{margin: 15% 0 0 80%;}
+
+}/*TABLET PORTRAIT ENDS*/
+
+/*MOBILE LANDSCAPE*/
+@media (min-width: 320px) and (max-width: 767px) {
+    .wrapper_body{
+        background-image:none;
+    }
+
+   .mySlides{
+        /*background-color: pink;*/
+        width: 95%;
+        padding: 5px;
+        position: absolute;
+        margin: 75% 0 0 0;
+    }
+
+    .mySlides h2{
+        padding-bottom:0;
+    }
+
+    .zodiac_background_title img{
+        width:20%;
+    }
+    .zodiac-section{
+        margin:auto;
+        width:100%;
+    }
+    .zodiac-button{
+        height: 7em;
+        width: 7em;
+        border-radius: 50%;
+        background-color: rgb(236,161,103);
+    }
+
+    .zodiac-button h3{
+        font-size:10px;
+        margin-top:-10px;
+    }
+
+    .zodiac-button p{
+        font-size: 10px;
+    }
+
+    #aqu_text{margin: 0 0 0 2%;}
+    #pis_text{margin: 0 0 0 25%;}
+    #ari_text{margin: 0 0 0 48%;}
+    #tau_text{margin: 0% 0 0 71%;}
+    #gem_text{margin: 25% 0 0 2%;}
+    #can_text{margin: 25% 0 0 25%;}
+    #leo_text{margin: 25% 0 0 48%;}
+    #vir_text{margin: 25% 0 0 71%;}
+    #lib_text{margin: 50% 0 0 2%;}
+    #sco_text{margin: 50% 0 0 25%;}
+    #sag_text{margin: 50% 0 0 48%;}
+    #cap_text{margin: 50% 0 0 71%;}
+}/*MOBILE LANDSCAPE ENDS*/
+
 </style>
 </head>
 
 <body>
-<div class = "my_background"><img src="../../images/projects/zodiac_sign/astrology-sign-template.png" alt="Zodiac Sign"></div>
+    <div class = "zodiac_background"><img src="../../images/projects/zodiac_sign/astrology-sign-template.png" alt="Zodiac Sign"></div>
+    <div class = "zodiac_background_pattern"><img src="../../images/projects/zodiac_sign/astrology-sign-pattern.jpg" alt="Zodiac Sign Pattern"></div>
 <div class = "wrapper_body">
 <div id="bodywrapper">
     <!--GRID CONTAINER-->
@@ -146,10 +273,9 @@ body{
         </div><!--gridwrapper ends-->
 <!--CONTENT BEGINS-->
 <!--ZODIAC SIGN PROJECT-->
+
 <div class="zodiac-container">
-
-    
-
+<div class = "zodiac_background_title"><img src="../../images/projects/zodiac_sign/zodiac-icon-small.png" alt="Zodiac Sign Title"></div>
 <div class="zodiac-content zodiac-content-mobile">
     <div class="mySlides">
         <img class="mySlides-1 large_slide" src="">
@@ -239,29 +365,29 @@ body{
 
   <div class="zodiac-section">  
       <button class="zodiac-button demo thumbnails" id="aqu_text" onclick="currentDiv(1)"> 
-        <img class="mySlides-2" src=""><h3>Aquarius</h3><br>Jan 22 - Feb 18</button> 
+        <img class="mySlides-2" src=""><h3>Aquarius</h3><p>Jan 22 - Feb 18</p></button> 
       <button class="zodiac-button demo thumbnails" id="pis_text" onclick="currentDiv(2)">
-        <img class="mySlides-2" src=""><h3>Pisces</h3><br>Feb 19 - Mar 20</button> 
+        <img class="mySlides-2" src=""><h3>Pisces</h3><p>Feb 19 - Mar 20</p></button> 
       <button class="zodiac-button demo thumbnails" id="ari_text" onclick="currentDiv(3)">
-        <img class="mySlides-2" src=""><h3>Aries</h3><br>Mar 21 - Apr 20</button>
+        <img class="mySlides-2" src=""><h3>Aries</h3><p>Mar 21 - Apr 20</p></button>
       <button class="zodiac-button demo thumbnails" id="tau_text" onclick="currentDiv(4)">
-        <img class="mySlides-2" src=""><h3>Taurus</h3><br>Apr 21 - May 20</button> 
+        <img class="mySlides-2" src=""><h3>Taurus</h3><p>Apr 21 - May 20</p></button> 
       <button class="zodiac-button demo thumbnails" id="gem_text" onclick="currentDiv(5)">
-        <img class="mySlides-2" src=""><h3>Gemini</h3><br>May 21 - Jun 20</button> 
+        <img class="mySlides-2" src=""><h3>Gemini</h3><p>May 21 - Jun 20</p></button> 
       <button class="zodiac-button demo thumbnails" id="can_text" onclick="currentDiv(6)">
-        <img class="mySlides-2" src=""><h3>Cancer</h3><br>Jun 21 - Jul 22</button> 
+        <img class="mySlides-2" src=""><h3>Cancer</h3><p>Jun 21 - Jul 22</p></button> 
       <button class="zodiac-button demo thumbnails" id="leo_text" onclick="currentDiv(7)">
-        <img class="mySlides-2" src=""><h3>Leo</h3><br>Jul 23 - Aug 22</button> 
+        <img class="mySlides-2" src=""><h3>Leo</h3><p>Jul 23 - Aug 22</p></button> 
       <button class="zodiac-button demo thumbnails" id="vir_text" onclick="currentDiv(8)">
-        <img class="mySlides-2" src=""><h3>Virgo</h3><br>Aug 23 - Sep 21</button> 
+        <img class="mySlides-2" src=""><h3>Virgo</h3><p>Aug 23 - Sep 21</p></button> 
       <button class="zodiac-button demo thumbnails" id="lib_text" onclick="currentDiv(9)">
-        <img class="mySlides-2" src=""><h3>Libra</h3><br>Sep 22 - Oct 20</button>
+        <img class="mySlides-2" src=""><h3>Libra</h3><p>Sep 22 - Oct 20</p></button>
       <button class="zodiac-button demo thumbnails" id="sco_text" onclick="currentDiv(7)">
-        <img class="mySlides-2" src=""><h3>Scorpio</h3><br>Oct 21 - Nov 20</button> 
+        <img class="mySlides-2" src=""><h3>Scorpio</h3><p>Oct 21 - Nov 20</p></button> 
       <button class="zodiac-button demo thumbnails" id="sag_text" onclick="currentDiv(8)">
-        <img class="mySlides-2" src=""><h3>Sagittarius</h3><br>Nov 21 - Dec 21</button> 
+        <img class="mySlides-2" src=""><h3>Sagittarius</h3><p>Nov 21 - Dec 21</p></button> 
       <button class="zodiac-button demo thumbnails" id="cap_text" onclick="currentDiv(9)">
-        <img class="mySlides-2" src=""><h3>Capricorn</h3><br>Dec 22 - Jan 21</button>
+        <img class="mySlides-2" src=""><h3>Capricorn</h3><p>Dec 22 - Jan 21</p></button>
     </div>
 </div><!--container ends-->
             
