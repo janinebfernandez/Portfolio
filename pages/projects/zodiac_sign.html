@@ -142,6 +142,7 @@ body{
 
     .zodiac_background_pattern img{
         width:100%;
+        height:110em;
     }
 
     .zodiac_background_title{
@@ -159,8 +160,10 @@ body{
 }/*TABLE + MOBILE ENDS*/
 /*TABLET PORTRAIT*/
 @media (min-width: 768px) and (max-width: 1024px) {
+    
     .wrapper_body{
         background-image:none;
+        overflow:scroll;
     }
 
    .mySlides{
@@ -172,28 +175,88 @@ body{
     }
 
     .zodiac-button{
-        height: 9em;
+        height:15em;
+        width:15em;
         border-radius: 50%;
-        background-color: rgb(236,161,103);
+        background-color: rgba(236,161,103,.8);
+    }
+
+    .zodiac-button h3{
+        font-size: 25px;
+        padding:0 0 1em 0;
+    }
+
+    .zodiac-button p{
+        font-size:15px;
+    }
+
+    .caption {
+        margin:42em 0 0 0;
+        background-color: rgba(255,255,255,.5);
+        width: 100%;
+        padding: 1em;
     }
 
     #aqu_text{margin: 0 0 0 5%;}
-    #pis_text{margin: 0 0 0 20%;}
-    #ari_text{margin: 0 0 0 35%;}
-    #tau_text{margin: 0 0 0 50%;}
-    #gem_text{margin: 0 0 0 65%;}
-    #can_text{margin: 0 0 0 80%;}
-    #leo_text{margin: 15% 0 0 5%;}
-    #vir_text{margin: 15% 0 0 20%;}
-    #lib_text{margin: 15% 0 0 35%;}
-    #sco_text{margin: 15% 0 0 50%;}
-    #sag_text{margin: 15% 0 0 65%;}
-    #cap_text{margin: 15% 0 0 80%;}
+    #pis_text{margin: 0 0 0 35%;}
+    #ari_text{margin: 0 0 0 65%;}
+    #tau_text{margin: 20% 0 0 5%;}
+    #gem_text{margin: 20% 0 0 35%;}
+    #can_text{margin: 20% 0 0 65%;}
+    #leo_text{margin: 40% 0 0 5%;}
+    #vir_text{margin: 40% 0 0 35%;}
+    #lib_text{margin: 40% 0 0 65%;}
+    #sco_text{margin: 60% 0 0 5%;}
+    #sag_text{margin: 60% 0 0 35%;}
+    #cap_text{margin: 60% 0 0 65%;}
 
 }/*TABLET PORTRAIT ENDS*/
 
+/*TABLET LANDSCAPE*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}/*TABLET LANDSCAPE ENDS*/
+
+/*MOBILE PORTRAIT*/
+@media (min-width: 320px) and (max-width: 480px) {
+    .mySlides{
+        width: 90%;
+        padding: 5px;
+        position: absolute;
+        margin: 75% 0 0 0;
+    }
+    
+    .zodiac-button{
+        height:6em;
+        width:6em;
+        border-radius: 50%;
+        background-color: rgba(236,161,103,.8);
+    }
+
+    .zodiac-button h3{
+        font-size: 12px;
+        margin-top: -5px;
+    }
+
+    .zodiac-button p{
+        font-size: 10px;
+    }
+
+    #aqu_text{margin: 0 0 0 0;}
+    #pis_text{margin: 0 0 0 24%;}
+    #ari_text{margin: 0 0 0 48%;}
+    #tau_text{margin: 0 0 0 72%;}
+    #gem_text{margin: 25% 0 0 0;}
+    #can_text{margin: 25% 0 0 24%;}
+    #leo_text{margin: 25% 0 0 48%;}
+    #vir_text{margin: 25% 0 0 72%;}
+    #lib_text{margin: 50% 0 0 0;}
+    #sco_text{margin: 50% 0 0 24%;}
+    #sag_text{margin: 50% 0 0 48%;}
+    #cap_text{margin: 50% 0 0 72%;}
+}/*MOBILE PORTRAIT ENDS*/
+
 /*MOBILE LANDSCAPE*/
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
     .wrapper_body{
         background-image:none;
     }
@@ -221,7 +284,7 @@ body{
         height: 7em;
         width: 7em;
         border-radius: 50%;
-        background-color: rgb(236,161,103);
+        background-color: rgba(236,161,103,.8);
     }
 
     .zodiac-button h3{

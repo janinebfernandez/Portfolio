@@ -261,8 +261,8 @@ background-color: rgba(255, 255, 255,.95);
 }
 
 #car_icon{
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   -webkit-transition: all .2s ease-in-out;; /* For Safari 3.1 to 6.0 */
   transition: all .2s ease-in-out;;
 }
