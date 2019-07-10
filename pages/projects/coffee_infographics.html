@@ -2,7 +2,7 @@
 <!--PORTFOLIO PAGE - PROJECTS PAGE - Coffee Infographics - HTML-->
 <!DOCTYPE html>
 <head>
-    <title>Janine Fernandez Portfolio 2019</title>
+    <title>Janine B.Fernandez Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 
@@ -146,7 +146,42 @@ opacity:1;
   transition: all 2s ease;
 }
 
+/*TABLE + MOBILE*/
+@media (min-width: 320px) and (max-width: 1024px) {
+}/*TABLE + MOBILE ENDS*/
 
+/*TABLET PORTRAIT*/
+@media (min-width: 768px) and (max-width: 1024px) {
+}/*TABLET PORTRAIT ENDS*/
+
+/*TABLET LANDSCAPE*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}/*TABLET LANDSCAPE ENDS*/
+
+/*MOBILE PORTRAIT*/
+@media (min-width: 320px) and (max-width: 480px) {
+#c3_wrapper {
+  width: 100%;
+}
+
+.left_content{
+  position: absolute;
+}
+
+.left_content img {
+  float: left;
+}
+
+  .large_slide {
+    width: 20em;
+    opacity: 1;
+    float: left;
+  }
+}/*MOBILE PORTRAIT ENDS*/
+
+/*MOBILE LANDSCAPE*/
+@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
+}/*MOBILE LANDSCAPE ENDS*/
 </style>    
 </head>
 
@@ -159,10 +194,10 @@ opacity:1;
         <div class="box header_welcome socialmedia"><a href="../../index.html" target = ""><img src="../../images/icons/home-icon.png" alt="j.ix Home"></a>
                                                     <a href="../projects.html" target = ""><img src="../../images/icons/go-back-arrow.png" alt="go back"></a></div>
         <div class="box header_pagename">
-            <a href="../../index.html"><p>Janine B. Fernandez | <!--<img src="../images/j.ix-logo.png" alt="Janine Fernandez Logo"> | -->Porfolio</p></a>
+            <a href="../../index.html"><p>Janine B. Fernandez | <!--<img src="../images/j.ix-logo.png" alt="Janine B. Fernandez Logo"> | -->Porfolio</p></a>
             <!--Social media accounts-->
             <div class = "socialmedia">
-                <a href="https://janinebfernandez.github.io/Portfolio/index.html#" target = ""><img style="width:3em" src="../../images/logo-2019-mini.png" alt="Janine Fernandez Logo"></a>
+                <a href="https://janinebfernandez.github.io/Portfolio/index.html#" target = ""><img style="width:3em" src="../../images/logo-2019-mini.png" alt="Janine B. Fernandez Logo"></a>
                 <a href="https://www.linkedin.com/in/janinebfernandez" target = "_blank"><img src="../../images/icons/linkedin-icon.png" alt="LinkedIn"></a>
                 <a href="https://www.youtube.com/channel/UCWjmkdK2poOYL6IYrYUskwQ/featured?disable_polymer=1" target = "_blank"><img src="../../images/icons/youtube-icon.png" alt="Flickr"></a>
                 <a href="https://www.instagram.com/j.ix.redefine9" target = "_blank"><img src="../../images/icons/instagram-icon.png" alt="Instagram"></a>
@@ -307,20 +342,24 @@ $(".large_slide").click(function() {
 </div><!--wrapper_body ENDS-->
 
 <!--NAV DROPDOWN-->
-<div class="box nav dropdown">
+<div id="nav_container">
+<div class="box nav dropdown float_center">
         <button onclick="myFunction()"><i class="fa fa-bars dropbtn"></i></button>
-        <div id="myDropdown" class="dropdown-content">
+        <ul id="myDropdown" class="dropdown-content child">
             <li id = "video"><!--<a href="url">Video</a>--></li>
-            <li id = "photo"><a href="../photography.html">Photography</a></li>
-            <li id = "wd"><a href="../webdesign.html">Web Design</a></li>
-            <li id = "graphics"><a href="../graphics.html">Graphics</a></li>
-            <li id = "projects"><a href="../projects.html">Projects</a></li>
-            <li id = "logo"><a href="../logo.html">Logo</a></li>
-            <li id = "type"><a href="../type.html">Type</a></li>
+            <li id = "photo"><a href="photography.html">Photography</a></li>
+            <li id = "wd"><a href="webdesign.html">Web Design</a></li>
+            <li id = "graphics"><a href="graphics.html">Graphics</a></li>
+            <li id = "projects"><a href="projects.html">Projects</a></li>
+            <li id = "logo"><a href="logo.html">Logo</a></li>
+            <li id = "type"><a href="type.html">Type</a></li>
             <li id = "animate"><!--<a href="url">Animate</a>--></li>
             <li id = "sound"><!--<a href="url">Sound</a>--></li>
-        </div><!--dropdown ends-->
+        </ul><!--dropdown ends-->
+        <div class="clear"></div>
         </div><!--nav ends-->
+    </div><!--nav container ends-->
+
 </body>
 
 </html>

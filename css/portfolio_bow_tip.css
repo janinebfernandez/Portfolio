@@ -5,24 +5,21 @@
 /***********************/
 
 @media (min-width: 896px) and (max-width: 1024px){
-    #bodywrapper{height: 90%;}
     .gridwrapper_content{margin-top:20%;}
-    .nav li {margin: 0 2em;}
+    /*.nav li {margin: 0 2em;}*/
     .myname{font-size: 3.3em;}
 } /*max-width 1024px ends*/
 
 @media (min-width: 768px) and (max-width: 896px){
-    #bodywrapper{height: 80%;}
     .gridwrapper_content{margin-top:30%;}
-    .nav li {margin: 0 1em;}
+    /*.nav li {margin: 0 1em;}*/
     .myname{font-size:2.5em;}
     .aboutme{margin-right:2em;}
 } /*max-width 1024px ends*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .my_background{
-        /*background-image: url('../images/redefinebackground.jpg');*/
-        width:100%;
+        background-image: url('../images/redefinebackground.jpg');
         height: 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -30,7 +27,7 @@
     }
 
     .wrapper_body{
-        background-image: url('../images/redefinebackground-portrait.jpg');
+        /*background-image: url('../images/redefinebackground-portrait.jpg');*/
         position: absolute;
         left: 0;
         top: 0;
@@ -50,6 +47,7 @@
         grid-template-columns: 20% 20% 20% 20% 20%;
     }
     
+    /********HEADER*******/
     .box{
         /*background-color:pink;
         border:solid 1px black;*/
@@ -75,7 +73,7 @@
     }
     
     .socialmedia img{
-        width:1.5em;
+        width:2.7em;
         padding: .5em;
     }
     .gridwrapper_content{
@@ -142,7 +140,8 @@
         color: black;
     }
     
-    .nav{
+    /**home page ONLY*/
+    /*.nav{
         width: 100%;
         position: absolute;
         bottom: 2em;
@@ -155,10 +154,62 @@
     .nav li{
         display: inline;
         padding: 0 2em;
-        /*margin: 0 1em;*/
         font-weight: bold;
-    }
+    }*/
 
+
+
+/******************/
+/****NAVIGATION****/
+/******************/
+
+.float_center{
+    float: right;
+    position: relative;
+    left: -50%;
+    text-align: left;
+}
+
+.float_center > .child{
+    position: relative;
+    left: 50%;
+}
+
+.clear{
+    clear: both;
+}
+
+#nav_container{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.float_center ul{
+    list-style-type: none;
+    margin: 0;
+    padding: .5em 0;
+}
+
+.child li{
+    float: left;
+    list-style-type: none;
+    margin: 1.5em 1.5em;
+}
+
+.child li a{
+    display: block;
+    height: 1em;
+    line-height: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.child li a:hover{
+    color:rgb(133, 0, 18);
+}
     button {
         display: none;
     }

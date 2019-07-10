@@ -2,7 +2,7 @@
 <!--PORTFOLIO PAGE - PHOTOGRAPHY - HTML-->
 <!DOCTYPE html>
 <head>
-    <title>Janine Fernandez Portfolio 2018</title>
+    <title>Janine B. Fernandez Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 
@@ -26,7 +26,7 @@
 </head>
 
 <body>
-<div class = "my_background"></div>
+<!--<div class = "my_background"></div>-->
 <div class = "wrapper_body">
 <div id="bodywrapper">
     <!--GRID CONTAINER-->
@@ -36,7 +36,7 @@
             <a href="../index.html"><p>Janine B. Fernandez | <!--<img src="../images/j.ix-logo.png" alt="Janine Fernandez Logo"> | -->Porfolio</p></a>
             <!--Social media accounts-->
             <div class = "socialmedia">
-                <a href="https://janinebfernandez.github.io/Portfolio/index.html#" target = ""><img style="width:3em" src="../images/logo-2019-mini.png" alt="Janine Fernandez Logo"></a>
+                <a href="https://janinebfernandez.github.io/Portfolio/index.html#" target = ""><img style="width:3em" src="../images/logo-2019-mini.png" alt="Janine B. Fernandez Logo"></a>
                 <a href="https://www.linkedin.com/in/janinebfernandez" target = "_blank"><img src="../images/icons/linkedin-icon.png" alt="LinkedIn"></a>
                 <a href="https://www.youtube.com/channel/UCWjmkdK2poOYL6IYrYUskwQ/featured?disable_polymer=1" target = "_blank"><img src="../images/icons/youtube-icon.png" alt="Flickr"></a>
                 <a href="https://www.instagram.com/j.ix_redefine9" target = "_blank"><img src="../images/icons/instagram-icon.png" alt="Instagram"></a>
@@ -46,9 +46,6 @@
         </div><!--gridwrapper ends-->
 <!--GALLERY BEGINS-->
 <h2 class="page_title">Photography</h2>
-<!--<h3 class="section_title">Night Photography</h3>
-<div class="description"><p>There is something about it that is so peaceful. My curiosity is always at its peak when I hear the shutter go off and you wait for the exposure shot to show you the outcome.</p>
-</div>-->
 <div class="row">
     <div class="column">
         <img src="../images/photography/icon/balance-icon.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
@@ -102,7 +99,7 @@
         <img src="https://farm2.staticflickr.com/1969/44807998995_b378d1db08_q_d.jpg" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
     </div>
 
-</div>
+</div><!--row ends-->
 
 <div id="myModal" class="modal">
   <span class="close cursor" onclick="closeModal()">&times;</span>
@@ -201,14 +198,15 @@
     </div>
 
 <!--GALLERY ENDS-->
-</div><!--gridwrapper ends-->
+</div><!--myModal ends-->
 </div><!--bodywrapper ends-->
 </div><!--wrapper_body ENDS-->
 
 <!--NAV DROPDOWN-->
-<div class="box nav dropdown">
+<div id="nav_container">
+<div class="box nav dropdown float_center">
         <button onclick="myFunction()"><i class="fa fa-bars dropbtn"></i></button>
-        <div id="myDropdown" class="dropdown-content">
+        <ul id="myDropdown" class="dropdown-content child">
             <li id = "video"><!--<a href="url">Video</a>--></li>
             <li id = "photo"><a href="photography.html">Photography</a></li>
             <li id = "wd"><a href="webdesign.html">Web Design</a></li>
@@ -218,8 +216,10 @@
             <li id = "type"><a href="type.html">Type</a></li>
             <li id = "animate"><!--<a href="url">Animate</a>--></li>
             <li id = "sound"><!--<a href="url">Sound</a>--></li>
-        </div><!--dropdown ends-->
+        </ul><!--dropdown ends-->
+        <div class="clear"></div>
         </div><!--nav ends-->
+    </div><!--nav container ends-->
 </body>
 
 </html>

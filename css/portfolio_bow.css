@@ -61,12 +61,12 @@ a:active {
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {top:-10px; opacity:0} 
-    to {top:10em; opacity:1}
+    to {top:13em; opacity:1}
 }
 
 @keyframes animatetop {
     from {top:-10px; opacity:0}
-    to {top:10em; opacity:1}
+    to {top:13em; opacity:1}
 }
 
 
@@ -95,9 +95,6 @@ background-color: rgba(255, 255, 255,.95);
     cursor: pointer;
 }
 
-
-
-
 /****************/
 /****GALLERY*****/
 /****************/
@@ -117,7 +114,7 @@ background-color: rgba(255, 255, 255,.95);
   
   .row{
       overflow: scroll;
-      height: 75%;
+      /*height: 75%;*/
       overflow-x: auto;
   }
   .column {
@@ -369,13 +366,12 @@ background-color: rgba(255, 255, 255,.95);
     left: 0;
     top: 0;
     width: 100%;
-    height: auto;
     bottom: 0;
 }
 
 #bodywrapper{
-    padding:2.5em;
-    height: 95%;
+    padding:1em;
+    /*height: 95%;*/
 }
 
 .gridwrapper{
@@ -477,6 +473,58 @@ background-color: rgba(255, 255, 255,.95);
     color: black;
 }
 
+/******************/
+/****NAVIGATION****/
+/******************/
+
+.float_center{
+    float: right;
+    position: relative;
+    left: -50%;
+    text-align: left;
+}
+
+.float_center > .child{
+    position: relative;
+    left: 50%;
+}
+
+.clear{
+    clear: both;
+}
+
+#nav_container{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.float_center ul{
+    list-style-type: none;
+    margin: 0;
+    padding: .5em 0;
+}
+
+.child li{
+    float: left;
+    list-style-type: none;
+    margin: 0 2.5em;
+}
+
+.child li a{
+    display: block;
+    height: 1em;
+    line-height: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.child li a:hover{
+    color:rgb(133, 0, 18);
+}
+/*
 .nav{
     width: 100%;
     position: absolute;
@@ -485,6 +533,7 @@ background-color: rgba(255, 255, 255,.95);
     margin: auto;
     text-align: center;
     font-size: 10px;
+    background-color:pink;
 }
 
 .nav li{
@@ -492,7 +541,9 @@ background-color: rgba(255, 255, 255,.95);
     padding: 0 2em;
     margin: 25px;
     font-weight: bold;
+    background-color:orange;
 }
+*/
 
 /*REMOVED WHEN PAGE IS ESTABLISHED*/
 #video, #animate, #sound{

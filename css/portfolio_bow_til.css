@@ -4,14 +4,17 @@
 /*TABLET-IPAD(landscape)*/
 /************************/
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-/*******HEADER*******/
-.socialmedia img {
-    width: 2.5em;
+/*******HOME PAGE*******/
+.my_background{
+    background-image: url('../images/redefinebackground.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/*******HOME*******/
 .gridwrapper_content {
-    margin-top: 5%;
+    margin-top: 15%;
 }
 
 #contactme_des, #aboutme_des{
@@ -22,6 +25,12 @@
     height: auto;
     padding: .5em;
 }
+
+/********HEADER*******/
+.socialmedia img {
+    width: 2.7em;
+}
+
 /*******GALLERY*******/
 .column{
     width: 20%;
@@ -81,4 +90,56 @@
     padding-bottom:2em;
 }
 
+
+/******************/
+/****NAVIGATION****/
+/******************/
+
+.float_center{
+    float: right;
+    position: relative;
+    left: -50%;
+    text-align: left;
+}
+
+.float_center > .child{
+    position: relative;
+    left: 50%;
+}
+
+.clear{
+    clear: both;
+}
+
+#nav_container{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.float_center ul{
+    list-style-type: none;
+    margin: 0;
+    padding: .5em 0;
+}
+
+.child li{
+    float: left;
+    list-style-type: none;
+    margin: .5em 2em;
+}
+
+.child li a{
+    display: block;
+    height: 1em;
+    line-height: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.child li a:hover{
+    color:rgb(133, 0, 18);
+}
 }/*@Media 1024px-768px-landscape*/
