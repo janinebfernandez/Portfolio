@@ -1,5 +1,5 @@
 <!--PORTFOLIO PAGE - Black on White - HTML-->
-<!--PORTFOLIO PAGE - LOGO - HTML-->
+<!--PORTFOLIO PAGE - PROJECTS PAGE - HTML-->
 <!DOCTYPE html>
 <head>
     <title>Janine B. Fernandez Portfolio</title>
@@ -8,9 +8,12 @@
 
     <!--Javascript-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--Popup-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="../js/toggle.js"></script>
     <script src="../js/nav_dropdown.js"></script>
-    <script src="../js/gallery_slideshow.js"></script>
+    <script src="../js/project-popup.js"></script>
         
     <!--Stylesheet-->
     <link href="../css/reset.css" type="text/css" rel="stylesheet">
@@ -22,17 +25,14 @@
 
     <!--Icon for Mobile Nav-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
 <style>
-.mySlides img{
-    width:60%;
+.project_container a{
+    padding:20px;
 }
 </style>
-
 </head>
 
 <body>
-<div class = "my_background"></div>
 <div class = "wrapper_body">
 <div id="bodywrapper">
     <!--GRID CONTAINER-->
@@ -45,108 +45,46 @@
                 <a href="https://janinebfernandez.github.io/Portfolio/index.html#" target = ""><img style="width:3em" src="../images/logo-2019-mini.png" alt="Janine B. Fernandez Logo"></a>
                 <a href="https://www.linkedin.com/in/janinebfernandez" target = "_blank"><img src="../images/icons/linkedin-icon.png" alt="LinkedIn"></a>
                 <a href="https://www.youtube.com/channel/UCWjmkdK2poOYL6IYrYUskwQ/featured?disable_polymer=1" target = "_blank"><img src="../images/icons/youtube-icon.png" alt="Flickr"></a>
-                <a href="https://www.instagram.com/j.ix.redefine9" target = "_blank"><img src="../images/icons/instagram-icon.png" alt="Instagram"></a>
+                <a href="https://www.instagram.com/j.ix_redefine9" target = "_blank"><img src="../images/icons/instagram-icon.png" alt="Instagram"></a>
                 <a href="https://www.flickr.com/photos/janinebfernandez/" target = "_blank"><img src="../images/icons/flickr-icon.png" alt="Flickr"></a>
             </div>
         </div>
         </div><!--gridwrapper ends-->
-
-  <!--GALLERY BEGINS-->
+<!--CONTENT BEGINS-->
 <h2 class="page_title">Logo Design</h2>
-<div class="row">
-    <div class="column">
-        <img src="../images/type/redefinemoments-border.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+<div class="project_container">
+<!--PROJECTS-->
+    <a class="trigger_popup_fricc"><img id="car_icon" src="../images/projects/car_meet/car-icon.png"></a>
+    <a class="trigger_popup_fricc_2"><img id="car_icon" src="../images/projects/cards/card-icon.png"></a>
+<!--POP UP-->
+<!--Car_Meet Pop up-->
+<div class="hover_bkgr_fricc">
+    <span class="helper"></span>
+    <div>
+        <div id="header_contact">Caffeine92</div>
+        <div id="slide_1"><br><p>COMING SOON</p>
+            <img class="car_ads" src="">
+            <img class="car_ads" src="">
+            <img class="car_ads" src="">
+        
+        </div><!--slide_1 ENDS-->
+        <div class="popupCloseButton">X</div>
     </div>
-    <div class="column">
-        <img src="../images/type/redefinemoments-cut.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-    </div>
-    <div class="column">
-        <img src="../images/type/redefinemoments-empty-space.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-    </div>
-    <div class="column">
-        <img src="../images/type/redefinemoments-filled.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-    </div>
-    <div class="column">
-        <img src="../images/type/redefinemoments-pattern.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-    </div>
-    <div class="column">
-        <img src="../images/type/redefinemoments-simple-color.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
-    </div>
-    <div class="column">
-        <img src="../images/type/redefinemoments-simple-hash.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
-    </div>
-    <div class="column">
-        <img src="../images/type/redefinemoments-simple.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-    </div>
-    <div class="column">
-        <img src="../images/type/redefinemoments-vertical.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
-    </div>
-    <!--<div class="column">
-        <img src="" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
-    </div>-->
 </div>
-
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">Redefine9</div>
-      <img src="../images/type/redefinemoments-border.jpg">
+<!--Card samples Pop up-->
+<div class="hover_bkgr_fricc_2">
+        <span class="helper"></span>
+        <div>
+            <div id="header_contact">MaPa Cuisine</div>
+            <div id="slide_1"><br><p>COMING SOON</p>
+                <img class="car_ads" src="">
+                <img class="car_ads" src="">
+            
+            </div><!--slide_1 ENDS-->
+            <div class="popupCloseButton">X</div>
+        </div>
     </div>
-
-    <div class="mySlides">
-        <div class="numbertext">Redefine9</div>
-        <img src="../images/type/redefinemoments-cut.jpg">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">Redefine9</div>
-        <img src="../images/type/redefinemoments-empty-space.jpg">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">Redefine9</div>
-        <img src="../images/type/redefinemoments-filled.jpg">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">Redefine9</div>
-        <img src="../images/type/redefinemoments-pattern.jpg">
-    </div>
-    
-    <div class="mySlides">
-            <div class="numbertext">Redefine9</div>
-            <img src="../images/type/redefinemoments-simple-color.jpg">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">Redefine9</div>
-      <img src="../images/type/redefinemoments-simple-hash.jpg">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">Redefine9</div>
-      <img src="../images/type/redefinemoments-simple.jpg">
-    </div>
-    
-    <div class="mySlides">
-      <div class="numbertext">Redefine9</div>
-      <img src="../images/type/redefinemoments-vertical.jpg">
-    </div>
-<!--
-    <div class="mySlides">
-        <div class="numbertext">Redefine9</div>
-        <img src="../images/type/redefinemoments-filled-jpg" style="width:80%">
-    </div>--> 
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-<!--GALLERY ENDS-->          
+</div><!--container ends-->
 </div><!--gridwrapper ends-->
 </div><!--bodywrapper ends-->
 </div><!--wrapper_body ENDS-->

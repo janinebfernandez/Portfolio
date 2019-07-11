@@ -484,7 +484,7 @@ background-color: rgba(255, 255, 255,.95);
 .float_center{
     float: right;
     position: relative;
-    left: -50%;
+    left: -40%;
     text-align: left;
 }
 
@@ -550,9 +550,9 @@ background-color: rgba(255, 255, 255,.95);
 */
 
 /*REMOVED WHEN PAGE IS ESTABLISHED*/
-#video, #animate, #sound{
+/*#video, #animate, #sound{
     border-bottom:solid 2px black;
-}
+}*/
 
 button.dropbtn, button{
     display: none;
