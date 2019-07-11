@@ -1,20 +1,25 @@
 <!--PORTFOLIO PAGE - Black on White - HTML-->
-<!--PORTFOLIO PAGE - PROJECTS PAGE -  Golf Course - HTML-->
+<!--PORTFOLIO PAGE - PROJECTS PAGE - Golf Course - TEST TEST - HTML-->
 <!DOCTYPE html>
 <head>
-    <title>Janine B. Fernandez Portfolio</title>
+    <title>Janine B.Fernandez Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 
+    <!--Google Font - Nunito-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <!--CSS-->
+    <!--<link rel="stylesheet" href="/lib/w3.css">-->
     <!--Javascript-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
+    <!--Keep updated for .load()-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <!--Popup-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="../../js/toggle.js"></script>
     <script src="../../js/nav_dropdown.js"></script>
     <script src="../../js/project-popup.js"></script>
-    
+        
     <!--Stylesheet-->
     <link href="../../css/reset.css" type="text/css" rel="stylesheet">
     <link href="../../css/portfolio_bow.css" type="text/css" rel="stylesheet">
@@ -22,175 +27,71 @@
     <link href="../../css/portfolio_bow_til.css" type="text/css" rel="stylesheet">
     <link href="../../css/portfolio_bow_ml.css" type="text/css" rel="stylesheet">
     <link href="../../css/portfolio_bow_mp.css" type="text/css" rel="stylesheet">
-    
+
     <!--Icon for Mobile Nav-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <style>
 
-/****************/
-/*****SLIDER*****/
-/****************/
-html {
-  border-top: 5px solid #fff;
-  background: #58DDAF;
-  color: #2a2a2a;
+#c3_wrapper{
+  /*background-color:pink;*/
+  width:100%;
+  margin:0 auto;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
+.c3-content{
+    width: 100%;
+    margin: auto;
 }
 
-h1 {
-  color: #fff;
-  text-align: center;
-  font-weight: 300;
+.c3-section{
+    padding: 1em;
+}
+.c3-button{
+  display:inline;
+  background-color:transparent;
+  border:none;
+  color:rgb(32, 150, 79);
+  font-weight: 800;
 }
 
-.w3-button{
-    display: block;
+.c_Slides{
+    /*background-color:pink;*/
+    width: 100%;
+    float: left;
+    padding-bottom:3em;
 }
 
-#slider {
-  position: relative;
-  overflow: hidden;
-  border-radius: 4px;
-  width:99% !important;
+.c_Slides h1{
+    font-size:26px;
+    color: rgb(32, 150, 79);
+    text-align: left;
+    padding: .2em 0;
 }
 
-#slider ul {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 200px;
-  list-style: none;
+.golf_content{
+    width:100%;
+    margin:auto;
+    position:relative;
+    padding: 2em 0;
 }
 
-#slider ul li {
-  position: relative;
-  display: block;
-  float: left;
-  margin: 0;
-  padding: 0;
-  width: 1200px;
-  height: 430px;
-  /*background: #ccc;*/
-  text-align: center;
-  line-height: 300px;
+img#gold_course_map {
+    width: 50%;
+    border: 15px solid rgba(201,171,126,.5);
 }
 
-.slider_content{
-  width:95%;
-  height:auto;
+img#gold_course_scorecard {
+    width: 45%;
+    float: left;
+    border: 15px solid rgba(201,171,126,.5);
 }
 
-a.control_prev, a.control_next {
-  position: absolute;
-  top: 40%;
-  z-index: 999;
-  display: block;
-  padding: 2%;
-  width: auto;
-  height: auto;
-  background: #fff;
-  color: #000;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 18px;
-  opacity: 0.5;
-  cursor: pointer;
-  border-radius:2px;
+button:hover, button:active{
+  cursor:pointer;
+  color:rgb(141, 165, 149);
 }
 
-a.control_prev:hover, a.control_next:hover {
-  opacity: 1;
-  -webkit-transition: all 0.2s ease;
-}
-
-a.control_prev {
-  border-radius: 0 2px 2px 0;
-}
-
-a.control_next {
-  right: 0;
-  border-radius: 2px 0 0 2px;
-}
-
-.slider_option {
-  position: relative;
-  margin: 10px auto;
-  width: 160px;
-  font-size: 18px;
-}
-    
-/*COURSE SLIDESHOW*/
-    .large_slide{
-        border:5px solid rgb(255,255,255);
-    }
-    
-    .mySlides {
-        display:none;
-    }
-
-    .w3-center{
-        overflow:hidden;
-        margin:0 auto;
-    }
-
-    button.demo,.w3-button{
-        background-color:rgb(95,95,95);
-        color:rgb(255,255,255);
-        width:9.08%;
-        float:left;
-    }  
-
-    button.demo:hover{
-        background-color:rgba(201,171,126,.5);
-        color:rgb(0,0,0);
-    }
-
-    .mySlides p{
-        height:50px;
-        width:450px;
-    }
-
-    .mySlides-1{
-        width:18%;
-        float:right;
-    }
-
-    button.w3-button.demo.thumbnails{
-        width:100px;    
-        background-color: rgba(0,0,0,0);
-        border: none;
-        cursor: pointer;
-        margin-top:5em;
-    }
-
-    img.mySlides-2{
-        width:100%;
-    }
-
-/*****************/
-/*CONTENT COURSE*/
-/****************/
-    #course_map img{
-        border:5px solid rgba(201,171,126,.5);
-    }
-
-    #course_map a{
-        padding:0;
-        margin-top:10px;
-        font-size:20px;
-    }
-
-    /*content 1*/
-    #course-content-1 img{
-        width:55%;
-    }
-
-    /*content 2*/
+/*****HOLES*******/
     .caption{
         text-align:left;
         line-height:1em;
@@ -202,16 +103,20 @@ a.control_next {
 
     .caption h2{
         font-size: 22px;
-        padding: 1em 0;
+        padding: .5em 0;
     }
 
     .caption p{
         font-size:12px;
     }
-    /*content 4*/
-     
-    /*content 5*/
-    #merch{
+
+    img.mySlides-1.large_slide{
+        width:20%;
+        float: right;
+    }
+
+/*****PHOTOS******/
+#merch{
         background-color: black;
         width: 75%;
         height: 342px;
@@ -239,7 +144,372 @@ a.control_next {
         border: 5px solid black;
     }
 
-</style>
+    /*INDIVIDUAL HOLES*/
+    .hole_slide{
+        margin:109px 25px 0 25px; 
+        border:15px solid rgb(255,255,255);
+    }
+    
+    .h_Slides {
+        display:none;
+    }
+
+    .h3-center{
+        overflow:hidden;
+        margin:0 auto;
+    }
+
+    button.ind_holes, .h3-button{
+        background-color: rgb(95,95,95);
+        color: rgb(255,255,255);
+        width: 9.08%;
+        float: left;
+        padding: 10px 16px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+    }  
+
+    button.h3-button.ind_holes.thumbnails {
+        width: 150px;
+        padding: 2px;
+        margin: 5px;
+    }
+
+    button.ind_holes:hover{
+        background-color:rgba(201,171,126,.5);
+        color:rgb(0,0,0);
+    }
+
+    .h_Slides p{
+        height:7em;
+        width:450px;
+    }
+
+    .h_Slides-1{
+        width:43.5%;
+        float:right;
+    }
+
+    button.h3-button.demo.thumbnails{
+        width:150px;
+        padding:2px;
+        margin:5px;
+    }
+
+    button{
+        display:block;
+    }
+
+    img.h_Slides-2{
+        width:100%;
+    }
+
+/************************/
+/********TEETIMES********/
+/************************/
+    #search_teetimes{
+        width: 100%;
+        background-color: grey;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 1em;
+    }
+
+    .input_teetime{
+        line-height:20px;
+        width:305px;
+        margin: 0;
+        padding: 5px 15px;
+        background-color:rgba(255,255,255,.9);
+        font-size:12px;
+        color:#000;
+        border:1px solid #0076a3; border-right:0px;
+        border-top-left-radius: 3px 3px;
+        border-bottom-left-radius: 3px 3px;
+    }
+
+    #reserve_now{
+        width:100%;
+        font-size:25px;
+        padding: .2em;
+        margin: 1em 0;
+        background:-webkit-gradient(linear, left top, left bottom, from(#DFBE85), to(#CF9C42));
+    }
+
+    #reserve_now:hover{ 
+        /*background-color:rgb(255,80,0);*/
+        color:black;
+        background: -webkit-gradient(linear, left top, left bottom, from(#CF9C42), to(#DFBE85));
+    }
+
+    #teetimes_selections ol li{
+        margin:0 70px;
+        display:inline-block;
+    }
+
+    #teetimes_selections ol li h3{
+        font-size:25px;
+    }
+
+    #teetimes_selections ul{
+        display:inline-block;
+        margin:10px 12px;
+
+    }
+
+    .tee_times{
+        padding:8px;
+        text-align:center;
+        background-color:rgb(115,115,115);
+        color:rgb(255,255,255);
+        width:150px;
+        height:200px;
+        border:.5px solid rgb(0,0,0);
+        box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+
+        /*teetimes popup properties*/
+        position:relative;
+        display:inline-block;
+        cursor:pointer;
+        user-select:none; 
+    }
+
+    #booking_time{
+        font-size:35px;
+        font-weight:100;
+        padding:15px 0;
+    }
+
+    #price{
+        font-size:15px;
+        margin-top:1em;
+    }
+
+    .month_players_discount{
+        margin-top:5px;
+        font-size:12px;
+    }
+
+    #call_now{
+        font-size:25px;
+        text-align:center;
+        padding:10px 0;
+    }
+	/*#booking_time:hover, #price:hover{
+		background-color:orange;	
+	}*/
+
+    /*TEETIME POPUP*/
+    #popup{
+        display:none;
+        width:160px;
+        background-color:#555;
+        color:#E8C384;
+        text-align:center;
+        border-radius:6px;
+        padding:8px 0;
+        position:absolute;
+        z-index:1;
+        bottom:25%;
+        left:50%;
+        margin-left:-80px;
+    }
+
+    .show{
+        display:block;
+    }
+
+    /************************/
+/*********EVENTS*********/
+/************************/
+    #tournaments{
+        width:100%;
+        height:auto;
+        padding-bottom:20px;
+    }
+
+    #tournament_list{
+        padding:10px 0;
+    }
+
+    #tournaments li, #tournament_list li{
+        display:inline-block;
+        padding:5px;
+        min-width:230px;
+        text-align:center;
+        font-size: 12px;
+    }
+
+    .tournament_list{
+        color:white;
+        padding:5px;
+        background-color:slategrey;
+        box-shadow: inset 2px 2px 2px rgba(230, 243, 255, .5), inset -2px -2px 10px rgba(0, 0, 0, .5);
+    }
+
+    .tournament_list li ul{
+        padding-bottom: .3em;
+    }
+
+    #tournaments ul:hover{
+        background-color:lightsteelblue;
+    }
+    
+#tour_button{
+    width:150px;
+    background-color:white;
+    color:black;
+    border-radius:5px;
+    padding:10px;
+    margin:0;
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+}
+
+    #tour_button:hover{
+        background: -webkit-gradient(linear, left top, left bottom, from(#DFBE85), to(#CF9C42));
+    }  
+
+    #tournaments p{
+        padding:3px 0;
+        text-align:center;
+        font-size:12px;
+    }
+
+/*EVENT HANDLER*/
+    .description2{
+        display:none;
+        color:white;
+        padding: 1em 0;
+        background: -webkit-gradient(linear, left top, left bottom, from(#7A7A7A), to(#494949));
+    }
+    
+    ul.tournament_list.row{
+        padding:5px;
+    }
+    /*EVENT HANDLER ENDS*/
+    
+    #events{
+        width:auto;
+        height:auto;
+        overflow:hidden;
+        padding:10px;
+    }
+
+    #events h1{
+        background-color: rgba(255,255,255,.8);
+        width: 90px;
+        padding: 5px;
+        margin-top:35px;
+        position: absolute;
+    }
+
+    #events img{
+        width:550px;
+    }
+
+    #events_list{
+        width: auto;
+        height: auto;
+        float: right;
+        background-color: rgba(230, 243, 255,.9);
+        padding-left:10px;
+        position: relative;
+        margin-top: -376px;
+        border-radius:10px;
+    }
+
+    #events ul{
+        padding:5px 0;
+    }
+
+    #events li{
+        display:inline-block;
+        width:250px;
+    }
+
+    #events .fa{
+        width:20px;
+    }
+
+/*POPUP INFORMATION*/
+/* Popup container - can be anything you want */
+/*#legend{
+    background-color:aqua;
+    width: 130px;
+    height: 300px;
+    margin: -345px 0 0 420px;
+    position: absolute;
+    padding:5px;
+}*/
+
+.popup{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+    .popuptext{
+        visibility: hidden;
+        width: 280px;
+        height:25px;
+        color:steelblue;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        /*z-index: 1;
+        bottom: 125%;
+        left: 450px;*/
+        /*margin: -5px 0 0 350px;*/
+        margin: 330px 0 0 -20px;
+
+    }
+
+    .popup .show{
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+    }
+
+
+
+
+
+/*TABLE + MOBILE*/
+@media (min-width: 320px) and (max-width: 1024px) {
+ .c3-button{
+    float:left;
+    width:25%;
+}
+
+}/*TABLE + MOBILE ENDS*/
+
+/*TABLET PORTRAIT*/
+@media (min-width: 768px) and (max-width: 1024px) {
+}/*TABLET PORTRAIT ENDS*/
+
+/*TABLET LANDSCAPE*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}/*TABLET LANDSCAPE ENDS*/
+
+/*MOBILE PORTRAIT*/
+@media (min-width: 320px) and (max-width: 480px) {
+#c3_wrapper {
+  width: 100%;
+}
+
+}/*MOBILE PORTRAIT ENDS*/
+
+/*MOBILE LANDSCAPE*/
+@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
+}/*MOBILE LANDSCAPE ENDS*/
+</style>    
 </head>
 
 <body>
@@ -263,108 +533,330 @@ a.control_next {
         </div>
         </div><!--gridwrapper ends-->
 <!--CONTENT BEGINS-->
-<h2 class="page_title">Golf Course</h2>
+<h2 class="page_title">Lake Mira Mar Golf Course</h2>
 <div class="project_container">
-<h1>Golf Course</h1>
-<div id="slider">
-  <a href="#" class="control_next">></a>
-  <a href="#" class="control_prev"><</a>
-  <ul>
+<div id="c3_wrapper">
 
-<!--CONTENT #1 - MAP-->
-    <li><div class="slider_content" id="course-content-1">
-        <img src="../../images/projects/golf_course/holes/lmgc_course_map.jpg" alt="Course Map">
-    </div></li><!--CONTENT #1 ENDS-->
-<!--CONTENT #2 - MAP & INDIVIDUAL HOLE-->
-    <li><div class="slider_content" id="course-content-2"><!--SLIDESHOW CONTENT-->
-    <div class="w3-container">
-        
-    <div class="w3-center">
-    <div class="w3-section">
-        <button class="w3-button nav-button" onclick="plusDivs(-1)">Prev</button>
-        <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
-        <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
-        <button class="w3-button demo" onclick="currentDiv(3)">3</button>
-        <button class="w3-button demo" onclick="currentDiv(4)">4</button> 
-        <button class="w3-button demo" onclick="currentDiv(5)">5</button> 
-        <button class="w3-button demo" onclick="currentDiv(6)">6</button> 
-        <button class="w3-button demo" onclick="currentDiv(7)">7</button> 
-        <button class="w3-button demo" onclick="currentDiv(8)">8</button> 
-        <button class="w3-button demo" onclick="currentDiv(9)">9</button>
-        <button class="w3-button nav-button" onclick="plusDivs(1)">Next</button>
-        </div>
-    </div>
-        
+<!--SLIDESHOW CONTENT-->
+<div class="c3-container">
 
-    <div class="w3-content w3-content-mobile">
-        <div class="mySlides">
-            <img class="mySlides-1 large_slide" src="../../images/projects/golf_course/holes/hole_1.jpg">
-            <div class="caption"><h2>Hole 1</h2><p>Start the course with an easy hole. This is our widest green and one of the shortest. It may be an easy shot but don't get distacted by the crowd waiting for some good play.</p></div>
-        </div>
-        <div class="mySlides">
-            <img class="mySlides-1 large_slide" src="https://c1.staticflickr.com/3/2945/33443057006_052a7f3a2a_b.jpg">
-            <div class="caption"><h2>Hole 2</h2><p>After an easy is one of our hardest green. This is the longest green with 575 for our longest tee. Aim straight and avoid the breeze if you want to make this one!</p></div>
-        </div>
-        <div class="mySlides">
-            <img class="mySlides-1 large_slide" src="https://c1.staticflickr.com/4/3780/32670070593_bc3f12738c_b.jpg">
-            <div class="caption"><h2>Hole 3</h2><p>This green is played like a mini course. Create an angled shot and make sure to hit strong enough for the ball to pass the incline. Hit too soft and the ball might just come back to where it started.</p></div>
-        </div>
-        <div class="mySlides">
-            <img class="mySlides-1 large_slide" src="https://c1.staticflickr.com/4/3947/33484119405_3b71c1cf3a_b.jpg">
-            <div class="caption"><h2>Hole 4</h2><p>Curve the shot! This green is very tricky. Angle your shot carefully or else you'll find yourself on a bunker!</p></div>
-        </div>
-        <div class="mySlides">
-            <img class="mySlides-1 large_slide" src="https://c1.staticflickr.com/4/3817/33328171942_dce2e09b14_b.jpg">
-            <div class="caption"><h2>Hole 5</h2><p>This is our second longest tee. All you have to do is aim straight but be very careful with the wind. You are up on a hit with this shot and anything can happen.</p></div>
-        </div>
-        <div class="mySlides">
-            <img class="mySlides-1 large_slide" src="https://c1.staticflickr.com/3/2837/33328173652_61f1773721_b.jpg">
-            <div class="caption"><h2>Hole 6</h2><p>A simple tee but watch out for that curve.</p></div>
-        </div>
-        <div class="mySlides">
-            <img class="mySlides-1 large_slide" src="https://c1.staticflickr.com/4/3814/33355932081_fc4d9b51e4_b.jpg">
-            <div class="caption"><h2>Hole 7</h2><p>This is our shortest tee. Aim straight and hit lightly and your on your way to the hole!</p></div>
-        </div>
-        <div class="mySlides">
-            <img class="mySlides-1 large_slide" src="https://c1.staticflickr.com/4/3762/32670069523_ac0721950a_b.jpg">
-            <div class="caption"><h2>Hole 8</h2><p>Very similar to our fourth tee but much more narrow. Becareful you dont hit people that are jogging.</p></div>
-        </div>
-        <div class="mySlides">
-            <img class="mySlides-1 large_slide" src="https://c1.staticflickr.com/4/3911/33100621660_c55df84202_b.jpg">
-            <div class="caption"><h2>Hole 9</h2><p>Finish string with our easiest tee! Short and sweet hit should take the ball home.</p></div>
-        </div>
-    </div>
+  <div class="c3-section">  
+      <button class="c3-button currentPage thumbnails _course" onclick="currentDiv(1)"> 
+        <img class="c_Slides-2" src="">Course</button>
+      <button class="c3-button currentPage thumbnails _course" onclick="currentDiv(2)">
+        <img class="c_Slides-2" src="">Tee Times</button> 
+      <button class="c3-button currentPage thumbnails _course" onclick="currentDiv(3)">
+        <img class="c_Slides-2" src="">Photos</button>
+      <button class="c3-button currentPage thumbnails _course" onclick="currentDiv(4)">
+        <img class="c_Slides-2" src="">Events</button> 
 
-    <div class="w3-section">  
-        <button class="w3-button demo thumbnails" onclick="currentDiv(1)"> 
-            <img class="mySlides-2" src="../../images/projects/golf_course/holes/hole_1.jpg"></button> 
-        <button class="w3-button demo thumbnails" onclick="currentDiv(2)">
-            <img class="mySlides-2" src="https://c1.staticflickr.com/3/2945/33443057006_052a7f3a2a_b.jpg"></button> 
-        <button class="w3-button demo thumbnails" onclick="currentDiv(3)">
-            <img class="mySlides-2" src="https://c1.staticflickr.com/4/3780/32670070593_bc3f12738c_b.jpg"></button>
-        <button class="w3-button demo thumbnails" onclick="currentDiv(4)">
-            <img class="mySlides-2" src="https://c1.staticflickr.com/4/3947/33484119405_3b71c1cf3a_b.jpg"></button> 
-        <button class="w3-button demo thumbnails" onclick="currentDiv(5)">
-            <img class="mySlides-2" src="https://c1.staticflickr.com/4/3817/33328171942_dce2e09b14_b.jpg"></button> 
-        <button class="w3-button demo thumbnails" onclick="currentDiv(6)">
-            <img class="mySlides-2" src="https://c1.staticflickr.com/3/2837/33328173652_61f1773721_b.jpg"></button> 
-        <button class="w3-button demo thumbnails" onclick="currentDiv(7)">
-            <img class="mySlides-2" src="https://c1.staticflickr.com/4/3814/33355932081_fc4d9b51e4_b.jpg"></button> 
-        <button class="w3-button demo thumbnails" onclick="currentDiv(8)">
-            <img class="mySlides-2" src="https://c1.staticflickr.com/4/3762/32670069523_ac0721950a_b.jpg"></button> 
-        <button class="w3-button demo thumbnails" onclick="currentDiv(9)">
-            <img class="mySlides-2" src="https://c1.staticflickr.com/4/3911/33100621660_c55df84202_b.jpg"></button>
-        </div>
-    </div><!--SLIDESHOW CONTAINER ENDS-->
-</div></li><!--CONTENT #2 ENDS-->
+    </div><!--section ends-->
 
-<!--CONTENT #3 -  GOLF COURSE TEETIMES-->  
-<!--<li><div class="slider_content" id="course-content-3">Content #3</div></li>--><!--CONTENT #3 ENDS-->
+    <div class="c3-content c3-content-mobile">
+        <div class="c_Slides">
+            <h1>The Course</h1>
+            <div class="golf_content">
+                <img id="gold_course_map" src="../../images/projects/golf_course/lmgc_course_map.jpg" alt="Golf Course Map">
+                <img id="gold_course_scorecard" src="../../images/projects/golf_course/scorecard.jpg" alt="Golf Course Scorecard">
+                
+            </div>
+        <div id="ind_holes">
+            <div class="h3-center">
+            <div class="h3-section">
+                <button class="h3-button nav-button" onclick="DivsPlus(-1)">Prev</button>
+                <button class="h3-button ind_holes" onclick="DivCurrent(1)">1</button> 
+                <button class="h3-button ind_holes" onclick="DivCurrent(2)">2</button> 
+                <button class="h3-button ind_holes" onclick="DivCurrent(3)">3</button>
+                <button class="h3-button ind_holes" onclick="DivCurrent(4)">4</button> 
+                <button class="h3-button ind_holes" onclick="DivCurrent(5)">5</button> 
+                <button class="h3-button ind_holes" onclick="DivCurrent(6)">6</button> 
+                <button class="h3-button ind_holes" onclick="DivCurrent(7)">7</button> 
+                <button class="h3-button ind_holes" onclick="DivCurrent(8)">8</button> 
+                <button class="h3-button ind_holes" onclick="DivCurrent(9)">9</button>
+                <button class="h3-button nav-button" onclick="DivsPlus(1)">Next</button>
+            </div>
+            </div>
 
-<!--CONTENT #4 -  GOLF COURSE EVENTS-->    
-    <!--<li><div class="slider_content" id="course-content-4">content #4</div></li>--><!--CONTENT #4 ENDS-->
-<!--CONTENT #5 -  GOLF COURSE IMAGES-->
-    <li><div class="slider_content" id="course-content-5">
+            <div class="h3-content h3-content-mobile">
+                <div class="h_Slides">
+                    <img class="h_Slides-1 hole_slide" src="https://c1.staticflickr.com/4/3740/32670054383_f8f3ba0c57_b.jpg">
+                    <div class="caption"><h2>Hole 1</h2><p>Start the course with an easy hole. This is our widest green and one of the shortest. It may be an easy shot but don't get distacted by the crowd waiting for some good play.</p></div>
+                </div>
+                <div class="h_Slides">
+                    <img class="h_Slides-1 hole_slide" src="https://c1.staticflickr.com/3/2945/33443057006_052a7f3a2a_b.jpg">
+                    <div class="caption"><h2>Hole 2</h2><p>After an easy is one of our hardest green. This is the longest green with 575 for our longest tee. Aim straight and avoid the breeze if you want to make this one!</p></div>
+                </div>
+                <div class="h_Slides">
+                    <img class="h_Slides-1 hole_slide" src="https://c1.staticflickr.com/4/3780/32670070593_bc3f12738c_b.jpg">
+                    <div class="caption"><h2>Hole 3</h2><p>This green is played like a mini course. Create an angled shot and make sure to hit strong enough for the ball to pass the incline. Hit too soft and the ball might just come back to where it started.</p></div>
+                </div>
+                <div class="h_Slides">
+                    <img class="h_Slides-1 hole_slide" src="https://c1.staticflickr.com/4/3947/33484119405_3b71c1cf3a_b.jpg">
+                    <div class="caption"><h2>Hole 4</h2><p>Curve the shot! This green is very tricky. Angle your shot carefully or else you'll find yourself on a bunker!</p></div>
+                </div>
+                <div class="h_Slides">
+                    <img class="h_Slides-1 hole_slide" src="https://c1.staticflickr.com/4/3817/33328171942_dce2e09b14_b.jpg">
+                    <div class="caption"><h2>Hole 5</h2><p>This is our second longest tee. All you have to do is aim straight but be very careful with the wind. You are up on a hit with this shot and anything can happen.</p></div>
+                </div>
+                <div class="h_Slides">
+                    <img class="h_Slides-1 hole_slide" src="https://c1.staticflickr.com/3/2837/33328173652_61f1773721_b.jpg">
+                    <div class="caption"><h2>Hole 6</h2><p>A simple tee but watch out for that curve.</p></div>
+                </div>
+                <div class="h_Slides">
+                    <img class="h_Slides-1 hole_slide" src="https://c1.staticflickr.com/4/3814/33355932081_fc4d9b51e4_b.jpg">
+                    <div class="caption"><h2>Hole 7</h2><p>This is our shortest tee. Aim straight and hit lightly and your on your way to the hole!</p></div>
+                </div>
+                <div class="h_Slides">
+                    <img class="h_Slides-1 hole_slide" src="https://c1.staticflickr.com/4/3762/32670069523_ac0721950a_b.jpg">
+                    <div class="caption"><h2>Hole 8</h2><p>Very similar to our fourth tee but much more narrow. Becareful you dont hit people that are jogging.</p></div>
+                </div>
+                <div class="h_Slides">
+                    <img class="h_Slides-1 hole_slide" src="https://c1.staticflickr.com/4/3911/33100621660_c55df84202_b.jpg">
+                    <div class="caption"><h2>Hole 9</h2><p>Finish string with our easiest tee! Short and sweet hit should take the ball home.</p></div>
+                </div>
+            </div>
+
+            <div class="h3-section">  
+                <button class="h3-button ind_holes thumbnails" onclick="DivCurrent(1)"> 
+                    <img class="h_Slides-2" src="https://c1.staticflickr.com/4/3740/32670054383_f8f3ba0c57_b.jpg"></button> 
+                <button class="h3-button ind_holes thumbnails" onclick="DivCurrent(2)">
+                    <img class="h_Slides-2" src="https://c1.staticflickr.com/3/2945/33443057006_052a7f3a2a_b.jpg"></button> 
+                <button class="h3-button ind_holes thumbnails" onclick="DivCurrent(3)">
+                    <img class="h_Slides-2" src="https://c1.staticflickr.com/4/3780/32670070593_bc3f12738c_b.jpg"></button>
+                <button class="h3-button ind_holes thumbnails" onclick="DivCurrent(4)">
+                    <img class="h_Slides-2" src="https://c1.staticflickr.com/4/3947/33484119405_3b71c1cf3a_b.jpg"></button> 
+                <button class="h3-button ind_holes thumbnails" onclick="DivCurrent(5)">
+                    <img class="h_Slides-2" src="https://c1.staticflickr.com/4/3817/33328171942_dce2e09b14_b.jpg"></button> 
+                <button class="h3-button ind_holes thumbnails" onclick="DivCurrent(6)">
+                    <img class="h_Slides-2" src="https://c1.staticflickr.com/3/2837/33328173652_61f1773721_b.jpg"></button> 
+                <button class="h3-button ind_holes thumbnails" onclick="DivCurrent(7)">
+                    <img class="h_Slides-2" src="https://c1.staticflickr.com/4/3814/33355932081_fc4d9b51e4_b.jpg"></button> 
+                <button class="h3-button ind_holes thumbnails" onclick="DivCurrent(8)">
+                    <img class="h_Slides-2" src="https://c1.staticflickr.com/4/3762/32670069523_ac0721950a_b.jpg"></button> 
+                <button class="h3-button ind_holes thumbnails" onclick="DivCurrent(9)">
+                    <img class="h_Slides-2" src="https://c1.staticflickr.com/4/3911/33100621660_c55df84202_b.jpg"></button>
+            </div>
+        </div><!--ind_holes end-->
+    </div><!--The Course Ends-->
+    <div class="c_Slides">
+        <h1>Tee Times</h1>
+        <div class="golf_content">
+                <div id="index_wrapper">
+                    <div id="search_teetimes">
+                                <form id="tfnewsearch" method="get" action="http://www.google.com">
+                                    
+                                <!--Tee Time-->
+                                <input type="text" id="input_teetime" class="input_teetime" name="q" placeholder="Tee Times" size="21" maxlength="120" value="">
+                                    
+                                <!--# Players-->
+                                <input type="text" id="input_date" class="input_teetime" name="q" size="21" maxlength="120" placeholder="Players" value="">
+                                
+                                <!--Date-->
+                                <input type="text" id="input_date" class="input_teetime" name="q" size="21" maxlength="120" placeholder="MM/DD/YY" value="">    
+                                <input type="submit" value="Search" class="search_button_teetime">
+                                </form>
+                            <div class="tfclear"></div>
+                    </div>
+
+                    <button id="reserve_now">Reserve Now!</button>
+                    
+                    <div id="teetimes_selections">
+                        <ol id="mobile_days">
+                            <li><h3>MON</h3></li>
+                            <li><h3>TUE</h3></li>
+                            <li><h3>WED</h3></li>
+                            <li><h3>THU</h3></li>
+                            <li><h3>FRI</h3></li>
+                        </ol>
+                            <ul id="mobile_teetimes"><div class="tee_times">
+                                <p id="popup">Thank you for Reserving!</p>
+                                <p class="month_players_discount">March 27</p>
+                                <p id="booking_time">7:05am</p>
+                                <p class="month_players_discount">1 - 6 Players</p>
+                                <p id="price">$49.00</p>
+                                <p class="month_players_discount">Member Discount</p>
+                                </div>
+                            </ul>
+                            <ul id="mobile_teetimes"><div class="tee_times">
+                                <p id="popup">Thank you for Reserving!</p>
+                                <p class="month_players_discount">March 28</p>
+                                <p id="booking_time">7:05am</p>
+                                <p class="month_players_discount">1 - 6 Players</p>
+                                <p id="price">$49.00</p>
+                                <p class="month_players_discount">Member Discount</p>
+                                </div>
+                            </ul>
+                            <ul id="mobile_teetimes"><div class="tee_times">
+                                <p id="popup">Thank you for Reserving!</p>
+                                <p class="month_players_discount">March 29</p>
+                                <p id="booking_time">7:05am</p>
+                                <p class="month_players_discount">1 - 6 Players</p>
+                                <p id="price">$49.00</p>
+                                <p class="month_players_discount">Member Discount</p>
+                                </div>
+                            </ul>
+                            <ul id="mobile_teetimes"><div class="tee_times">
+                                <p id="popup">Thank you for Reserving!</p>
+                                <p class="month_players_discount">March 30</p>
+                                <p id="booking_time">7:05am</p>
+                                <p class="month_players_discount">1 - 6 Players</p>
+                                <p id="price">$49.00</p>
+                                <p class="month_players_discount">Member Discount</p>
+                                </div>
+                            </ul>
+                            <ul id="mobile_teetimes"><div class="tee_times">
+                                <p id="popup">Thank you for Reserving!</p>
+                                <p class="month_players_discount">March 31</p>
+                                <p id="booking_time">6:45am</p>
+                                <p class="month_players_discount">1 - 4 Players</p>
+                                <p id="price">$69.00</p>
+                                <p class="month_players_discount">Popular Hour</p>
+                                </div>
+                            </ul>
+                            <ul id="mobile_teetimes"><div class="tee_times">
+                                <p id="popup">Thank you for Reserving!</p>
+                                <p class="month_players_discount">March 27</p>
+                                <p id="booking_time">11:00am</p>
+                                <p class="month_players_discount">1 - 6 Players</p>
+                                <p id="price">$79.00</p>
+                                <p class="month_players_discount">4+ Member Discount</p>
+                                </div>
+                            </ul>
+                            <ul id="mobile_teetimes"><div class="tee_times">
+                                <p id="popup">Thank you for Reserving!</p>
+                                <p class="month_players_discount">March 28</p>
+                                <p id="booking_time">10:00am</p>
+                                <p class="month_players_discount">1 - 6 Players</p>
+                                <p id="price">$79.00</p>
+                                <p class="month_players_discount">+4 Member Discount</p>
+                                </div>
+                            </ul>
+                            <ul id="mobile_teetimes"><div class="tee_times">
+                                <p id="popup">Thank you for Reserving!</p>
+                                <p class="month_players_discount">March 29</p>
+                                <p id="booking_time">10:00am</p>
+                                <p class="month_players_discount">1 - 6 Players</p>
+                                <p id="price">$79.00</p>
+                                <p class="month_players_discount">4+ Member Discount</p>
+                                </div>
+                            </ul>
+                            <ul id="mobile_teetimes"><div class="tee_times">
+                                <p id="popup">Thank you for Reserving!</p>
+                                <p class="month_players_discount">March 30</p>
+                                <p id="booking_time">10:00am</p>
+                                <p class="month_players_discount">1 - 6 Players</p>
+                                <p id="price">$79.00</p>
+                                <p class="month_players_discount">4+ Member Discount</p>
+                                </div>
+                            </ul>
+                                <ul id="mobile_teetimes"><div class="tee_times">
+                                <p id="popup">Thank you for Reserving!</p>
+                                <p class="month_players_discount">March 31</p>
+                                <p id="booking_time">9:45am</p>
+                                <p class="month_players_discount">1 - 4 Players</p>
+                                <p id="price">$99.00</p>
+                                <p class="month_players_discount">Popular Hour</p>
+                                </div>
+                            </ul>
+                            <ul id="mobile_teetimes"><div class="tee_times">
+                                <p id="popup">Thank you for Reserving!</p>
+                                <p class="month_players_discount">March 27</p>
+                                <p id="booking_time">1:10pm</p>
+                                <p class="month_players_discount">1 - 4 Players</p>
+                                <p id="price">$99.00</p>
+                                <p class="month_players_discount">Popular Hour</p>
+                                </div>
+                            </ul>
+                            <ul id="mobile_teetimes"><div class="tee_times">
+                                <p id="popup">Thank you for Reserving!</p>
+                                <p class="month_players_discount">March 28</p>
+                                <p id="booking_time">1:10pm</p>
+                                <p class="month_players_discount">1 - 4 Players</p>
+                                <p id="price">$99.00</p>
+                                <p class="month_players_discount">Popular Hour</p>
+                                </div>
+                            </ul>
+                            <ul id="mobile_teetimes"><div class="tee_times">
+                                <p id="popup">Thank you for Reserving!</p>
+                                <p class="month_players_discount">March 29</p>
+                                <p id="booking_time">1:10pm</p>
+                                <p class="month_players_discount">1 - 4 Players</p>
+                                <p id="price">$99.00</p>
+                                <p class="month_players_discount">Popular Hour</p>
+                                </div>
+                            </ul>
+                            <ul id="mobile_teetimes"><div class="tee_times">
+                                <p id="popup">Thank you for Reserving!</p>
+                                <p class="month_players_discount">March 30</p>
+                                <p id="booking_time">1:10pm</p>
+                                <p class="month_players_discount">1 - 4 Players</p>
+                                <p id="price">$99.00</p>
+                                <p class="month_players_discount">Popular Hour</p>
+                                </div>
+                            </ul>
+                            <ul id="mobile_teetimes"><div class="tee_times">
+                                <p id="popup">Thank you for Reserving!</p>
+                                <p class="month_players_discount">March 31</p>
+                                <p id="booking_time">12:50pm</p>
+                                <p class="month_players_discount">1 - 2 Players</p>
+                                <p id="price">$119.00</p>
+                                <p class="month_players_discount">Popular Hour</p>
+                                </div>
+                            </ul>
+                            <ul id="mobile_teetimes"><div class="tee_times">
+                                <p id="popup">Thank you for Reserving!</p>
+                                <p class="month_players_discount">March 27</p>
+                                <p id="booking_time">3:30pm</p>
+                                <p class="month_players_discount">1 - 4 Players</p>
+                                <p id="price">$120.00</p>
+                                <p class="month_players_discount">Keep in Pace</p>
+                                </div>
+                            </ul>
+                            <ul id="mobile_teetimes"><div class="tee_times">
+                                <p id="popup">Thank you for Reserving!</p>
+                                <p class="month_players_discount">March 28</p>
+                                <p id="booking_time">3:30pm</p>
+                                <p class="month_players_discount">1 - 4 Players</p>
+                                <p id="price">$120.00</p>
+                                <p class="month_players_discount">Keep in Pace</p>
+                                </div>
+                            </ul>
+                            <ul id="mobile_teetimes"><div class="tee_times">
+                                <p id="popup">Thank you for Reserving!</p>
+                                <p class="month_players_discount">March 29</p>
+                                <p id="booking_time">3:30pm</p>
+                                <p class="month_players_discount">1 - 4 Players</p>
+                                <p id="price">$120.00</p>
+                                <p class="month_players_discount">Keep in Pace</p>
+                                </div>
+                            </ul>
+                            <ul id="mobile_teetimes"><div class="tee_times">
+                                <p id="popup">Thank you for Reserving!</p>
+                                <p class="month_players_discount">March 30</p>
+                                <p id="booking_time">3:10pm</p>
+                                <p class="month_players_discount">1 - 4 Players</p>
+                                <p id="price">$120.00</p>
+                                <p class="month_players_discount">Keep in Pace</p>
+                                </div>
+                            </ul>
+                            <ul id="mobile_teetimes"><div class="tee_times">
+                                <p id="popup">Thank you for Reserving!</p>
+                                <p class="month_players_discount">March 31</p>
+                                <p id="booking_time">3:50pm</p>
+                                <p class="month_players_discount">1 - 2 Players</p>
+                                <p id="price">$149.99</p>
+                                <p class="month_players_discount">Keep in Pace</p>
+                                </div>
+                            </ul>
+                    </div>
+                    <p id="call_now"> Call <strong>(858) 531 - 0000 </strong>or <strong>Reserve Online </strong>Now!
+                </div><!--INDEX_WRAPPER ENDS-->
+        </div><!--Teetimes content ends-->
+    </div><!--Tee Times Ends-->
+    <div class="c_Slides">
+        <h1>Explore</h1>
+        <div class="golf_content">
+            <li><div class="slider_content" id="course-content-5">
             <div id="merch">
                 <div id="images_rowone">
                     <span><p>Professional Clubs</p><img src="../../images/projects/golf_course/proshop-club-2.jpg" alt="Proshop Club 2"></span>
@@ -377,17 +869,150 @@ a.control_next {
                     <span><p>Rentals</p><img src="../../images/projects/golf_course/proshop-tools.jpg" alt="Proshop Club 1"></span>
                     <span><p>Merchandise</p><img src="../../images/projects/golf_course/proshop-clubs.jpg" alt="Proshop Collection"></span>
                 </div>
-            
-            </div><!--merch ends-->
-    </div></li><!--CONTENT #5 ENDS-->
-        <li><div class="slider_content" id="course-content-6"><img src="../../images/projects/golf_course/holes/scorecard.jpg" alt="Scorecard">
-        </div></li><!--CONTENT #6 ENDS-->
-  </ul>  
-</div>
-</div><!--project container ends-->          
+            </div>
+            </div>
+        </div>
+    </div><!--Explore Ends-->
+    <div class="c_Slides">
+        <h1>Events</h1>
+        <div class="golf_content">
+            <ul id="tournament_list">
+            <li><ul>NAME</ul></li>
+            <li><ul>PLAYERS</ul></li>
+            <li><ul>HOLES</ul></li>
+            </ul>
+    
+            <!--Tournament Block Beginds-->
+            <div id="tournaments">
+                
+                <div class="tournament current">
+                    <ul class="tournament_list row">
+                        <li><ul>PROFESSIONAL</ul>       
+                            <ul>Apr.01</ul>
+                            <ul><strong>7:00am</strong></ul></li>
+                        <li class="li-players"><ul>2-8</ul>     
+                            <ul>Players</ul><br></li>
+                        <li class="li-holes"><ul>9-hole<br><br></ul></li>
+                        <li><button id="tour_button">BOOK NOW!</button></li>
+                    </ul>
+                    <div class="description2 row">
+                        <p> Weekly Professional Tournament with complete package. Please Register before tournament day.</p>
+                        <p>FEE: $250.00</p><p>Admit: $50</p>
+                    </div>
+                </div>   
+                
+                <div class="tournament current">
+                    <ul class="tournament_list row">
+                        <li><ul>LOCAL</ul>       
+                            <ul>Apr.01</ul>
+                            <ul><strong>11:30am</strong></ul></li>
+                        <li class="li-players" style="margin-top:-20px;"><ul>2-10</ul>     
+                            <ul>Players</ul><br></li>
+                        <li class="li-holes"><ul>9-hole<br><br></ul></li>
+                        <li><button id="tour_button">BOOK NOW!</button></li>
+                    </ul>
+                    <div class="description2 row">
+                        <p class="description"> Local Tournament with free cart. Day of tournament admission accepted.</p>
+                        <p>FEE: $220.00</p><p>Admit: $35.00</p>
+                    </div>
+                </div> 
+                
+                <div class="tournament current">
+                    <ul class="tournament_list row">
+                        <li><ul>LOCAL</ul>       
+                            <ul>Apr.01</ul>
+                            <ul><strong>4:00pm</strong></ul></li>
+                        <li class="li-players"><ul>2-10</ul>     
+                            <ul>Players</ul><br></li>
+                        <li class="li-holes"><ul>9-hole<br><br></ul></li>
+                        <li><button id="tour_button">BOOK NOW!</button></li>
+                    </ul>
+                    <div class="description2 row">
+                        <p class="description">Local Tournament with free cart. Day of tournament admission accepted.</p>
+                        <p>FEE: $220.00</p><p>Admit: $35.00</p>
+                    </div>
+                </div> 
+                
+                <div class="tournament current">
+                    <ul class="tournament_list row">
+                        <li><ul>PROFESSIONAL</ul>       
+                            <ul>Apr.02</ul>
+                            <ul><strong>7:00am</strong></ul></li>
+                        <li class="li-players"><ul>2-8</ul>     
+                            <ul>Players</ul><br></li>
+                        <li class="li-holes"><ul>9-hole<br><br></ul></li>
+                        <li><button id="tour_button">BOOK NOW!</button></li>
+                    </ul>
+                    <div class="description2 row">
+                        <p class="description">Weekly Professional Tournament with complete package. Please Register before tournament day.</p>
+                        <p>FEE: $250.00</p><p>Admit: $50.00</p>
+                    </div>
+                </div> 
+                
+                <div class="tournament current">
+                    <ul class="tournament_list row">
+                        <li><ul>KIDDIE RACE</ul>       
+                            <ul>Apr.02</ul>
+                            <ul><strong>11:30am</strong></ul></li>
+                        <li class="li-players"><ul>Limited</ul>     
+                            <ul>Space</ul><br></li>
+                        <li class="li-holes"><ul>9-hole<br><br></ul></li>
+                        <li><button id="tour_button">BOOK NOW!</button></li>
+                    </ul>
+                    <div class="description2 row">
+                        <p class="description">Range competition: Hit the targets. Includes a bucket of balls and space.</p>
+                        <p>FEE: $110.00</p><p>Admit: $15.00</p>
+                    </div>
+                </div> 
+                
+                <div class="tournament current">
+                    <ul class="tournament_list row">
+                        <li><ul>REJOICE</ul>       
+                            <ul>Apr.02</ul>
+                            <ul><strong>2:30pm</strong></ul></li>
+                        <li class="li-players"><ul>Unlimited</ul>
+                            <ul>Space</ul><br></li>
+                        <li class="li-holes"><ul>9-hole<br><br></ul></li>
+                        <li><button id="tour_button">BOOK NOW!</button></li>
+                    </ul>
+                    <div class="description2 row">
+                        <p class="description">Charity for Rejoice: Enjoy a day in the sun for a cause.Please call for more information.</p>
+                        <p>FEE: $150.00</p><p>Admit: Free</p>
+                        <p>Registration must be done one 2 weeks prior to the event.</p>
+                    </div>
+                </div> 
+                
+                <div class="tournament current">
+                    <ul class="tournament_list row">
+                        <li><ul>LOCAL</ul>       
+                            <ul>Apr.02</ul>
+                            <ul><strong>4:30pm</strong></ul></li>
+                        <li class="li-players"><ul>2-10</ul>
+                            <ul>Players</ul><br></li>
+                        <li class="li-holes"><ul>9-hole<br><br></ul></li>
+                        <li><button id="tour_button">BOOK NOW!</button></li>
+                    </ul>
+                    <div class="description2 row">
+                        <p class="description">Last tournament until the week starts again. Enjoy the course at disscounted pirce!</p>
+                        <p>FEE: $180.00</p><p>Admit: $20.00</p>
+                    </div>
+                </div> 
+                
+
+                <p>Range access available for play throughout tournaments and events for discounted price. **RANGE NOT AVAILABLE DURING KIDDIE RACE.</p>
+            </div><!--Tournament Content Ends-->
+        </div><!--gold_content ends-->
+    </div><!--Events End-->
+</div><!--C3-content ENDS-->
+</div><!--C3 CONTAINER ENDS-->
+    
+      
+</div><!--c3-wrapper ends-->  
+</div><!--container ends-->
 </div><!--gridwrapper ends-->
 </div><!--bodywrapper ends-->
 </div><!--wrapper_body ENDS-->
+
 
 <!--NAV DROPDOWN-->
 <div id="nav_container">
@@ -395,12 +1020,12 @@ a.control_next {
         <button onclick="myFunction()"><i class="fa fa-bars dropbtn"></i></button>
         <ul id="myDropdown" class="dropdown-content child">
             <li id = "video"><!--<a href="url">Video</a>--></li>
-            <li id = "photo"><a href="photography.html">Photography</a></li>
-            <li id = "wd"><a href="webdesign.html">Web Design</a></li>
-            <li id = "graphics"><a href="graphics.html">Graphics</a></li>
-            <li id = "projects"><a href="projects.html">Projects</a></li>
-            <li id = "logo"><a href="logo.html">Logo</a></li>
-            <li id = "type"><a href="type.html">Type</a></li>
+            <li id = "photo"><a href="../photography.html">Photography</a></li>
+            <li id = "wd"><a href="../webdesign.html">Web Design</a></li>
+            <li id = "graphics"><a href="../graphics.html">Graphics</a></li>
+            <li id = "projects"><a href="../projects.html">Projects</a></li>
+            <li id = "logo"><a href="../logo.html">Logo</a></li>
+            <li id = "type"><a href="../type.html">Type</a></li>
             <li id = "animate"><!--<a href="url">Animate</a>--></li>
             <li id = "sound"><!--<a href="url">Sound</a>--></li>
         </ul><!--dropdown ends-->
@@ -410,60 +1035,7 @@ a.control_next {
 
 </body>
 
-<!--JAVASCRIPT STARTS - SLIDER-->
-<script>
-
-jQuery(document).ready(function ($) {
-
-  $('#checkbox').change(function(){
-    setInterval(function () {
-        moveRight();
-    }, 3000);
-  });
-  
-	var slideCount = $('#slider ul li').length;
-	var slideWidth = $('#slider ul li').width();
-	var slideHeight = $('#slider ul li').height();
-	var sliderUlWidth = slideCount * slideWidth;
-	
-	$('#slider').css({ width: slideWidth, height: slideHeight });
-	
-	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
-	
-    $('#slider ul li:last-child').prependTo('#slider ul');
-
-    function moveLeft() {
-        $('#slider ul').animate({
-            left: + slideWidth
-        }, 350, function () {
-            $('#slider ul li:last-child').prependTo('#slider ul');
-            $('#slider ul').css('left', '');
-        });
-    };
-
-    function moveRight() {
-        $('#slider ul').animate({
-            left: - slideWidth
-        }, 350, function () {
-            $('#slider ul li:first-child').appendTo('#slider ul');
-            $('#slider ul').css('left', '');
-        });
-    };
-
-    $('a.control_prev').click(function () {
-        moveLeft();
-    });
-
-    $('a.control_next').click(function () {
-        moveRight();
-    });
-
-});    
-
-</script>
-
-
-<!--JAVASCRIPT STARTS - COURSE - content 2-->
+<!--JAVASCRIPT STARTS - Golf Course currentPages/sections-->
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -478,18 +1050,120 @@ function currentDiv(n) {
 
 function showDivs(n) {
   var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
+  var x = document.getElementsByClassName("c_Slides");
+  var dots = document.getElementsByClassName("currentPage");
   if (n > x.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
      x[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-red", "");
+     dots[i].className = dots[i].className.replace(" c3-red", "");
   }
   x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-red";
+  dots[slideIndex-1].className += " c3-red";
+}
+
+
+
+</script> 
+
+
+<!--INDIVIDUAL HOLES-->
+<script>
+var IndexSlide = 1;
+DivsShow(IndexSlide);
+
+function DivsPlus(n) {
+  DivsShow(IndexSlide += n);
+}
+
+function DivCurrent(n) {
+  DivsShow(IndexSlide = n);
+}
+
+function DivsShow(n) {
+  var i;
+  var x = document.getElementsByClassName("h_Slides");
+  var dots = document.getElementsByClassName("ind_holes");
+  if (n > x.length) {IndexSlide = 1}    
+  if (n < 1) {IndexSlide = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" h3-red", "");
+  }
+  x[IndexSlide-1].style.display = "block";  
+  dots[IndexSlide-1].className += " h3-red";
 }
 </script> 
+
+<!--TEETIMES--->
+<script>
+		$(document).ready(function(){
+			$(function(){
+				$("#headerContentPages").load("../includes/lmgc-header.html"); 
+		      		$("#footerContentPages").load("../includes/lmgc-footer.html"); 
+		    });
+          });
+	
+	
+		$(document).ready(function(){
+	    		$(".tee_times").mouseenter(function(){
+				$('#booking_time',this).css("background-color","#E8C384");
+				$('#price',this).css("color","#E8C384");
+	    		});
+	    		$(".tee_times").mouseleave(function(){
+				$('#booking_time',this).css("background-color","rgb(115,115,115)");
+				$('#price',this).css("color","rgb(225,225,225)")
+	    		});
+
+	});
+	</script>
+
+<!--EVENTS-->
+
+<script>    
+  
+  /*HEADER & FOOTER PULL*/
+		$(document).ready(function(){
+			$(function(){
+				$("#headerContentPages").load("../includes/lmgc-header.html"); 
+		      		$("#footerContentPages").load("../includes/lmgc-footer.html"); 
+		    });
+          });
+	
+	
+  
+     var main = function(){
+        $('.tournament').click(function(){
+            $('.tournament').removeClass('current');
+            /*hides the description of the current event*/
+            $('.description2').slideUp();
+            
+            /*.children allows you to search through elements nested directly under the current element*/
+            $(this).addClass('current');
+            $(this).children('.description2').slideDown();
+            });
+        
+        /*using 0(111) & n(011) to navigate through*/
+        $(document).keypress(function(event){
+            /*if you press 0 then toggle through the description*/
+            if (event.which===111) {
+                $('.current').children('.description2').toggle();
+            }
+            /*if you press n - move to next article*/
+            else if (event.which===110) {
+                $('.description2').hide('.current');
+                var currentArticle = $('.current');
+                var nextArticle = currentArticle.next();
+                currentArticle.removeClass('current');
+                nextArticle.addClass('current');
+            }   
+        });
+    }/*Main Ends*/
+     
+     $(document).ready(main);
+    </script>
 </html>

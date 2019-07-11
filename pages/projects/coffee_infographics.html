@@ -50,8 +50,9 @@
     margin: auto;
 }
 
-.c3-section{
-  /*margin:2em 0;*/
+
+.c3-container {
+    margin-top: 1em;
 }
 
 .c3-button{
@@ -214,7 +215,26 @@ opacity:1;
 <!--SLIDESHOW CONTENT-->
 <div class="c3-container">
 
-    
+  <div class="c3-section">  
+      <button class="c3-button demo thumbnails _drip" onclick="currentDiv(1)"> 
+        <img class="c_Slides-2" src="">Drip</button>/
+      <button class="c3-button demo thumbnails _drip" onclick="currentDiv(2)">
+        <img class="c_Slides-2" src="">Espresso</button>/ 
+      <button class="c3-button demo thumbnails _drip" onclick="currentDiv(3)">
+        <img class="c_Slides-2" src="">Americano</button>/
+      <button class="c3-button demo thumbnails _drip" onclick="currentDiv(4)">
+        <img class="c_Slides-2" src="">Latte</button>/ 
+      <button class="c3-button demo thumbnails _drip" onclick="currentDiv(5)">
+        <img class="c_Slides-2" src="">Cappucino</button>/ 
+      <button class="c3-button demo thumbnails _drip" onclick="currentDiv(6)">
+        <img class="c_Slides-2" src="">Flat White</button>/ 
+      <button class="c3-button demo thumbnails _drip" onclick="currentDiv(7)">
+        <img class="c_Slides-2" src="">Mocha</button>/ 
+      <button class="c3-button demo thumbnails _drip" onclick="currentDiv(8)">
+        <img class="c_Slides-2" src="">White Mocha</button>/ 
+      <button class="c3-button demo thumbnails _drip" onclick="currentDiv(9)">
+        <img class="c_Slides-2" src="">Caramel Macchiato</button>
+    </div>
 
 <div class="c3-content c3-content-mobile">
     <div class="c_Slides">
@@ -254,7 +274,7 @@ opacity:1;
         <!--<div class="caption"><h2>Hole 9</h2><p>Finish string with our easiest tee! Short and sweet hit should take the ball home.</p></div>-->
     </div>
 </div><!--SELECTION BUTTON ENDS-->
-
+<!--
   <div class="c3-section">  
       <button class="c3-button demo thumbnails _drip" onclick="currentDiv(1)"> 
         <img class="c_Slides-2" src="">Drip</button>/
@@ -275,9 +295,36 @@ opacity:1;
       <button class="c3-button demo thumbnails _drip" onclick="currentDiv(9)">
         <img class="c_Slides-2" src="">Caramel Macchiato</button>
     </div>
+    -->
 </div><!--SLIDESHOW CONTAINER ENDS-->
     
-      
+</div><!--c3-wrapper ends-->  
+</div><!--container ends-->
+</div><!--gridwrapper ends-->
+</div><!--bodywrapper ends-->
+</div><!--wrapper_body ENDS-->
+
+<!--NAV DROPDOWN-->
+<div id="nav_container">
+<div class="box nav dropdown float_center">
+        <button onclick="myFunction()"><i class="fa fa-bars dropbtn"></i></button>
+        <ul id="myDropdown" class="dropdown-content child">
+            <li id = "video"><!--<a href="url">Video</a>--></li>
+            <li id = "photo"><a href="../photography.html">Photography</a></li>
+            <li id = "wd"><a href="../webdesign.html">Web Design</a></li>
+            <li id = "graphics"><a href="../graphics.html">Graphics</a></li>
+            <li id = "projects"><a href="../projects.html">Projects</a></li>
+            <li id = "logo"><a href="../logo.html">Logo</a></li>
+            <li id = "type"><a href="../type.html">Type</a></li>
+            <li id = "animate"><!--<a href="url">Animate</a>--></li>
+            <li id = "sound"><!--<a href="url">Sound</a>--></li>
+        </ul><!--dropdown ends-->
+        <div class="clear"></div>
+        </div><!--nav ends-->
+    </div><!--nav container ends-->
+
+</body>
+
 
 <!--JAVASCRIPT STARTS - Works after the content ONLY-->
 <script>
@@ -328,38 +375,5 @@ $(".large_slide").click(function() {
 });
 
 </script> 
-
-    
-    
-
-</div><!--c3-wrapper ends-->  
-</div><!--container ends-->
-            
-
-
-</div><!--gridwrapper ends-->
-</div><!--bodywrapper ends-->
-</div><!--wrapper_body ENDS-->
-
-<!--NAV DROPDOWN-->
-<div id="nav_container">
-<div class="box nav dropdown float_center">
-        <button onclick="myFunction()"><i class="fa fa-bars dropbtn"></i></button>
-        <ul id="myDropdown" class="dropdown-content child">
-            <li id = "video"><!--<a href="url">Video</a>--></li>
-            <li id = "photo"><a href="photography.html">Photography</a></li>
-            <li id = "wd"><a href="webdesign.html">Web Design</a></li>
-            <li id = "graphics"><a href="graphics.html">Graphics</a></li>
-            <li id = "projects"><a href="projects.html">Projects</a></li>
-            <li id = "logo"><a href="logo.html">Logo</a></li>
-            <li id = "type"><a href="type.html">Type</a></li>
-            <li id = "animate"><!--<a href="url">Animate</a>--></li>
-            <li id = "sound"><!--<a href="url">Sound</a>--></li>
-        </ul><!--dropdown ends-->
-        <div class="clear"></div>
-        </div><!--nav ends-->
-    </div><!--nav container ends-->
-
-</body>
 
 </html>
