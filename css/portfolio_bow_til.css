@@ -43,7 +43,9 @@
 /**PROJECT PAGE*/
 #slide_1{
     overflow: scroll;
-    height: 35em;
+    height: 30em;
+    overflow-x: auto;
+    padding-bottom: 10em;
 }
 
 
@@ -141,5 +143,12 @@
 
 .child li a:hover{
     color:rgb(133, 0, 18);
+}
+
+/**************************
+*****COFFEINE92 LOGO*******
+***************************/
+#caffeine-logo,#MPC-logo{
+    width:100%
 }
 }/*@Media 1024px-768px-landscape*/

@@ -58,7 +58,7 @@
     /*background-color:pink;*/
     width: 100%;
     float: left;
-    padding-bottom:3em;
+    padding-bottom:10em;
 }
 
 .c_Slides h1{
@@ -488,6 +488,18 @@ button:hover, button:active{
     width:25%;
 }
 
+#merch,#merch img{
+    width: 100%;
+}
+
+#images_rowone{
+    height: auto;
+}
+
+div#images_rowtwo {
+    margin-bottom: 10em;
+}
+
 }/*TABLE + MOBILE ENDS*/
 
 /*TABLET PORTRAIT*/
@@ -496,12 +508,58 @@ button:hover, button:active{
 
 /*TABLET LANDSCAPE*/
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
 }/*TABLET LANDSCAPE ENDS*/
 
 /*MOBILE PORTRAIT*/
 @media (min-width: 320px) and (max-width: 480px) {
 #c3_wrapper {
   width: 100%;
+}
+
+.hole_slide{
+    margin: 0px 25px 0 25px;
+}
+
+button.ind_holes,.h3-button{
+    padding: 5px;
+}
+
+#teetimes_selections ul{
+    margin:2px;
+    width: 40%;
+}
+.tee_times{
+    width: 80%;
+    height:auto;
+}
+
+#booking_time{
+    font-size:20px;
+}
+
+#mobile_days{
+    display: none;
+}
+
+#call_now{
+    padding: 1em 0 3em 0;
+}
+
+#tour_button{
+    margin:auto;
+}
+
+#tournament_list{
+    display:none;
+}
+
+#tournaments li, #tournament_list li {
+    padding:2px;
+}
+
+.description2{
+    padding:.2em 0;
 }
 
 }/*MOBILE PORTRAIT ENDS*/
@@ -856,7 +914,7 @@ button:hover, button:active{
     <div class="c_Slides">
         <h1>Explore</h1>
         <div class="golf_content">
-            <li><div class="slider_content" id="course-content-5">
+            <div class="slider_content" id="course-content-5">
             <div id="merch">
                 <div id="images_rowone">
                     <span><p>Professional Clubs</p><img src="../../images/projects/golf_course/proshop-club-2.jpg" alt="Proshop Club 2"></span>

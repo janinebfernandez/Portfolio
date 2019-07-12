@@ -19,6 +19,7 @@
     <script src="../../js/toggle.js"></script>
     <script src="../../js/nav_dropdown.js"></script>
     <script src="../../js/project-popup.js"></script>
+    <script src="../../js/gallery_slideshow.js"></script>
         
     <!--Stylesheet-->
     <link href="../../css/reset.css" type="text/css" rel="stylesheet">
@@ -31,10 +32,9 @@
     <!--Icon for Mobile Nav-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-
 #c3_wrapper{
   /*background-color:pink;*/
-  width:1000px;
+  width:100%;
   margin:0 auto;
   text-align: center;
 }
@@ -49,7 +49,6 @@
     width: 100%;
     margin: auto;
 }
-
 
 .c3-container {
     margin-top: 1em;
@@ -69,7 +68,7 @@ button:hover, button:active{
 }
 
 .large_slide{
-  width:25em;
+  width:50%;
   opacity:1;
   -webkit-transition: all 2s ease;  
   -moz-transition: all 2s ease;  
@@ -118,12 +117,12 @@ opacity:.1;
 
 .left_content img{
   float: right;
-  width: 47%;
+  width: 60%;
 }
 
 .right_content img{
   float: left;
-  width: 59%;
+  width: 80%;
 }
 
 .transform-active-left, .transform-active-right{
@@ -131,11 +130,11 @@ opacity:1;
 }
 
 .transform-active-left {
-  margin-left:100px;
+  margin-left:5%;
 }
 
 .transform-active-right {
-  margin-right:100px;
+  margin-right:5%;
 }
 
 .transform-large_slide{
@@ -147,12 +146,39 @@ opacity:1;
   transition: all 2s ease;
 }
 
+/*Desktop mobile custom*/
+.c3-content-mobile, .modal, .row{
+  display:none;
+}
+
 /*TABLE + MOBILE*/
 @media (min-width: 320px) and (max-width: 1024px) {
 }/*TABLE + MOBILE ENDS*/
 
 /*TABLET PORTRAIT*/
 @media (min-width: 768px) and (max-width: 1024px) {
+  .large_slide{
+    width:45%;
+    margin-left:-7em;
+  }
+
+  .left_content img {
+    float: left;
+    width: 50%;
+  }
+  .right_content img {
+    float: left;
+    width: 60%;
+  }
+
+  .transform-active-left {
+  margin-left:10%;
+}
+
+.transform-active-right {
+  margin-right:10%;
+}
+
 }/*TABLET PORTRAIT ENDS*/
 
 /*TABLET LANDSCAPE*/
@@ -173,15 +199,53 @@ opacity:1;
   float: left;
 }
 
-  .large_slide {
+.large_slide {
     width: 20em;
     opacity: 1;
     float: left;
-  }
+}
+
+  /*Mobile Custom content*/
+.c3-content, .c3-section{
+  display: none;
+}
+
+.c3-content-mobile, .row{
+  display:block;
+}
+
+.mySlides img{
+        width: 50%;
+    }
+
+.coffee_label{
+  color: rgb(158, 91, 93);
+  font-weight: 800;
+}
 }/*MOBILE PORTRAIT ENDS*/
 
 /*MOBILE LANDSCAPE*/
 @media (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
+.c3-content, .c3-section{
+  display: none;
+}
+
+.c3-content-mobile, .row{
+  display:block;
+}
+
+.mySlides img{
+        width: 50%;
+    }
+
+.coffee_label{
+  color: rgb(158, 91, 93);
+  font-weight: 800;
+}
+
+.coffee_icons{
+  width: 30%;
+}
 }/*MOBILE LANDSCAPE ENDS*/
 </style>    
 </head>
@@ -225,7 +289,7 @@ opacity:1;
       <button class="c3-button demo thumbnails _drip" onclick="currentDiv(4)">
         <img class="c_Slides-2" src="">Latte</button>/ 
       <button class="c3-button demo thumbnails _drip" onclick="currentDiv(5)">
-        <img class="c_Slides-2" src="">Cappucino</button>/ 
+        <img class="c_Slides-2" src="">Cappuccino</button>/ 
       <button class="c3-button demo thumbnails _drip" onclick="currentDiv(6)">
         <img class="c_Slides-2" src="">Flat White</button>/ 
       <button class="c3-button demo thumbnails _drip" onclick="currentDiv(7)">
@@ -236,7 +300,8 @@ opacity:1;
         <img class="c_Slides-2" src="">Caramel Macchiato</button>
     </div>
 
-<div class="c3-content c3-content-mobile">
+<!--TABLET AMD DESKTOP CONTENT-->
+<div class="c3-content">
     <div class="c_Slides">
         <div class="left_content"><img src="../../images/projects/coffee_info/drip-left.png"></div><img class="z_Slides-1 large_slide" src="../../images/projects/coffee_info/drip-mid.png"><div class="right_content"><img src="../../images/projects/coffee_info/drip-right.png"></div> 
         <!--<div class="overlay_content"><h2>Hole 1</h2><p>Start the course with an easy hole. This is our widest green and one of the shortest. It may be an easy shot but don't get distacted by the crowd waiting for some good play.</p></div>-->
@@ -254,7 +319,7 @@ opacity:1;
         <!--<div class="caption"><h2>Hole 4</h2><p>Curve the shot! This green is very tricky. Angle your shot carefully or else you'll find yourself on a bunker!</p></div>-->
     </div>
     <div class="c_Slides">
-        <div class="left_content"><img src="../../images/projects/coffee_info/cappucino-left.png"></div><img class="z_Slides-1 large_slide" src="../../images/projects/coffee_info/cappucino-mid.png"><div class="right_content"><img src="../../images/projects/coffee_info/cappucino-right.png"></div>
+        <div class="left_content"><img src="../../images/projects/coffee_info/cappuccino-left.png"></div><img class="z_Slides-1 large_slide" src="../../images/projects/coffee_info/cappuccino-mid.png"><div class="right_content"><img src="../../images/projects/coffee_info/cappuccino-right.png"></div>
         <!--<div class="caption"><h2>Hole 5</h2><p>This is our second longest tee. All you have to do is aim straight but be very careful with the wind. You are up on a hit with this shot and anything can happen.</p></div>-->
     </div>
     <div class="c_Slides">
@@ -273,31 +338,107 @@ opacity:1;
         <div class="left_content"><img src="../../images/projects/coffee_info/caramelmacchiato-left.png"></div><img class="z_Slides-1 large_slide" src="../../images/projects/coffee_info/caramelmacchiato-mid.png"><div class="right_content"><img src="../../images/projects/coffee_info/caramelmacchiato-right.png"></div>
         <!--<div class="caption"><h2>Hole 9</h2><p>Finish string with our easiest tee! Short and sweet hit should take the ball home.</p></div>-->
     </div>
-</div><!--SELECTION BUTTON ENDS-->
-<!--
-  <div class="c3-section">  
-      <button class="c3-button demo thumbnails _drip" onclick="currentDiv(1)"> 
-        <img class="c_Slides-2" src="">Drip</button>/
-      <button class="c3-button demo thumbnails _drip" onclick="currentDiv(2)">
-        <img class="c_Slides-2" src="">Espresso</button>/ 
-      <button class="c3-button demo thumbnails _drip" onclick="currentDiv(3)">
-        <img class="c_Slides-2" src="">Americano</button>/
-      <button class="c3-button demo thumbnails _drip" onclick="currentDiv(4)">
-        <img class="c_Slides-2" src="">Latte</button>/ 
-      <button class="c3-button demo thumbnails _drip" onclick="currentDiv(5)">
-        <img class="c_Slides-2" src="">Cappucino</button>/ 
-      <button class="c3-button demo thumbnails _drip" onclick="currentDiv(6)">
-        <img class="c_Slides-2" src="">Flat White</button>/ 
-      <button class="c3-button demo thumbnails _drip" onclick="currentDiv(7)">
-        <img class="c_Slides-2" src="">Mocha</button>/ 
-      <button class="c3-button demo thumbnails _drip" onclick="currentDiv(8)">
-        <img class="c_Slides-2" src="">White Mocha</button>/ 
-      <button class="c3-button demo thumbnails _drip" onclick="currentDiv(9)">
-        <img class="c_Slides-2" src="">Caramel Macchiato</button>
+</div><!--C3 CONTAINER ENDS-->
+
+
+<!--MOBILE CONTENT-->
+<div class="row">
+    <div class="column coffee_icons">
+        <img src="../../images/projects/coffee_info/drip-mid.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        <p class="coffee_label">Drip</p>
     </div>
-    -->
-</div><!--SLIDESHOW CONTAINER ENDS-->
+    <div class="column coffee_icons">
+        <img src="../../images/projects/coffee_info/espresso-mid.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        <p class="coffee_label">Espresso</p>
+    </div>
+    <div class="column coffee_icons">
+        <img src="../../images/projects/coffee_info/americano-mid.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        <p class="coffee_label">Americano</p>
+    </div>
+    <div class="column coffee_icons">
+        <img src="../../images/projects/coffee_info/latte-mid.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        <p class="coffee_label">Latte</p>
+    </div>
+    <div class="column coffee_icons">
+        <img src="../../images/projects/coffee_info/cappuccino-mid.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+        <p class="coffee_label">Cappuccino</p>
+    </div>
+    <div class="column coffee_icons">
+        <img src="../../images/projects/coffee_info/flatwhite-mid.png" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+        <p class="coffee_label">Flat White</p>
+    </div>
+    <div class="column coffee_icons">
+        <img src="../../images/projects/coffee_info/mocha-mid.png" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+        <p class="coffee_label">Mocha</p>
+    </div>
+    <div class="column coffee_icons">
+        <img src="../../images/projects/coffee_info/whitemocha-mid.png" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+        <p class="coffee_label">Whitemocha</p>
+    </div>
+    <div class="column coffee_icons">
+        <img src="../../images/projects/coffee_info/caramelmacchiato-mid.png" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+        <p class="coffee_label">Macchiato</p>
+    </div>
+</div>
+
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+        <!--<div class="numbertext"></div>-->
+        <img src="../../images/projects/coffee_info/drip-mid.png">
+    </div>
+
+    <div class="mySlides">
+            <!--<div class="numbertext">Unimaginable</div>-->
+            <img src="../../images/projects/coffee_info/espresso-mid.png">
+    </div>
+
+    <div class="mySlides">
+      <!--<div class="numbertext">Find Time</div>-->
+      <img src="../../images/projects/coffee_info/americano-mid.png">
+    </div>
+
+    <div class="mySlides">
+      <!--<div class="numbertext">Lion and Gazelle</div>-->
+      <img src="../../images/projects/coffee_info/latte-mid.png">
+    </div>
     
+    <div class="mySlides">
+      <!--<div class="numbertext">Lead by Example</div>-->
+      <img src="../../images/projects/coffee_info/cappuccino-mid.png">
+    </div>
+
+    <div class="mySlides">
+      <!--<div class="numbertext">FREE</div>-->
+      <img src="../../images/projects/coffee_info/flatwhite-mid.png">
+    </div>
+
+    <div class="mySlides">
+        <!--<div class="numbertext">Zodiac Signs</div>-->
+        <img src="../../images/projects/coffee_info/mocha-mid.png">
+    </div>
+
+    <div class="mySlides">
+        <!--<div class="numbertext">Give & Take</div>-->
+        <img src="../../images/projects/coffee_info/whitemocha-mid.png">
+    </div>
+
+    <div class="mySlides">
+        <!--<div class="numbertext">In Balance 2</div>-->
+        <img src="../../images/projects/coffee_info/caramelmacchiato-mid.png">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<!--
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>-->
+<!--MOBILE CONTENT ENDS-->
+</div><!--PROJECT CONTAINER ENDS-->
 </div><!--c3-wrapper ends-->  
 </div><!--container ends-->
 </div><!--gridwrapper ends-->

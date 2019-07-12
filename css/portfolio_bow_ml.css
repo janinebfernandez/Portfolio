@@ -312,11 +312,20 @@
 /**PROJECT PAGE SLIDER*/
 #slide_1{
     overflow: scroll;
-    height: 12em;
+    height: 16em;
+    overflow-x: auto;
+    padding-bottom: 2em;
 }
 
 .modal{
     padding-top:3em;
+}
+
+/**********************
+*****COFFEINE92 LOGO*******
+**********************/
+#caffeine-logo,#MPC-logo{
+    width:100%
 }
 
 }/*@Media 481px-767px-landscape*/

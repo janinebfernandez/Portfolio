@@ -309,6 +309,10 @@ button {
     height: 28em;
 }
 
+.car_ads,#caffeine-logo,#MPC-logo{
+    width: 100%;
+}
+
 .modal{
     padding-top:9em;
 }
