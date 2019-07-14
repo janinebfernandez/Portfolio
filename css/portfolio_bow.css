@@ -13,6 +13,63 @@ body, html{
     background-attachment: fixed;
 }
 
+.tran1a{
+    animation: easeLeft 2s;
+}
+
+@keyframes easeLeft {
+    from { opacity: 0; margin-left:-3em;}
+    to   { opacity: 1; margin-left:0}
+    }
+
+.tran1b{
+    animation: easeRight 2s;
+}
+
+@keyframes easeRight {
+    from { opacity: 0; margin-right:-10em;}
+    to   { opacity: 1; margin-right:0}
+    }
+
+.tran2{
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 5s; /* Firefox < 16 */
+    -ms-animation: fadein 5s; /* Internet Explorer */
+    -o-animation: fadein 5s; /* Opera < 12.1 */
+    animation:fadein 2s;
+    } 
+
+@keyframes fadein {
+from { opacity: 0;}
+to   { opacity: 1;}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+
+.tran3{
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 5s; /* Firefox < 16 */
+    -ms-animation: fadein 5s; /* Internet Explorer */
+    -o-animation: fadein 5s; /* Opera < 12.1 */
+    animation:easeUp 1s;
+    }  
+    
+    @keyframes easeUp {
+        from { opacity: 1; margin-bottom:-5em;}
+        to   { opacity: 1; margin-bottom:0}
+        }
+
 /* unvisited link */
 a:link {
     color: black;
@@ -87,13 +144,13 @@ background-color: rgba(255, 255, 255,.95);
 }
 
 
-#header_contact, #close_contact, #close_about{
+/*#header_contact, #close_contact{
     width: 100%;
     padding: 1em 0;
     margin: 0;
     color: white;
     background-color:rgba(0, 0, 0, 0.85);
-}
+}*/
 
 #close_contact, #close_about{
     cursor: pointer;
@@ -310,12 +367,12 @@ background-color: rgba(255, 255, 255,.95);
     position: relative;
     border-radius: 3px;
 }
-#header_contact{
+#header_contact, #close_about, #header_contact, #close_contact{
     width: 100%;
     padding: 1em 0;
     margin: 0;
     color: black;
-    background-color: rgba(200, 200, 200, .6);
+    background-color: rgba(200, 200, 200, .97);
 }
 .popupCloseButton {
     background-color: #000;
