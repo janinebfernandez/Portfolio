@@ -153,56 +153,109 @@ opacity:1;
 
 /*TABLE + MOBILE*/
 @media (min-width: 320px) and (max-width: 1024px) {
+  .modal{
+    background-color: rgba(255,255,255,.7)
+}
+
+.prev, .next, .close{
+  color:black;
+}
+
+.large_slide{
+  float: none;
+}
+
+.left_content, .right_content{
+  position: absolute;
+}
+.left_content{
+  width:135px;
+  margin-left:-50px;
+}
+.right_content{
+  right:0;
+  width:170px;
+}
+
+.right_content img{
+  float: right;
+}
+
+.transform-large_slide{
+  opacity:1;
+}
+/*  .transform-active-left {
+  margin-left:6%;
+}
+
+.transform-active-right {
+  margin-right:10%;
+}*/
 }/*TABLE + MOBILE ENDS*/
 
 /*TABLET PORTRAIT*/
 @media (min-width: 768px) and (max-width: 1024px) {
-  .large_slide{
+.large_slide{
     width:45%;
-    margin-left:-7em;
+    position:absolute;
+    margin-left:-11em;
   }
 
   .left_content img {
-    float: left;
-    width: 50%;
+    width: 60%;
+  }
+
+  .right_content{
+    width:180px;
   }
   .right_content img {
     float: left;
     width: 60%;
   }
 
-  .transform-active-left {
-  margin-left:10%;
+.transform-active-left {
+  margin-left:5%;
 }
 
 .transform-active-right {
-  margin-right:10%;
+  margin-right:5%;
 }
 
 }/*TABLET PORTRAIT ENDS*/
 
 /*TABLET LANDSCAPE*/
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .large_slide{
+    margin-left:-15em;
+  }
+  
+  .left_content{
+    width:175px;
+  }
+  
+  .left_content img {
+    width: 60%;
+  }
+
+  .right_content{
+    width:230px;
+  }
+
 }/*TABLET LANDSCAPE ENDS*/
 
 /*MOBILE PORTRAIT*/
 @media (min-width: 320px) and (max-width: 480px) {
+.project_container{
+  height: auto;
+}
 #c3_wrapper {
   width: 100%;
-}
-
-.left_content{
-  position: absolute;
-}
-
-.left_content img {
-  float: left;
 }
 
 .large_slide {
     width: 20em;
     opacity: 1;
-    float: left;
+    /*float: left;*/
 }
 
   /*Mobile Custom content*/
@@ -215,17 +268,50 @@ opacity:1;
 }
 
 .mySlides img{
-        width: 50%;
+        /*width: 40%;*/
     }
+
+.left_content, .right_content{
+  width:100px;
+  height:120px;
+  position:absolute;
+}
+
+.left_content{
+  left:0;
+}
+
+.left_content img{
+  float:left;
+  margin-left: 25px;
+}
+
+.right_content{
+  right:0;
+}
 
 .coffee_label{
   color: rgb(158, 91, 93);
   font-weight: 800;
+  font-size:10px;
+}
+
+  .transform-active-left {
+  margin-left:0;
+}
+
+.transform-active-right {
+  margin-right:10%;
+}
+
+.close{
+  top:2em;
 }
 }/*MOBILE PORTRAIT ENDS*/
 
 /*MOBILE LANDSCAPE*/
 @media (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
+
 .c3-content, .c3-section{
   display: none;
 }
@@ -241,17 +327,30 @@ opacity:1;
 .coffee_label{
   color: rgb(158, 91, 93);
   font-weight: 800;
+  font-size:10px;
 }
 
 .coffee_icons{
   width: 30%;
+}
+
+  .transform-active-left {
+  margin-left:2%;
+}
+
+.transform-active-right {
+  margin-right:10%;
+}
+
+.close{
+  top:1em;
 }
 }/*MOBILE LANDSCAPE ENDS*/
 </style>    
 </head>
 
 <body>
-<div class = "my_background"></div>
+<!--<div class = "my_background"></div>-->
 <div class = "wrapper_body">
 <div id="bodywrapper">
     <!--GRID CONTAINER-->
@@ -343,14 +442,14 @@ opacity:1;
 
 <!--MOBILE CONTENT-->
 <div class="row">
-    <div class="column coffee_icons">
+    <ul><div class="column coffee_icons">
         <img src="../../images/projects/coffee_info/drip-mid.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
         <p class="coffee_label">Drip</p>
-    </div>
-    <div class="column coffee_icons">
+    </div></ul>
+    <ul><div class="column coffee_icons">
         <img src="../../images/projects/coffee_info/espresso-mid.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
         <p class="coffee_label">Espresso</p>
-    </div>
+    </div></ul>
     <div class="column coffee_icons">
         <img src="../../images/projects/coffee_info/americano-mid.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
         <p class="coffee_label">Americano</p>
@@ -388,47 +487,65 @@ opacity:1;
 
     <div class="mySlides">
         <!--<div class="numbertext"></div>-->
-        <img src="../../images/projects/coffee_info/drip-mid.png">
+        <div class="left_content"><img src="../../images/projects/coffee_info/drip-left.png"></div>
+        <div class="right_content"><img src="../../images/projects/coffee_info/drip-right.png"></div>
+        <img class="z_Slides-1 large_slide" src="../../images/projects/coffee_info/drip-mid.png"> 
     </div>
 
     <div class="mySlides">
-            <!--<div class="numbertext">Unimaginable</div>-->
-            <img src="../../images/projects/coffee_info/espresso-mid.png">
+        <!--<div class="numbertext">Unimaginable</div>-->
+        <div class="left_content"><img src="../../images/projects/coffee_info/espresso-left.png"></div>
+        <div class="right_content"><img src="../../images/projects/coffee_info/espresso-right.png"></div>
+        <img class="z_Slides-1 large_slide" src="../../images/projects/coffee_info/espresso-mid.png">
     </div>
 
     <div class="mySlides">
       <!--<div class="numbertext">Find Time</div>-->
-      <img src="../../images/projects/coffee_info/americano-mid.png">
+      <div class="left_content"><img src="../../images/projects/coffee_info/americano-left.png"></div>
+      <div class="right_content"><img src="../../images/projects/coffee_info/americano-right.png"></div>
+      <img class="z_Slides-1 large_slide" src="../../images/projects/coffee_info/americano-mid.png">
     </div>
 
     <div class="mySlides">
       <!--<div class="numbertext">Lion and Gazelle</div>-->
-      <img src="../../images/projects/coffee_info/latte-mid.png">
+      <div class="left_content"><img src="../../images/projects/coffee_info/latte-left.png"></div>
+      <div class="right_content"><img src="../../images/projects/coffee_info/latte-right.png"></div>
+      <img class="z_Slides-1 large_slide" src="../../images/projects/coffee_info/latte-mid.png">
     </div>
     
     <div class="mySlides">
       <!--<div class="numbertext">Lead by Example</div>-->
-      <img src="../../images/projects/coffee_info/cappuccino-mid.png">
+      <div class="left_content"><img src="../../images/projects/coffee_info/cappuccino-left.png"></div>
+      <div class="right_content"><img src="../../images/projects/coffee_info/cappuccino-right.png"></div>
+      <img class="z_Slides-1 large_slide" src="../../images/projects/coffee_info/cappuccino-mid.png">
     </div>
 
     <div class="mySlides">
       <!--<div class="numbertext">FREE</div>-->
-      <img src="../../images/projects/coffee_info/flatwhite-mid.png">
+      <div class="left_content"><img src="../../images/projects/coffee_info/flatwhite-left.png"></div>
+      <div class="right_content"><img src="../../images/projects/coffee_info/flatwhite-right.png"></div>
+      <img class="z_Slides-1 large_slide" src="../../images/projects/coffee_info/flatwhite-mid.png">
     </div>
 
     <div class="mySlides">
         <!--<div class="numbertext">Zodiac Signs</div>-->
-        <img src="../../images/projects/coffee_info/mocha-mid.png">
+        <div class="left_content"><img src="../../images/projects/coffee_info/mocha-left.png"></div>
+        <div class="right_content"><img src="../../images/projects/coffee_info/mocha-right.png"></div>
+        <img class="z_Slides-1 large_slide" src="../../images/projects/coffee_info/mocha-mid.png">
     </div>
 
     <div class="mySlides">
         <!--<div class="numbertext">Give & Take</div>-->
-        <img src="../../images/projects/coffee_info/whitemocha-mid.png">
+        <div class="left_content"><img src="../../images/projects/coffee_info/whitemocha-left.png"></div>
+        <div class="right_content"><img src="../../images/projects/coffee_info/whitemocha-right.png"></div>
+        <img class="z_Slides-1 large_slide" src="../../images/projects/coffee_info/whitemocha-mid.png">
     </div>
 
     <div class="mySlides">
         <!--<div class="numbertext">In Balance 2</div>-->
-        <img src="../../images/projects/coffee_info/caramelmacchiato-mid.png">
+        <div class="left_content"><img src="../../images/projects/coffee_info/caramelmacchiato-left.png"></div>
+        <div class="right_content"><img src="../../images/projects/coffee_info/caramelmacchiato-right.png"></div>
+        <img class="z_Slides-1 large_slide" src="../../images/projects/coffee_info/caramelmacchiato-mid.png">
     </div>
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
