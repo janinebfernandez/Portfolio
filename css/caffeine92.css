@@ -1,0 +1,195 @@
+/**CAFFEINE92 STYLESHEET*/
+
+body{
+    padding:0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+}
+
+#caffeine92_wrapper{
+    /*background-color:rgb(152, 190, 250);*/
+    width:99%;
+    padding:5px;
+}
+
+nav{
+    /*background-color:rgb(87, 147, 242);*/
+    width: 100%;
+    height:10em;
+}
+
+#caffeine92_logo{
+    /*background-color:pink;*/
+    width:120px;
+    height:100px;
+    float: left;
+}
+
+#caffeine92_logo img{
+    width:90%;
+}
+
+.page_content{
+    background-color:pink;
+    width: 96%;
+    margin:auto;
+}
+
+.h3_ab{
+    position: absolute;
+    margin:0;
+    padding:0;
+}
+
+.menu_link{
+    float: right;
+    font-size: 1.17em;
+    top:0;
+    font-weight:800;
+}
+
+.menu_link a{
+    color: rgb(179, 118, 5);
+}
+
+.float_l li, .float_r li{
+    display: inline;
+    /*background-color: rgb(147, 229, 250);*/
+    padding:0 1em;
+}
+
+.nav2, .social_media{
+    float:right;
+}
+
+.nav1, .footer_nav{
+    float: left;
+}
+
+.nav1, .nav2{
+    margin-top:3em;
+}
+
+#left_content{
+    width: 49%;
+    float: left;
+    height:35em;
+}
+
+#right_content{
+    width:49%;
+    float: right;
+    height:35em;
+}
+
+#h3_top{
+    margin-bottom:7em;
+}
+
+#left_content_icons{
+    text-align: center;
+    background-color: yellow;
+}
+
+footer{
+    width:96%;
+    padding:.5em;
+    position: relative;;
+    bottom:0;
+    /*background-color:yellow;*/
+}
+
+.social_media img{
+    width:15px;
+    color: gold;
+}
+
+.social_media img:hover{
+    opacity:.7;
+}
+
+/**text style**/
+a{
+    text-decoration: none;
+    color:black;
+}
+
+h1{
+    font-size:3.5em;
+    color: rgb(255, 210, 64);
+    padding:0;
+    margin:.5em 0 0 0;
+}
+
+.nav1 li a:hover, .nav2 li a:hover, .footer_nav li a:hover{
+    border-bottom: 2px solid rgb(255, 217, 0);
+    width:100%;
+}
+
+/*caffeine-drinks page*/
+
+#coffee_drinks, #coffee_drinks ul, #coffee_drinks ul li, #coffee_snacks ul li, #coffee_snacks ul{
+    margin:1.5em 0;
+    padding:0;
+}
+
+#coffee_drinks ul li{
+    width: 31em;
+    background-color: orange;
+    display:inline-block;
+}
+
+#coffee_drinks li, #coffee_snacks li{
+    list-style:none;
+}
+
+#coffee_drinks img, #coffee_snacks img{
+    width:15em;
+    margin:1em 0;
+}
+
+.drink_info{
+    width: 15em;
+    background-color: yellow;
+    display:inline-block;
+    position: absolute;
+    margin: 3.5em 0 1em 0;
+    height:120px;
+}
+
+.drink_info h4, .drink_info p{
+    margin:0;
+}
+
+.drink_info h4{
+    font-size: 15px;
+}
+
+.drink_info p{
+    font-size:11px;
+}
+
+.drink_description{
+    height: 5em;
+}
+
+.price{
+    margin-top: 3em;
+    font-weight:bold;
+}
+
+/*caffeine-snacks page*/
+#coffee_snacks ul li{
+    background-color:orange;
+    width:22em;
+    display:inline-block;
+    border-left: 2px solid rgb(179, 118, 5);
+    padding-left:.5em;
+}
+
+/*caffeined-members page*/
+#right_content a:hover{
+    color:rgb(179, 118, 5);
+}
+
