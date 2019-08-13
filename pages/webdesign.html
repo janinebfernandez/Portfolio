@@ -1,16 +1,21 @@
 <!--PORTFOLIO PAGE - Black on White - HTML-->
-<!--PORTFOLIO PAGE - WEB DESIGN - HTML-->
+<!--PORTFOLIO PAGE - PROJECTS PAGE - HTML-->
 <!DOCTYPE html>
 <head>
     <title>Janine B. Fernandez Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Janine B. Fernandez Portfolio. Creativity never stops. Discover your process.">
+    <meta name="keywords" content="Janine B. Fernandez, Janine, Fernandez, Janine Fernandez Portfolio, Design, Creativity, Art, Digital Art, Logo, Logo Design">
     <meta charset="UTF-8">
 
     <!--Javascript-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--Popup-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="../js/toggle.js"></script>
     <script src="../js/nav_dropdown.js"></script>
-    <script src="../js/gallery_slideshow.js"></script>
+    <script src="../js/project-popup.js"></script>
         
     <!--Stylesheet-->
     <link href="../css/reset.css" type="text/css" rel="stylesheet">
@@ -22,11 +27,38 @@
 
     <!--Icon for Mobile Nav-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+<style>
+
+.project_container{
+    margin-top:2em;
+    padding:1em;
+}
+.project_container a{
+    padding:20px;
+}
+
+.slide_1{
+    width:100%;
+    background-color:pink;
+    padding:20px;
+}
+.custom_link{
+    width:150px;
+    height:50px;
+    background-color: rgba(255, 210, 64, .95);
+    color:white;
+    text-align:center;
+    margin:auto;
+    padding:5px;
+}
+
+.custom_link a:hover{
+    color:red;
+}
+</style>
 </head>
 
 <body>
-<div class = "my_background"></div>
 <div class = "wrapper_body">
 <div id="bodywrapper">
     <!--GRID CONTAINER-->
@@ -37,112 +69,22 @@
             <!--Social media accounts-->
             <div class = "socialmedia">
                 <a href="https://janinebfernandez.github.io/Portfolio/index.html#" target = ""><img style="width:3em" src="../images/logo-2019-mini.png" alt="Janine B. Fernandez Logo"></a>
-                <a href="https://www.linkedin.com/in/janinebfernandez" target = "_blank"><img src="../images/icons/linkedin-icon.png" alt="LinkedIn"></a>
-                <a href="https://www.youtube.com/channel/UCWjmkdK2poOYL6IYrYUskwQ/featured?disable_polymer=1" target = "_blank"><img src="../images/icons/youtube-icon.png" alt="Flickr"></a>
-                <a href="https://www.instagram.com/j.ix.redefine9" target = "_blank"><img src="../images/icons/instagram-icon.png" alt="Instagram"></a>
-                <a href="https://www.flickr.com/photos/janinebfernandez/" target = "_blank"><img src="../images/icons/flickr-icon.png" alt="Flickr"></a>
+                <a href="https://www.linkedin.com/in/janinebfernandez" target = "_blank"><img src="../images/icons/linkedin-icon.png" alt="LinkedIn" alt="Janine Fernandez LinkedIn"></a>
+                <a href="https://www.youtube.com/channel/UCWjmkdK2poOYL6IYrYUskwQ/featured?disable_polymer=1" target = "_blank"><img src="../images/icons/youtube-icon.png" alt="Janine Fernandez Flickr"></a>
+                <a href="https://www.instagram.com/j.ix.redefine9" target = "_blank"><img src="../images/icons/instagram-icon.png" alt="Janine Fernandez Instagram"></a>
+                <a href="https://www.flickr.com/photos/janinebfernandez/" target = "_blank"><img src="../images/icons/flickr-icon.png" alt="Janine Fernandez Flickr"></a>
             </div>
         </div>
         </div><!--gridwrapper ends-->
+<!--CONTENT BEGINS-->
+<h2 class="page_title">Web Design</h2>
+<div class="project_container">
+<!--PROJECTS ICON-->
+    <a href="uxui/caffeine92.html" target="_blank"><img id="car_icon" src="../images/logo/caffeine-small-icon.png" alt="Caffeine92 Coffee Shop Logo"></a>
+    <a href="uxui/mpCuisine.html" target="_blank"><img id="car_icon" src="../images/logo/mapa-cuisine-small-icon.png" alt="MaPa Cuisine Logo"></a>
 
-  <!--GALLERY BEGINS-->
-<h2 class="page_title">Web Designs</h2>
-<div class="row">
-    <div class="column">
-        <img src="https://farm8.staticflickr.com/7842/45857134944_5ab132a1a6_q_d.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-    </div>
-    <div class="column">
-        <img src="https://farm5.staticflickr.com/4900/46529127052_c87bf1df86_q_d.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-    </div>
-    <div class="column">
-        <img src="https://farm5.staticflickr.com/4876/46581393941_8421d2c2f4_q_d.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-    </div>
-    <div class="column">
-        <img src="https://farm8.staticflickr.com/7891/32707438858_ca9acf557d_q_d.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-    </div>
-    <div class="column">
-        <img src="https://farm5.staticflickr.com/4901/44763344980_66a6b5c668_q_d.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-    </div>
-    <!--<div class="column">
-        <img src="https://farm5.staticflickr.com/4813/45722139761_a5c9586623_q_d.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
-    </div>
-    <div class="column">
-        <img src="https://farm5.staticflickr.com/4813/45722139761_a5c9586623_q_d.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
-    </div>
-    <div class="column">
-        <img src="https://farm5.staticflickr.com/4853/44997209154_d0abb0ed2f_q_d.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-    </div>
-    <div class="column">
-        <img src="https://farm5.staticflickr.com/4815/31850480948_0baa8037c6_q_d.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
-    </div>
-    <div class="column">
-        <img src="https://farm2.staticflickr.com/1969/44807998995_b378d1db08_q_d.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
-    </div>-->
-</div>
 
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">Indulge</div>
-      <img src="../images/web_design/uxui-template-festival-friends-color.jpg" style="width:80%">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">Miramar Lake</div>
-        <img src="../images/web_design/uxui-template-miramar-lake.jpg" style="width:80%">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">Daily Quotes</div>
-        <img src="../images/web_design/uxui-template-daily-quotes.jpg" style="width:80%">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">Cali Side</div>
-        <img src="../images/web_design/uxui-template-cali-side.jpg" style="width:80%">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">Music Alliance</div>
-        <img src="../images/web_design/uxui-template-music-alliance.jpg" style="width:80%">
-    </div>
-
-    <!--<div class="mySlides">
-        <div class="numbertext">Into the City</div>
-        <img src="https://farm5.staticflickr.com/4813/45722139761_8f50298324_o_d.jpg" style="width:100%">
-    </div>
-
-    
-    <div class="mySlides">
-            <div class="numbertext">Into the City</div>
-            <img src="https://farm5.staticflickr.com/4813/45722139761_8f50298324_o_d.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">Balboa Night</div>
-      <img src="https://farm5.staticflickr.com/4853/44997209154_7252ff3c38_o_d.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">Birds View</div>
-      <img src="https://farm5.staticflickr.com/4815/31850480948_ea3a968ef9_o_d.jpg" style="width:100%">
-    </div>
-    
-    <div class="mySlides">
-      <div class="numbertext">Bridge Point</div>
-      <img src="https://farm2.staticflickr.com/1969/44807998995_ac1996a13e_o_d.jpg" style="width:100%">
-    </div>-->
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-<!--GALLERY ENDS-->          
+</div><!--project container ends-->
 </div><!--gridwrapper ends-->
 </div><!--bodywrapper ends-->
 </div><!--wrapper_body ENDS-->
@@ -151,7 +93,7 @@
 <div id="nav_container">
 <div class="box nav dropdown float_center">
         <button onclick="myFunction()"><i class="fa fa-bars dropbtn"></i></button>
-        <div id="myDropdown" class="dropdown-content child">
+        <ul id="myDropdown" class="dropdown-content child">
             <li id = "video"><!--<a href="url">Video</a>--></li>
             <li id = "photo"><a href="photography.html">Photography</a></li>
             <li id = "wd"><a href="webdesign.html">Web Design</a></li>
@@ -159,11 +101,12 @@
             <li id = "projects"><a href="projects.html">Projects</a></li>
             <li id = "logo"><a href="logo.html">Logo</a></li>
             <li id = "type"><a href="type.html">Type</a></li>
-            <li id = "animate"><!--<a href="url">Animate</a>--></li>
-            <li id = "sound"><!--<a href="url">Sound</a>--></li>
-        </div><!--dropdown ends-->
+            <li id = "animate"><!--<a href="url">Animate&Sound</a>--></li>
+            <li id = "sound"><!--<a href="url">BTS</a>--></li>
+        </ul><!--dropdown ends-->
+        <div class="clear"></div>
         </div><!--nav ends-->
-    </div><!--nav ends-->
+    </div><!--nav container ends-->
 </body>
 
 </html>

@@ -7,10 +7,11 @@ body{
     font-size:12px;
 }
 
-#caffeine92_wrapper{
-    /*background-color:rgb(152, 190, 250);*/
+.caffeine92_wrapper{
     width:99%;
     padding:5px;
+    overflow:scroll;
+    position:relative;
 }
 
 nav{
@@ -31,7 +32,7 @@ nav{
 }
 
 .page_content{
-    background-color:pink;
+    /*background-color:pink;*/
     width: 96%;
     margin:auto;
 }
@@ -45,8 +46,10 @@ nav{
 .menu_link{
     float: right;
     font-size: 1.17em;
-    top:0;
-    font-weight:800;
+    font-weight: 800;
+    position: absolute;
+    right: 0;
+    margin-right: 3em;
 }
 
 .menu_link a{
@@ -61,6 +64,7 @@ nav{
 
 .nav2, .social_media{
     float:right;
+    padding-right:3em;
 }
 
 .nav1, .footer_nav{
@@ -72,9 +76,10 @@ nav{
 }
 
 #left_content{
-    width: 49%;
+    width: 45%;
     float: left;
-    height:35em;
+    height: 35em;
+    margin: 0 20px;
 }
 
 #right_content{
@@ -89,15 +94,15 @@ nav{
 
 #left_content_icons{
     text-align: center;
-    background-color: yellow;
 }
 
 footer{
-    width:96%;
-    padding:.5em;
-    position: relative;;
+    width:100%;
+    padding:.5em 1em .5em .5em;
+    position: relative;
     bottom:0;
-    /*background-color:yellow;*/
+    background-color:rgb(255, 210, 64);
+    height:43px;
 }
 
 .social_media img{
@@ -128,30 +133,36 @@ h1{
 }
 
 /*caffeine-drinks page*/
+#coffee_drinks ul li{
+    margin:2.5em 0;
+}
 
-#coffee_drinks, #coffee_drinks ul, #coffee_drinks ul li, #coffee_snacks ul li, #coffee_snacks ul{
+
+#coffee_drinks,#coffee_drinks ul, #coffee_snacks ul li, #coffee_snacks ul{
     margin:1.5em 0;
     padding:0;
 }
 
 #coffee_drinks ul li{
     width: 31em;
-    background-color: orange;
     display:inline-block;
+}
+
+#coffee_snacks{
+    overflow:scroll;
 }
 
 #coffee_drinks li, #coffee_snacks li{
     list-style:none;
 }
 
-#coffee_drinks img, #coffee_snacks img{
+#coffee_drinks img{
     width:15em;
     margin:1em 0;
 }
 
 .drink_info{
     width: 15em;
-    background-color: yellow;
     display:inline-block;
     position: absolute;
     margin: 3.5em 0 1em 0;
@@ -181,7 +192,6 @@ h1{
 
 /*caffeine-snacks page*/
 #coffee_snacks ul li{
-    background-color:orange;
     width:22em;
     display:inline-block;
     border-left: 2px solid rgb(179, 118, 5);
@@ -193,3 +203,69 @@ h1{
     color:rgb(179, 118, 5);
 }
 
+
+/**MENU POP**/
+
+/* Popup box BEGIN */
+.hover_bkgr_fricc{
+    background:rgba(255,255,255,.7);
+    cursor:pointer;
+    display:none;
+    height:100%;
+    position:absolute;
+    text-align:center;
+    /*top:0;*/
+    width:100%;
+    z-index:10000;
+    overflow:scroll;
+    padding:6em 0;
+}
+.hover_bkgr_fricc .helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+.hover_bkgr_fricc > div {
+    background-color: #fff;
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    height: auto;
+    max-width: 551px;
+    min-height: 100px;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+    border-radius: 8px;
+    padding: 15px 5%;
+}
+.popupCloseButton {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.popupCloseButton:hover {
+    background-color: #ccc;
+}
+.trigger_popup_fricc {
+    cursor: pointer;
+    font-size: 15px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.img_control img{
+    width:100%
+}
+/* Popup box END */

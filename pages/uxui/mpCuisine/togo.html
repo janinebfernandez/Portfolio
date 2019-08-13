@@ -1,0 +1,144 @@
+<!--********MaPa Cusine - TO GO - UXUI Design*********-->
+<DOCTYPE html>
+<html>
+<head>
+    <title>Janine B. Fernandez Portfolio: MaPa Cuisine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Janine B. Fernandez Portfolio. Creativity never stops. Discover your process.">
+    <meta name="keywords" content="Janine B. Fernandez, Janine, Fernandez, Janine Fernandez Portfolio, Design, Creativity, MaPa Cusine, Filipino, Filipino Cuisine, Cuisine, Restaurant, Food, Dinuguan, Kare Kare">
+    <meta charset="UTF-8">
+
+    <!--Stylesheet-->
+    <link href="../../../css/mpCuisine.css" type="text/css" rel="stylesheet">
+    <style>
+
+    h1{
+        color:red;
+    }
+    #pg_select a{
+        color: red;
+    }
+    .body_wrapper{
+        height:1140px;
+    }
+    </style>
+</head>
+<body> 
+    <nav>
+        <div id="mpc_logo"><img src="../../../images/web_design/MaPa_Cuisine/mapa-cuisine-small-icon.png" alt="Mapa Cuisine Logo"/></div>
+        <ul class="mpc_nav mpc_links">
+            <li><a href="../mpCuisine.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li id="pg_select"><a href="togo.html">To Go</a></li>
+            <li class="end_link"><a href="contactus.html">Contact Us</a></li>
+        </ul>
+        <div class="social_media">
+            <ul>
+                <li><a href="https://janinebfernandez.github.io/Portfolio/index.html"><img src="../../../images/logo-2019-mini.png" alt="Janine B. Fernandez Portfolio"></a></li>
+                <li><a href="https://www.linkedin.com/in/janinebfernandez/"><img src="../../../images/icons/linkedin-icon.png" alt="Linkedin"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCWjmkdK2poOYL6IYrYUskwQ/featured?disable_polymer=1"><img src="../../../images/icons/youtube-icon.png" alt="Youtube"></a></li>
+                <li><a href="https://www.instagram.com/j.ix.redefine9/"><img src="../../../images/icons/instagram-icon.png" alt="Instagram"></a></li>
+                <li><a href="https://www.flickr.com/photos/janinebfernandez/"><img src="../../../images/icons/flickr-icon.png" alt="Flickr"></a></li>
+            </ul>
+        </div><!--social_media ENDS-->
+    </nav>
+    <div class="body_wrapper">
+        <h1>PLACE YOUR ORDER</h1>
+
+        <div class="form_container">
+            <form>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Required">
+
+                <label for="fname">Last Name</label>
+                <input type="text" id="fname" name="lastname" placeholder="Required">
+
+                <label for="fname">Phone Number</label>
+                <input type="text" id="fname" name="phone_number" placeholder="000-000-0000">
+
+                <label for="fname">Email</label>
+                <input type="text" id="fname" name="email" placeholder="Required">
+
+                <h2>Pick Up Time</h2>
+                <label for="fname">Date</label>
+                <input type="text" id="fname" name="date" placeholder="00/00/00">
+
+                <label for="fname">Time</label>
+                <input type="text" id="fname" name="time" placeholder="00:00 pst">
+
+                <label for="guest">Item #1</label>
+                <select id="guest" name="guest">
+                    <option value="#">SELECT</option>
+                    <option value="#">Adobo</option>
+                    <option value="#">Sisig</option>
+                    <option value="#">Kare Kare</option>
+                    <option value="#">Imbotido Mix Plate</option>
+                    <option value="#">Bistek</option>
+                    <option value="#">Beef Kaldereta</option>
+                    <option value="#">Sinigang</option>
+                </select>
+                <label for="guest">Item #2</label>
+                <select id="guest" name="guest">
+                    <option value="#">SELECT</option>
+                    <option value="#">Ginataan Isda</option>
+                    <option value="#">Chopseuy</option>
+                    <option value="#">Dinuguan</option>
+                    <option value="#">Pancit</option>
+                    <option value="#">Palabok</option>
+                    <option value="#">Lechon Kawali</option>
+                    <option value="#">Crispy Pata</option>
+                </select>
+                <label for="guest">Sides</label>
+                <select id="guest" name="guest">
+                    <option value="#">SELECT</option>
+                    <option value="#">Hotdog on a Stick</option>
+                    <option value="#">BBQ Stick</option>
+                    <option value="#">Lumpia</option>
+                    <option value="#">Turon</option>
+                    <option value="#">Embutido</option>
+                    <option value="#">Ginataan</option>
+                    <option value="#">Buro</option>
+                    <option value="#">Arroz Caldo</option>
+                    <option value="#">Sopas</option>
+                </select>
+                <label for="guest">Deserts</label>
+                <select id="guest" name="guest">
+                    <option value="#">SELECT</option>
+                    <option value="#">Leche Flan</option>
+                    <option value="#">Cheese Sticks</option>
+                    <option value="#">Banana Que</option>
+                    <option value="#">Buko Pandan</option>
+                    <option value="#">Pasta Fruit Salad</option>
+                    <option value="#">Gelatic (Yellow/Pink)</option>
+                    <option value="#">Pastillas (Regular / Ube)</option>
+                    <option value="#">Cheese Puto</option>
+                </select>
+                <label for="guest">The Refreshers</label>
+                <select id="guest" name="guest">
+                    <option value="#">SELECT</option>
+                    <option value="#">Halo Halo</option>
+                    <option value="#">Ice Candy</option>
+                    <option value="#">Tropical Ice Cream</option>
+                </select>
+                <p style="color:red;">*Please specify number of items below, flavors and other request.</p>
+
+                <label for="subject">Food Quantity & Flavors</label>
+                <textarea id="subject" name="subject" placeholder="Please describe in details." style="height:100px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div><!--form_container ENDS-->
+        <div class="utensil_background"><img src="../../../images/web_design/MaPa_Cuisine/utensil_background.jpg"/></div>
+    </div><!--body_wrapper ENDS-->
+    <footer>
+        <ul class="mpc_footer mpc_links">
+            <li><a href="">Terms of Use</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Careers</a></li>
+            <li class="end_link">© 2019 MaPa Cuisine, Inc. All Rights Reserved.</li>
+        </ul>
+    </footer>
+</body>
+<script></script>
+
+</html>
