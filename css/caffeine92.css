@@ -1,16 +1,20 @@
 /**CAFFEINE92 STYLESHEET*/
 
 body{
+    width:100%;
     padding:0;
-    margin:0;
+    margin:auto;
     font-family: Arial, Helvetica, sans-serif;
     font-size:12px;
 }
 
+.content_wrapper{
+    position:relative;
+    height:500px;
+}
 .caffeine92_wrapper{
     width:99%;
-    padding:5px;
-    overflow:scroll;
+    padding:3em;
     position:relative;
 }
 
@@ -35,6 +39,7 @@ nav{
     /*background-color:pink;*/
     width: 96%;
     margin:auto;
+    padding-bottom:5em;
 }
 
 .h3_ab{
@@ -77,14 +82,15 @@ nav{
 
 #left_content{
     width: 45%;
-    float: left;
-    height: 35em;
+    position: absolute;
+    left:0;
     margin: 0 20px;
 }
 
 #right_content{
     width:49%;
-    float: right;
+    position:absolute;
+    right:0;
     height:35em;
 }
 
@@ -99,7 +105,7 @@ nav{
 footer{
     width:100%;
     padding:.5em 1em .5em .5em;
-    position: relative;
+    position: fixed;
     bottom:0;
     background-color:rgb(255, 210, 64);
     height:43px;

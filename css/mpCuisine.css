@@ -74,6 +74,7 @@ nav, footer{
 }
 
 footer{
+    position:fixed;
     bottom:0;
     background-color:rgb(255, 204, 0);
 }
@@ -135,6 +136,6 @@ button{
   }
 
   .utensil_background img{
-    width:600px;
+    width:50%;
 }
 /*FORM ENDS*/
