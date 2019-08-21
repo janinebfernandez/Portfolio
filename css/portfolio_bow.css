@@ -101,6 +101,22 @@ a:active {
 .socialmedia a:hover{
     opacity: .5;
   }
+
+/*PAGES LINK STYLE*/
+._link{
+    font-size: 20px;
+    padding:2em 0;
+}
+
+._link a{
+    color:rgba(255, 210, 64, .95);
+    text-shadow: 1px 1px rgba(0,0,0,.9);
+}
+
+._link a:hover{
+    color:black;
+}
+
 /*ABOUT ME - CONTACT ME*/
 #contactme_des, #aboutme_des{
     display: none;
@@ -338,7 +354,7 @@ background-color: rgba(255, 255, 255,.95);
     padding-bottom: 2em;
 }
 
-.hover_bkgr_fricc, .hover_bkgr_fricc_2{
+.hover_bkgr_fricc, .hover_bkgr_fricc_2, .hover_bkgr_fricc_3{
     background:rgba(0,0,0,.4);
     display:none;
     height:100%;
@@ -349,13 +365,13 @@ background-color: rgba(255, 255, 255,.95);
     z-index:10000;
     left:0;
 }
-.hover_bkgr_fricc .helper,.hover_bkgr_fricc_2 .helper{
+.hover_bkgr_fricc .helper,.hover_bkgr_fricc_2 .helper,.hover_bkgr_fricc_3 .helper{
     display:inline-block;
     height:100%;
     vertical-align:middle;
 }
 
-.hover_bkgr_fricc > div, .hover_bkgr_fricc_2 > div{
+.hover_bkgr_fricc > div, .hover_bkgr_fricc_2 > div, .hover_bkgr_fricc_3 > div{
     background-color: rgba(250, 250, 250, .9);
     box-shadow: 10px 10px 60px #555;
     display: inline-block;

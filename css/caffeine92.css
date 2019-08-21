@@ -13,7 +13,7 @@ body{
     height:500px;
 }
 .caffeine92_wrapper{
-    width:99%;
+    width:95%;
     padding:3em;
     position:relative;
 }
@@ -54,7 +54,7 @@ nav{
     font-weight: 800;
     position: absolute;
     right: 0;
-    margin-right: 3em;
+    margin-right: 3.5em;
 }
 
 .menu_link a{
@@ -67,7 +67,10 @@ nav{
     padding:0 1em;
 }
 
-.nav2, .social_media{
+.nav2{
+    float:right;
+}
+.social_media{
     float:right;
     padding-right:3em;
 }
@@ -78,6 +81,10 @@ nav{
 
 .nav1, .nav2{
     margin-top:3em;
+    display: visible;
+}
+.dropdown{
+    display:none;
 }
 
 #left_content{
@@ -154,10 +161,6 @@ h1{
     display:inline-block;
 }
 
-#coffee_snacks{
-    overflow:scroll;
-}
-
 #coffee_drinks li, #coffee_snacks li{
     list-style:none;
 }
@@ -223,7 +226,7 @@ h1{
     /*top:0;*/
     width:100%;
     z-index:10000;
-    overflow:scroll;
+    /*overflow:scroll;*/
     padding:6em 0;
 }
 .hover_bkgr_fricc .helper{
@@ -275,3 +278,142 @@ h1{
     width:100%
 }
 /* Popup box END */
+
+
+
+/***************************************RESPONSIVE DESIGN******************************************/
+
+/************************/
+/****MOBILE(landscape)***/
+/************************/
+@media (min-width: 481px) and (max-width: 767px) {
+
+}/*MOBILE(landscape) ENDS*/
+
+/*************************/
+/****MOBILE(portrait)****/
+/*************************/
+@media (min-width: 320px) and (max-width: 480px) {
+    /*HOME*/
+
+    .dropbtn {
+        background-color: rgb(255, 210, 64);
+        color: black;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        /*cursor: pointer;*/
+        width:100%;;
+    }
+
+
+    .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: rgba(255,255,255,.9);
+        min-width: 150px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        bottom:100%;
+        font-size:25px;
+        text-align:center;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .show {display: block;}
+
+    .dropdown{
+        margin-bottom:300px;
+        position: absolute;
+        display: inline-block;
+        width:100%;
+    }
+
+    .dropdown li{
+        list-style-type: none;
+    }
+
+    .content_wrapper{
+        height:600px;
+    }
+    .caffeine92_wrapper {
+        width: 100%;
+        padding: 0;
+        margin:0;
+    }
+
+    .nav1, .nav2{
+        display:none;
+    }
+
+    #caffeine92_logo{
+        float:none;
+        align-content: center;
+        width:100%;
+    }
+
+    #caffeine92_logo img {
+        margin: 5em 0 0 9em;
+        width:40%;
+    }
+
+    #left_content {
+        width: 94.5%;
+        position: absolute;
+        left: 0;
+        padding:0;
+        line-height: 3em;
+        margin-top: 6em;
+    }
+
+    #left_content_icons img{
+        width:80%;
+    }
+
+    #right_content {
+        width: 90%;
+        position: relative;
+        height:auto;
+        display:none;
+    }
+
+    footer{
+        padding:0;
+        height:100px;
+        position:relative;
+        text-align:center;
+    }
+
+    .social_media{
+        float:left;
+        width:100%;
+        padding:0;
+        margin:2em 0 0 0;
+        
+    }
+
+    .social_media img{
+        width:25px;
+    }
+}/****MOBILE(portrait) ENDS****/
+
+/************************/
+/*TABLET-IPAD(landscape)*/
+/************************/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}/*TABLET-IPAD(landscape) ENDS*/
+
+/***********************/
+/*TABLET-IPAD(portrait)*/
+/***********************/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}/*TABLET-IPAD(portrait) ENDS*/
