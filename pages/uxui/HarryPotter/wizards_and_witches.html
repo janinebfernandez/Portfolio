@@ -8,6 +8,7 @@
 
 	<!--DROPDOWN-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     
 
 
@@ -32,7 +33,9 @@
 		  font-weight: bold;
 		  color: #2e6e80;
 		}
-
+		a{
+			cursor:help;
+		}
 		/**
 		  * important: keep position fixed, you can however use top:0 instead of bottom:0
 		  * if you want to make it stick to the top of the browser
@@ -49,9 +52,12 @@
 			/*bottom:0;*/
 		}
 
-		.frame{
-			bottom:0;
-			/*top:0;*/
+
+		.frame_des{
+		  z-index: 500;
+		  width: 20000px;
+		  margin-left:0em;
+		  color:white;
 		}
 
 
@@ -148,6 +154,7 @@
 		  margin-left:0em;
 		  color:white;
 		  padding: 0;
+		  bottom:0;
 		}
 
 		.frame img{
@@ -610,105 +617,147 @@
 	background-color:rgba(255,255,255,.5);
 }
 
-	/************NAV DROPDOWN ENDS************/
+/************NAV DROPDOWN ENDS************/
 
-	/***************INFO POP UP**************/
-/* The Modal (background) */
-.modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1000; 
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-	margin-top:10em;
+/**********TOGGLE DESCRIPTION************/
+
+/*******TOGGLE DESCRIPTION ENDS**********/
+.show_des {
+  display:none;
+  /*background-color:red;*/
+	width:150px;
+	height:500px;
+	color:black;
+	z-index:1000;
+	position: fixed;
+	bottom:0;
+	font-size:22px;
+	font-weight:bold;
+	color:rgba(255,255,255,.75);
+	/*color:rgba(0, 128, 128,.3);*/
+	text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1.5px 0px rgba(0,0,0,.8);
+
+}
+/*
+.show_des.is-visible {
+  display:block;
+}*/
+.text_blue.is-visible{
+	-webkit-animation: slide-in 1s ease-in;
+  	-moz-animation: slide-in 1s ease-in;
+}
+.text_blue{
+	color:rgb(46, 110, 128);
+	opacity:.5;
+}
+/*
+.show_des.invisible{
+	-webkit-animation: slide-out 1s ease-out;
+    -moz-animation: slide-out 1s ease-out;
+}
+*/
+/*
+.char_des{
+	background-color:red;
+	width:300px;
+	height:50px;
+	color:black;
+	z-index:1000;
+	position: fixed;
+	bottom:0;
+}*/
+
+@-webkit-keyframes slide-in {
+      0% { opacity: 0; -webkit-transform: translateX(-15%); }   
+    50% { opacity: 1; -webkit-transform: translateX(0); }
+}
+@-moz-keyframes slide-in {
+      0% { opacity: 0; -moz-transform: translateX(-15%); }   
+    50% { opacity: 1; -moz-transform: translateX(0); }
+}
+/*
+@-webkit-keyframes slide-out {
+    100% { opacity: 1; -webkit-transform: translateX(-15%); }   
+      0% { opacity: 0; -webkit-transform: translateX(0); }
+}
+@-moz-keyframes slide-out {
+    100% { opacity: 1; -moz-transform: translateX(-15%); }   
+      0% { opacity: 0; -moz-transform: translateX(0); }
+}
+*/
+#des_harry{
+	margin:0 0 5em 37em;
+}
+#des_hermione{
+	margin:0 0 0 95em;
+}
+#des_ron{
+	margin:0 0 5em 135em;
+}
+#des_draco{
+	margin:0 0 8em 195em;
+}
+#des_severus{
+	margin:0 0 5em 265.5em;
+}
+#des_sirius{
+	margin:0 0 0 335em;
+}
+#des_bellatrix{
+	margin:0 0 6em 430em;
+}
+#des_tom{
+	margin:0 0 8em 490em;
+}
+#des_albus{
+	margin:0 0 8em 535em;
+}
+#des_minerva{
+	margin:0 0 0 596em;
+}
+#des_neville{
+	margin:0 0 8em 676.5em;
+}	
+#des_luna{
+	margin:0 0 0 706em;
+}
+#des_fred_george{
+	margin:0 0 8em 776.5em;
+}
+#des_hagrid{
+	margin:0 0 8em 816em;
+}
+#des_dobby{
+	margin:0 0 0 869em;
 }
 
-/* Modal Content */
-.modal-content {
-    position: absolute;
-    background-color: white;
-    border: 1px solid #888;
-    width: 40%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 2.4s;
-    animation-name: animatetop;
-    animation-duration: 2.4s
-}
+		/****************/
+		/*GRADIENT START*/
+		/****************/
+		#left_gradient{
+			width:20%;
+			height:100%;
+			background-image: linear-gradient(to right, rgba(255,255,255,1) , rgba(255,255,255,0));
+			z-index:500;
+			position:fixed;
+			top:0;
+		}
 
-/* Add Animation */
-@-webkit-keyframes animatetop {
-    from {top:-5em; opacity:0} 
-    to {top:0em; opacity:1}
-}
-
-@keyframes animatetop {
-    from {top:-5em; opacity:0}
-    to {top:0em; opacity:1}
-}
-
-/* The Close Button */
-.close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.modal-header {
-    padding: 2px 16px;
-    background-color: black;
-    color: white;
-}
-
-.modal-body {padding: 2px 16px;}
-
-#myBtn{
-    background-color: black;
-    color: white;
-    border: solid 2px black;
-    padding: 15px 0;
-    width: 13em;
-    text-align: center;
-}
-	/************INFO POP UP ENDS************/
+		#right_gradient{
+			width:20%;
+			height:100%;
+			background-image: linear-gradient(to left, rgba(255,255,255,1) , rgba(255,255,255,0));
+			z-index:500;
+			position:fixed;
+			right:0;
+			top:0;
+		}
 
 
-	            /****************/
-                /*GRADIENT START*/
-                /****************/
-                #left_gradient{
-                        width:25%;
-                        height:100%;
-                        background-image: linear-gradient(to right, rgba(255,255,255,1) , rgba(255,255,255,0));
-                        z-index:500;
-                        position:fixed;
-                        top:0;
-                }
-
-                #right_gradient{
-                        width:25%;
-                        height:100%;
-                        background-image: linear-gradient(to left, rgba(255,255,255,1) , rgba(255,255,255,0));
-                        z-index:500;
-                        position:fixed;
-                        right:0;
-                        top:0;
-                }
-
-
-                /****************/
-                /*GRADIENT ENDS*/
-                /****************/
-    </style>
+		/****************/
+		/*GRADIENT ENDS*/
+		/****************/
+</style>
 </head>
 <body>
 
@@ -762,37 +811,73 @@
 				</div>
 			</div><!--DROPDOWN ENDS-->
 	    </div><!--nav_fixed ENDS-->
-	  <!--direction starts-->
-	    <div id="direction_">Scroll to explore wizards & witches <p id="arrow"> &rarr;</p></div>
 
 	 <!--GRADIENT START-->
 	 	<div id="left_gradient"></div>
 	 	<div id="right_gradient"></div>
 	 <!--GRADIENT ENDS-->
 
+
+	  <!--direction starts-->
+	    <div id="direction_">Scroll to explore wizards & witches <p id="arrow"> &rarr;</p></div>
 	   <!--content starts-->
 	    <div class="slide_container scroll">
 	    	<!--back-->
 		    <div class="text scroll">
 		    	<ul>
-		    		<li class="slide_1"><p id="h1_name">Harry</p><!--<div id="myBtn">Wizard Info</div>--><a href="">Witch Info</a></li>
-		    		<li class="slide_2"><p id="h1_name">Hermione</p><a href="">Witch Info</a></li>
-		    		<li class="slide_3"><p id="h1_name">Ron</p><a href="">Wizard Info</a></li>
-		    		<li class="slide_4"><p id="h1_name">Draco</p><a href="">Wizard Info</a></li>
-		    		<li class="slide_5"><p id="h1_name">Severus</p><a href="">Wizard Info</a></li>
-		    		<li class="slide_6"><p id="h1_name">Sirius</p><a href="">Wizard Info</a></li>
-		    		<li class="slide_7"><p id="h1_name">Bellatrix</p><a href="">Witch Info</a></li>
-		    		<li class="slide_8"><p id="h1_name">Tom</p><a href="">Wizard Info</a></li>
-		    		<li class="slide_9"><p id="h1_name">Albus</p><a href="">Wizard Info</a></li>
-		    		<li class="slide_10"><p id="h1_name">Minerva</p><a href="">Witch Info</a></li>
-		    		<li class="slide_11"><p id="h1_name">Neville</p><a href="">Wizard Info</a></li>
-		    		<li class="slide_12"><p id="h1_name">Luna</p><a href="">Witch Info</a></li>
-		    		<li class="slide_13"><p id="h1_name">Fred & George</p><a href="">Wizard Info</a></li>
-		    		<li class="slide_14"><p id="h1_name">Hagrid</p><a href="">Giant Info</a></li>
-		    		<li class="slide_15"><p id="h1_name">Dobby</p><a href="">Elf Info</a></li>
+		    		<li class="slide_1"><p id="h1_name">Harry</p><a id="show_harry">Wizard Info</a></li>
+		    		<li class="slide_2"><p id="h1_name">Hermione</p><a id="show_hermione">Witch Info</a></li>
+		    		<li class="slide_3"><p id="h1_name">Ron</p><a id="show_ron">Wizard Info</a></li>
+		    		<li class="slide_4"><p id="h1_name">Draco</p><a id="show_draco">Wizard Info</a></li>
+		    		<li class="slide_5"><p id="h1_name">Severus</p><a id="show_severus">Wizard Info</a></li>
+		    		<li class="slide_6"><p id="h1_name">Sirius</p><a id="show_sirius">Wizard Info</a></li>
+		    		<li class="slide_7"><p id="h1_name">Bellatrix</p><a id="show_bellatrix">Witch Info</a></li>
+		    		<li class="slide_8"><p id="h1_name">Tom</p><a id="show_tom">Wizard Info</a></li>
+		    		<li class="slide_9"><p id="h1_name">Albus</p><a id="show_albus">Wizard Info</a></li>
+		    		<li class="slide_10"><p id="h1_name">Minerva</p><a id="show_minerva">Witch Info</a></li>
+		    		<li class="slide_11"><p id="h1_name">Neville</p><a id="show_neville">Wizard Info</a></li>
+		    		<li class="slide_12"><p id="h1_name">Luna</p><a id="show_luna">Witch Info</a></li>
+		    		<li class="slide_13"><p id="h1_name">Fred & George</p><a id="show_fred_george">Wizard Info</a></li>
+		    		<li class="slide_14"><p id="h1_name">Hagrid</p><a id="show_hagrid">Giant Info</a></li>
+		    		<li class="slide_15"><p id="h1_name">Dobby</p><a id="show_dobby">Elf Info</a></li>
 		    	</ul>
 		       
 		    </div>
+
+		    <!------CHARACTER DESCRIPTION------>
+		    <div class="frame_des scroll">
+			  <div id="des_harry" class="char_des show_des"><span class="text_blue">The boy who lives.</span> Scarred by an unforgettable night, this child has grown to be one of Howarts most popular kid in school. With the help of his friends he soon <span class="text_blue">discovers</span> that he is more than just a well known student. From <span class="text_blue">quidditch</span> to dementors, no one can stop him from <span class="text_blue">doing what's right.</span></div>
+
+			  <div id="des_hermione" class="char_des show_des">One of Hogwarts <span class="text_blue">brightest student</span>. You will see her hand up for every questions in class. Make sure to stay on her <span class="text_blue">good side</span> otherwise she might <span class="text_blue">leviosa</span> you out the door.</div>
+
+			  <div id="des_ron" class="char_des show_des">You will recognize him everywhere with that <span class="text_blue">bright red hair</span>. This <span class="text_blue">Weasley</span> student may not be into books but he has the guts of a <span class="text_blue">mighty Gryffindor</span>.</div>
+
+			  <div id="des_draco" class="char_des show_des">With the <span class="text_blue">family name</span> under his belt Draco does not fall short of a <span class="text_blue">Malfoy</span>. <span class="text_blue">Blonde hair</span>, a fancy wardrobe and <span class="text_blue">intimidating</span> friends. Don't mess with this boy.</div>
+
+			  <div id="des_severus" class="char_des show_des">Known to be the <span class="text_blue">Potions Master</span>, Professor Snape of one of Hogwarts best. <span class="text_blue">Loyalty</span> is his game and <span class="text_blue">love</span> is his priority. It may not seem like it but read the entire book and find out.</div>
+
+			  <div id="des_sirius" class="char_des show_des">The <span class="text_blue">notorious Black</span>. Banned to the <span class="text_blue">Prisoner of Azkaban</span>, this gentleman has many <span class="text_blue">secrets</span> throughout his Howarts days.</div>
+
+			  <div id="des_bellatrix" class="char_des show_des">Not a lot to say about Bellatrix, but she is a very <span class="text_blue">dynamic</span> person. <span class="text_blue">Do not trust her</span>, but admire her style in duels and her <span class="text_blue">loyalty</span> to her lord.</div>
+
+			  <div id="des_tom" class="char_des show_des"><span class="text_blue">"He who must not be named"</span></div>
+
+			  <div id="des_albus" class="char_des show_des">One of Howarts <span class="text_blue">greatest Head Master</span>. He is responsible for <span class="text_blue">defending the castle from treat</span> even if it cost his life.</div>
+
+			  <div id="des_minerva" class="char_des show_des">Break the <span class="text_blue">rules</span> and this professor will give you the punishment. She can be a little lenient sometimes specially if you're <span class="text_blue">saving the world</span>.</div>
+
+			  <div id="des_neville" class="char_des show_des">One of the few that can <span class="text_blue">wield the Sword of Gryffindor</span>. Despite his history, this student has <span class="text_blue">conquered his fears</span> and has saved the day multiple times when he is <span class="text_blue">needed the most</span>.</div>
+
+			  <div id="des_luna" class="char_des show_des">Quiet and very reserve. Luna is the <span class="text_blue">pride of Ravenclaw</span>. Don't let her appearance fool you though.</div>
+
+			  <div id="des_fred_george" class="char_des show_des">These <span class="text_blue">Weasley brothers</span> can make you <span class="text_blue">magically laugh</span> every moment they are around. They left Hogwarts riding a dragon fireworks to follow their <span class="text_blue">dreams</span>.</div>
+
+			  <div id="des_hagrid" class="char_des show_des">He is Hogwarts <span class="text_blue">giant keeper</span>. He lives in a small cottage outside of the castle with his dog, <span class="text_blue">Fang</span>. His <span class="text_blue">heart</span> is as big as his height, maybe even bigger.</div>
+
+			  <div id="des_dobby" class="char_des show_des"><span class="text_blue">"Dobby has no master. Dobby is a free elf!"</span></div>
+
+			</div>
+		    <!------CHARACTER DESCRIPTION ENDS------>
 
 
 	<!-----------------INFO POP UP-------------------->
@@ -989,34 +1074,57 @@ window.onclick = function(event) {
 </script>
 
 
-<!--------------INFO POP UP---------------->
-
+<!------TOGGLE------>
 <script>
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+$(document).ready(function(){
+  $("#show_harry").click(function(){
+  	$("#des_harry").fadeToggle( "slow", "linear" );
+    $(".text_blue").toggleClass("is-visible");
+  });
+  $("#show_hermione").click(function(){
+    $("#des_hermione").fadeToggle( "slow", "linear" );
+  });
+  $("#show_ron").click(function(){
+    $("#des_ron").fadeToggle( "slow", "linear" );
+  });
+  $("#show_draco").click(function(){
+    $("#des_draco").fadeToggle( "slow", "linear" );
+  });
+  $("#show_severus").click(function(){
+    $("#des_severus").fadeToggle( "slow", "linear" );
+  });
+  $("#show_sirius").click(function(){
+    $("#des_sirius").fadeToggle( "slow", "linear" );
+  });
+  $("#show_bellatrix").click(function(){
+    $("#des_bellatrix").fadeToggle( "slow", "linear" );
+  });
+  $("#show_tom").click(function(){
+    $("#des_tom").fadeToggle( "slow", "linear" );
+  });
+  $("#show_albus").click(function(){
+    $("#des_albus").fadeToggle( "slow", "linear" );
+  });
+  $("#show_minerva").click(function(){
+    $("#des_minerva").fadeToggle( "slow", "linear" );
+  });
+  $("#show_neville").click(function(){
+    $("#des_neville").fadeToggle( "slow", "linear" );
+  });
+  $("#show_luna").click(function(){
+    $("#des_luna").fadeToggle( "slow", "linear" );
+  });
+  $("#show_fred_george").click(function(){
+    $("#des_fred_george").fadeToggle( "slow", "linear" );
+  });
+  $("#show_hagrid").click(function(){
+    $("#des_hagrid").fadeToggle( "slow", "linear" );
+  });
+  $("#show_dobby").click(function(){
+    $("#des_dobby").fadeToggle( "slow", "linear" );
+  });
+});
 </script>
+
 </body>
 </html>
