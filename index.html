@@ -1,4 +1,4 @@
-<!--PORTFOLIO PAGE - Black on White - HTML-->
+<!--PORTFOLIO - DYNAMIC - JANINE FERNANDEZ - INDEX PAGE-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,131 +16,106 @@
 <!--GOOGLE WEBMASTER TOOL START-->
     <meta name="google-site-verification" content="ZT-j7V2ZNz3gB6tCpHdm-MlS_cqu8zFKQktu_RtQhDQ" />
     <!--GOOGLE WEBMASTER TOL ENDS-->
-    <title>Janine B. Fernandez Portfolio</title>
+    <title>Janine B. Fernandez : Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Janine B. Fernandez Portfolio. Creativity never stops. Discover your process.">
-    <meta name="keywords" content="Janine B. Fernandez, Janine, Fernandez, Janine Fernandez Portfolio, Design, Creativity, Art, Digital Art, Photography, Wed Development, Web Design, UX, UI, Logo, Typography, Project Management">
+    <meta name="description" content="Janine B. Fernandez Portfolio : Home - Creativity in the Digital Space">
+    <meta name="keywords" content="Janine B. Fernandez, Janine, Fernandez, Janine Fernandez Portfolio, Design, Creativity, Art, Digital Art, Photography, Wed Development, Web Design, UX, UI, Logo, Typography, Project, Creative9, creative outlet, creative, Digital Space">
     <meta charset="UTF-8">
 
     <!--Javascript-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/toggle.js"></script>
-    <script src="js/nav_dropdown.js"></script>
+    <script src="js/side-nav.js"></script>
         
     <!--Stylesheet-->
-    <link href="css/reset.css" type="text/css" rel="stylesheet">
-    <link href="css/portfolio_bow.css" type="text/css" rel="stylesheet">
-    <link href="css/portfolio_bow_tip.css" type="text/css" rel="stylesheet">
-    <link href="css/portfolio_bow_til.css" type="text/css" rel="stylesheet">
-    <link href="css/portfolio_bow_ml.css" type="text/css" rel="stylesheet">
-    <link href="css/portfolio_bow_mp.css" type="text/css" rel="stylesheet">
+    <link href="css/normalize.css" type="text/css" rel="stylesheet">
+    <link href="css/content.css" type="text/css" rel="stylesheet">
+    <link href="css/side-nav.css" type="text/css" rel="stylesheet">
+    <link href="css/media-query.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 
     <!--Icon for Mobile Nav-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-.nav{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    padding: 2% 0;
-    margin: auto;
-    text-align: center;
-    font-size: 10px;
-}
+    .intro{
+        width:100%;
+        background-image: url("images/banner/banner_index_1.jpg");
+        background-size: cover;
+    }
 
-.nav li{
-    display: inline;
-    padding: 0 2em;
-    margin: 25px;
-    font-weight: bold;
-}
+    .about_me{
+        margin-bottom:15%;
+    }
+
+    .op_overlay{
+        opacity:0.7;
+        height:100%;
+    }
+
+    #block_img_1{background-image: url("images/thumbnail/thumb_photography.jpg");}
+    #block_img_2{background-image: url("images/thumbnail/thumb_web_design.jpg");}
+    #block_img_3{background-image: url("images/thumbnail/thumb_graphic.jpg");}
+    #block_img_4{background-image: url("images/thumbnail/thumb_type.jpg");}
+    #block_img_5{background-image: url("images/thumbnail/thumb_projects.jpg");}
+    #block_img_6{background-image: url("images/thumbnail/thumb_logo.jpg");}
+    #block_img_7{background-image: url("images/thumbnail/thumb_creative9.jpg");}
+
 </style> 
 </head>
 
 <body>
-<div class = "my_background"></div>
-<div class = "wrapper_body">
-<div id="bodywrapper">
-    <!--GRID CONTAINER-->
-    <div class = "gridwrapper">
-        <div class="box header_welcome tran1a">welcome</div>
-        <div class="box header_pagename tran1b">
-            <a href="#"><p>Janine B. Fernandez | Porfolio</p></a>
-            <!--Social media accounts-->
-            <div class = "socialmedia">
-                <a href="https://janinebfernandez.github.io/Portfolio/index.html#" target = ""><img style="width:3em" src="images/logo-2019-mini.png" alt="Janine B. Fernandez Logo"></a>
-                <a href="https://www.linkedin.com/in/janinebfernandez" target = "_blank"><img src="images/icons/linkedin-icon.png" alt="LinkedIn" alt="Janine Fernandez LinkedIn"></a>
-                <a href="https://www.youtube.com/channel/UCWjmkdK2poOYL6IYrYUskwQ/featured?disable_polymer=1" target = "_blank"><img src="images/icons/youtube-icon.png" alt="Janine Fernandez Flickr"></a>
-                <a href="https://www.instagram.com/j.ix.redefine9" target = "_blank"><img src="images/icons/instagram-icon.png" alt="Janine Fernandez Instagram"></a>
-                <a href="https://www.flickr.com/photos/janinebfernandez/" target = "_blank"><img src="images/icons/flickr-icon.png" alt="Janine Fernandez Flickr"></a>
-            </div>
-        </div>
-        </div><!--gridwrapper ends-->
+    <div class="content_wrapper">
+       <div class="fixed_items">
+        <div class="jix_logo"><a href="#"><img src="images/icons/logo-2019-mini.png" alt="j.ix" alt="Janine Fernandez Logo"></a></div><!--jix_logo ENDS-->
+        <div class="social_media">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/janinebfernandez" target = "_blank"><img src="images/icons/linkedin-icon.png" alt="LinkedIn" alt="Janine Fernandez LinkedIn"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCWjmkdK2poOYL6IYrYUskwQ/featured?disable_polymer=1" target = "_blank"><img src="images/icons/youtube-icon.png" alt="Janine Fernandez Flickr"></a></li>
+                    <li><a href="https://www.instagram.com/j.ix.redefine9" target = "_blank"><img src="images/icons/instagram-icon.png" alt="Janine Fernandez Instagram"></a></li>
+                </ul>
+            </div><!--social_media ENDS-->
+            <div class="copyright">2020</div><!--copyright ENDS-->
+        </div><!--fixed_item ENDS-->
 
-            <div class = "gridwrapper_content tran2">
-                <div class="box mylogo">
-                    <p id = "logo_image">
-                        <img src="images/logo-2019-mini.png" alt="Janine Fernandez Logo">
-                    </p> 
-                </div>
-                      
-                <div class = "gridwrapper_info">
-                    <div class="box mytitle">designer & developer
-                        </div>
-                    <div class="box myname">Janine B. Fernandez
-                        </div>
-                    <a id="aboutme_button" href="#"><div class="box aboutme">About Me
-                        </div></a>
-                    <a id="contactme_button" href="#"><div class="box contact">Say Hello
-                        </div></a>
+        <div class="project_container">
+            <div class="intro">
+                <div id="index_content">
+                    <div id="name"><bold>Janine B. Fernandez</bold></div><!--name ENDS-->
+                    <div id="profession"><h1>CREATIVE DESIGNER</h1><h3>IN THE DIGITAL SPACE</h3></div><!--profession ENDS-->
+                </div><!--index_content ENDS-->
+            </div><!--INTRO ENDS-->
+            <div class="block_1">
+                <div class="block_1_title_div"><p class="block_1_title">MY WORK</p></div>
+                <ul>
+                    <li><a href="../Photography/photography.html"><div class="sq_block op_overlay" id="block_img_1"></div><div class="block_text"><p>PHOTOGRAPHY</p></div></a></li>
+                    <li><a href="../Web_Design/web_design.html"><div class="sq_block op_overlay" id="block_img_2"></div><div class="block_text"><p>WEB DESIGN</p></div></a></li>
+                    <li><a href="../Graphic_Design/graphic_design.html"><div class="sq_block op_overlay" id="block_img_3"></div><div class="block_text"><p>GRAPHIC DESIGN</p></div></a></li>
+                    <li><a href="../Typography/typography.html"><div class="sq_block op_overlay" id="block_img_4"></div><div class="block_text"><p>TYPOGRAPHY</p></div></a></li>
+                    <li><a href="pages/projects.html"><div class="sq_block op_overlay" id="block_img_5"></div><div class="block_text"><p>PROJECTS</p></div></a></li>
+                    <li><a href="../Logo/logo.html"><div class="sq_block op_overlay" id="block_img_6"></div><div class="block_text"><p>LOGO</p></div></a></li>
+                    <li><a href="https://janinebfernandez.github.io/Creative9/index.html"><div class="sq_block op_overlay" id="block_img_7"></div><div class="block_text"><p>CREATIVE</p></div></a></li>
+                </ul>
+            </div><!--BLOCK_1 ENDS-->
 
-                </div><!--gridwrapper_info ends-->
+        </div><!--project_container ENDS-->
+    </div><!--content_wrapper ENDS-->
 
-<!--ABOUT ME & SAY HELLO CONTENT-->
-<div id="aboutme_des">
-        <p id="header_contact">ABOUT ME</p>
-        <p id="aboutme_content">
-            Art and the digital world colliding is a field with endless outcomes. 
-            I aim to surround myself in an environment that will foster my interest and growth.
-            As I learn new things, I strive to use my knowledge and skills in creating 
-            something new or build on a solid foundation. 
-            <br>
-            <br>
-            <br>
-        </p>
-        <p id="close_about">X</p>
+
+
+
+<!--------NAVIGATION---------->
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Home</a>
+    <a href="../Photography/photography.html">Photography</a>
+    <a href="../Web_Design/web_design.html">Web Design</a>
+    <a href="../Graphic_Design/graphic_design.html">Graphic Design</a>
+    <a href="../Typography/typography.html">Typography</a>
+    <a href="pages/projects.html">Projects</a>
+    <a href="../Logo/logo.html">Logo</a>
+    <a href="https://janinebfernandez.github.io/Creative9/index.html" target="_blank">Creative9</a>
+    <a class="about_me" href="pages/aboutme.html">About Me</a>
 </div>
-<div id="contactme_des">
-        <p id="header_contact">CONTACT ME</p>
-        <div id="contactme_content">
-            <p>Please contact me directly at: </p>
-            <p id="my_email">janinebfernandez@gmail.com</p>
-            <p>I'd would love to hear from you!</p>
-            <p><a href="https://www.linkedin.com/in/janinebfernandez" target="_blank" style="font-weight:bold;">LinkedIn</a></p>
-        </div>
-        <p id="close_contact">X</p>
-</div>
-<!--ABOUT ME & SAY HELLO ENDS-->
-</div><!--gridwrapper ends-->
-</div><!--bodywrapper ends-->
-</div><!--wrapper_body ENDS-->
-
-<!--NAV DROPDOWN-->
-<div class="box nav dropdown tran3">
-        <button onclick="myFunction()"><i class="fa fa-bars dropbtn"></i></button>
-        <div id="myDropdown" class="dropdown-content">
-            <!--<li id = "video"><a href="url">Video</a></li>-->
-            <li id = "photo"><a href="https://janinebfernandez.github.io/Photos-by-Janine/photography.html">Photography</a></li>
-            <li id = "wd"><a href="pages/webdesign.html">Web Design</a></li>
-            <li id = "graphics"><a href="pages/graphics.html">Graphics</a></li>
-            <li id = "projects"><a href="pages/projects.html">Projects</a></li>
-            <li id = "logo"><a href="pages/logo.html">Logo</a></li>
-            <li id = "type"><a href="pages/type.html">Type</a></li>
-            <li id = "CREATIVE9"><a href="https://janinebfernandez.github.io/Creative9/index.html">Creative9</a></li>
-            <!--<li id = "animate"><a href="url">Animate</a></li>-->
-            <!--<li id = "sound"><a href="url">Sound</a></li>-->
-        </div><!--dropdown ends-->
-        </div><!--nav ends-->
+  <span class="nav_button" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<!-------NAVIGATION ENDS-------->
 </body>
-
 </html>
