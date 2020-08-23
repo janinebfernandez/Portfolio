@@ -1,0 +1,390 @@
+/*PORTFOLIO - DYNAMIC - INDEX - MAIN CSS*/
+
+html, body{
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  html, body, .content_wrapper, .fixed_items{
+    height:100%;
+  }
+  p{font-size:12px;margin:0;}
+  h1{font-size:50px;margin:1%;}
+  h3{font-size:20px;}
+  h4{font-size:15px;}
+  a{color:black;text-decoration: none;}
+  ul{list-style:none;margin:0;padding:0;}
+  
+   .content_wrapper{
+       margin:auto;
+       width:100%;
+       position:relative;
+   } 
+  
+   .clearfix {
+      overflow: auto;
+    }
+  
+  .op_overlay{
+      opacity:0.7;
+      height:100%;
+  }
+
+
+
+/**********************/
+/********LOGO**********/
+/**********************/
+.jix_logo img{
+    width:100%;
+    padding-top: 10%;
+  }
+  
+  /**********************/
+  /*****SOCIAL MEDIA*****/
+  /**********************/
+  .social_media ul li img{
+    padding:15% 0;
+    width:40%;
+  }
+  
+  .social_media ul li img:hover{
+    filter: invert(80%);
+  }
+  
+  /**********************/
+  /*********NAV**********/
+  /**********************/
+  
+  .fixed_items{
+      height:150%;
+      position:fixed;
+      align-content: center;
+      z-index:2;
+      left:0;
+      background-color: rgba(255,255,255,.2);
+      width: 5%;
+      text-align:center;
+  }
+      .jix_logo, .social_media, .copyright{
+          padding:.5%;
+      }
+  
+      .jix_logo{
+        position: fixed;
+        width: 4%;
+      }
+  
+      .social_media{
+          position: fixed;
+          bottom:0;
+          left:0;
+          width:4%;
+      }
+  
+      .social_media ul{
+        margin:0;
+        padding:0;
+      }
+  
+      .social_media li{
+        list-style:none;
+        padding:30% 0;
+      }
+  
+      .copyright{
+          position: fixed;
+          bottom:0;
+          right:0;
+          font-size:12px;
+          font-weight: 700;
+      }
+  /*NAME / PROFESSION*/
+  #index_content{
+    width: 90%;
+    text-align: center;
+    padding: 15% 1% 1% 1%;
+    color: white;
+    margin: 0 auto;
+    position: relative;
+}
+  
+  div#profession {
+    margin-top: 2em;
+  }
+
+  #profession h3{
+      padding:0;
+  }
+
+
+
+/***************/
+/*****INTRO*****/
+/***************/
+
+.project_container{
+    width: 100%;
+    height:auto;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+}
+
+.intro{
+    width:100%;
+    height: auto;
+    padding: 0 0 20% 0;
+    margin: 0;
+    font-size:2em;
+    position:relative;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,.4)
+}
+
+.intro h2, .intro h3, .intro h4, .intro p{
+    margin:0 8%;
+    color:white;
+}
+
+.intro h2{
+    padding-top:10%;
+}
+
+.intro h3{
+    padding: 5% 0 1% 0;
+}
+
+.intro h4{
+    padding:5% 0;
+    font-size:15px;
+}
+
+.intro p{
+    width:30%;
+    line-height:2em;
+    margin-top: .5em;
+}
+
+/***************/
+/****BLOCK_1****/
+/***************/
+
+.block_1_large ul li, .sq_block img, .img_icon{
+    transition: all .2s ease-in-out
+}
+
+.block_1_large ul li:hover, .sq_block img:hover, .img_icon:hover{
+    transform: scale(1.05);
+}
+
+.sq_block{
+    height:auto;
+    background-size: cover;
+}
+
+.block_1{
+    width:90%;
+    height:auto;
+    padding:5%;
+    margin:0;
+    position:relative;
+}
+
+.block_1 ul li{
+    display: inline-block;
+    width:17%;
+    height:120px;
+    margin:1.3%;
+    background-color:white;
+    overflow: hidden;
+    position:relative;
+    text-align:center;
+    box-shadow: 2px 2px 2px black;
+}
+
+.block_1 ul li:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all .2s ease-in-out;
+}
+
+
+/*STRIPED TITLE*/
+.block_1_title_div{
+    width:100%;
+    background-color:white;
+    position:relative;
+    padding:1%;
+    margin-bottom:5%;
+    background-image:repeating-linear-gradient(
+        45deg,
+        #edf2f8 5px,
+        #edf2f8 20px,
+        transparent 20px,
+        transparent 40px
+    );
+}
+
+.block_1_title{
+    font-size: 25px;
+    font-weight: 700;
+    background-color: white;
+    text-align: center;
+    width: 20%;
+    margin: 0 auto;
+    border: solid 1px #d7dfe9;
+    color: #d7dfe9;
+    text-shadow: 1px 1px 1px #000;
+}
+
+/*STRIPED TITLE ENDS*/
+
+
+/*BLOCK_1_LARGE*/
+.block_1_large{
+    width:90%;
+    height:auto;
+    background-color:white;
+    padding:0 5%;
+    margin:auto 0;
+    position:relative;
+    align-content: center;
+}
+
+    /*IMAGE ICON*/
+    .img_icon{
+        width: 15%;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        margin:0 2%;
+    }
+
+    .img_icon_li{
+        width: 100%!important;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        margin:0 2%;
+    }
+
+    .align_icon{
+        display:contents;
+    }
+    /*IMAGE ICON ENDS*/
+
+
+.block_1_large ul{
+    text-align: center;
+}
+
+.block_1_large ul li{
+    display: inline-block;
+    width:30%;
+    height:auto;
+    margin:1.3%;
+    position:relative;
+    background-color:black;
+    overflow: hidden;
+    align-content: center;
+    box-shadow: 2px 2px 2px black;
+}
+/*BLOCK_1_LARGE ENDS*/
+
+/*BLOCK TEXT OVERLAY*/
+.sq_block:hover{
+    opacity:1;
+}
+
+.block_text{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+.block_text p{
+    font-size: 17px;
+    color: black;
+    background-color: rgba(255,255,255,0.6);
+    display: inline-block;
+    padding:2px;
+}
+/*BLOCK TEXT OVERLAY ENDS*/
+
+
+/***************/
+/****PROCESS****/
+/***************/
+.process{
+    width:100%;
+    height:500px;
+    padding:0;
+    margin:0;
+    position:relative;
+}
+
+/***************/
+/****BLOCK_2****/
+/***************/
+.block_2{
+    width:100%;
+    height:200px;
+    background-color:yellowgreen;
+    padding:0;
+    margin:0;
+    position:relative;
+}
+
+/***************/
+/****FEATURES***/
+/***************/
+.features{
+    width:100%;
+    height:500px;
+    padding:0;
+    margin:0;
+    position:relative;
+}
+
+/***************/
+/*****FINAL*****/
+/***************/
+.final_project{
+    width:100%;
+    height:500px;
+    background-color:yellowgreen;
+    padding:0;
+    margin:0;
+    position:relative;
+}
+
+/***************/
+/***ABOUT ME****/
+/***************/
+.block_content{
+    position:relative;
+    margin-bottom:5%;
+    padding:2%;
+}
+.left_block{
+    width:70%;
+    height:auto;
+    position: relative;
+    float: left;
+}
+
+.left_block p{
+    font-size:20px;
+    padding-top:10%;
+    line-height: 40px;
+}
+
+.right_block{
+    width:30%;
+    height:auto;
+    display:inline-block;
+    position:relative;
+}
+
+.right_block img{
+    width:100%;
+    float:right;
+}
+

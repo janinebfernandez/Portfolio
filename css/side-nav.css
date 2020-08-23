@@ -1,0 +1,54 @@
+/* /*PORTFOLIO - DYNAMIC - SIDE BAR NAVIGATION*/
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.8);
+    color: rgba(0,0,0,.3);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 40px;
+    
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+    line-height: 1.5em;
+  }
+  
+  .sidenav a:hover {
+    color: rgba(0,0,0,1);
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    font-size: 36px;
+  }
+  
+  .nav_button{
+    position:fixed;
+    right:0;
+    top:0;
+    padding-right:1%;
+    z-index: 3;
+    text-shadow: .5px .5px 7.5px #fff;
+  }
+
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

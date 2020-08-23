@@ -1,0 +1,377 @@
+/*PORTFOLIO - DYNAMIC - MEDIA QUESRY CSS*/
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    /*FIXED*/
+    .fixed_items{
+      width:7%;
+    }
+
+    .jix_logo{
+      width:6%;
+    }
+
+    .social_media{
+      width:5.5%;
+    }
+
+    .social_media ul li img {
+      padding: 35% 5%;
+      width: 55%;
+    }
+  
+    .nav_button{
+      padding-right:2%;
+      font-size:40px!important;
+    }
+
+  .intro h2, .intro h3, .intro p{
+    margin: 0 12%;
+  }
+
+  .intro h2{
+    padding-bottom:5%;
+    font-size:60px;
+  }
+  .intro p{
+    width:70%;
+    font-size:15px;
+  }
+  .intro h3{
+    font-size:40px
+  }
+
+  #profession h3{
+    font-size:20px;
+   }
+
+  /*FIXED ITEMS END*/
+  .block_1{
+    padding: 5% 5% 5% 6%;
+  }
+
+  .block_1 ul li {
+    width: 29%;
+    height: 140px;
+    margin: 1.5%;
+  }
+
+  .block_1_title{
+    width:30%;
+  }
+
+  .block_text p{
+    font-size:20px;
+  }
+  
+  /*ABOUT ME*/
+  .left_block p{
+    font-size:15px;
+    padding-top:5%;
+  }
+}/*IPAD PORTRAIT ENDS*/
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+
+  /*FIXED ITEMS*/
+    .fixed_items {
+      width: 6%;
+    }
+
+    .jix_logo{
+      width:5%;
+    }
+
+    .social_media{
+      width:5%;
+    }
+  
+    .social_media ul li img {
+      padding: 35% 0;
+      width: 50%;
+    }
+
+    #profession h3{
+     font-size:20px;
+    }
+    /*FIXED ITEMS ENDS*/
+    .intro h2, .intro h3, .intro p, .work_link {
+      margin: 0 8%;
+    }
+    .intro{
+      padding:0 0 15% 0;
+    }
+    .intro p{
+      width:60%;
+      font-size:20px;
+    }
+  
+    .intro h2 {
+      padding: 10% 0 5% 0;
+      font-size:70px;
+    }
+
+    .intro h3{
+      font-size: 40px;
+    }
+
+    .block_1 ul li {
+      width: 30%;
+      height: 170px;
+      margin: 1.5%;
+    }
+  
+    .block_1_title {
+      width: 30%;
+    }
+  
+}/*IPAD LANDSCAPE*/
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+      /*FIXED ITEMS*/
+  
+      .social_media{
+        width:4%;
+      }
+    
+      .social_media ul li img {
+        padding: 25% 0;
+        width: 55%;
+      }
+      /*FIXED ITEMS ENDS*/
+
+  .intro{
+    padding:0 0 15% 0;
+  }
+  .intro p{
+    width:50%;
+  }
+
+  .intro h2 {
+    padding: 10% 0 5% 0;
+  }
+
+   .block_1 ul li {
+    width: 45%;
+    height: 140px;
+    margin: 2%;
+  }
+
+  .block_1_title{
+    width:40%;
+  }
+
+  .block_text p{
+    font-size:30px;
+  }
+
+  .block_1_large ul li{
+    width:45%
+  }
+
+  .about_me{
+    margin-bottom:15%;
+  }
+  .mySlides{
+    padding-bottom:10%;
+  }
+  
+/*WEB DESIGN*/
+.img_icon {
+  width: 25%;
+}
+  /*ABOUT ME*/
+.left_block {
+  width: 100%;
+  height: auto;
+  position: relative;
+  text-align:left;
+}
+
+.left_block p{
+  font-size:15px;
+}
+
+.right_block{
+  width:100%;
+}
+}/*Mobile LANDSCAPE DONE*/
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  h1{font-size:35px;}
+  h2{font-size:30px;}
+  h2{font-size:25px;}
+
+    /*FIXED ITEMS*/
+    .fixed_items{
+      width:10%;
+    }
+    
+    .jix_logo{
+      width:9%;
+    }
+  
+    .social_media{
+      width:9%;
+    }
+  
+    .social_media ul li img {
+      padding: 40% 0;
+      width: 50%;
+    }
+    /*FIXED ITEMS ENDS*/
+
+    /*INDEX PROFESSION*/
+  #index_content{
+      width: 90%;
+      text-align: center;
+      padding: 30% 1% 1% 1%;
+      color: white;
+      margin: 0 auto;
+      position: relative;
+      min-height:300px
+  }
+
+  #name{
+    font-size:20px;
+  }
+
+  #profession h1{
+    font-size: 30px;
+  }
+  
+  #profession h3{
+    margin:0;
+    font-size: 15px;
+  }
+  /*INDEX PROFESSION ENDS*/
+
+  .intro h2, .intro h3, .intro p{
+    margin-left: 13%;
+  }
+  
+  .intro{
+    height: auto;
+    padding:0 0 15% 0;
+  }
+
+  .intro p{
+    width:80%;
+  }
+
+  .intro h2 {
+    padding: 15% 0 10% 0;
+  }
+
+  .block_1 ul{
+    margin:0 auto;
+    text-align: center;
+  }
+
+  .block_1 ul li {
+    width: 80%;
+    height:140px;
+    margin:5% 10%;
+  }
+  .block_1_title{
+    font-size:20px;
+    width:50%;
+  }
+
+  .block_1{
+    margin:0 auto;
+  }
+
+  /*WEB DESIGN*/
+  .block_1_large ul li {
+    width: 80%;
+    margin:5% 10%;
+  }
+
+  .img_icon {
+    width: 40%;
+  }
+
+  /*POP UP SLIDER*/
+  .mySlides{
+    margin-bottom:0;
+  }
+
+  /*NAVIGATION START*/
+  span.nav_button {
+    font-size: 40px!important;
+  }
+
+  .sidenav{
+    background-color: rgba(255,255,255,0.9)
+  }
+  /*NAVIGATION ENDS*/
+
+
+/*ABOUT ME*/
+
+.block_content h1{
+  padding-left:4%;
+}
+.left_block {
+  width: 94%;
+  height: auto;
+  position: relative;
+  text-align:left;
+  margin-left: 5%;
+}
+
+.left_block p{
+  font-size:15px;
+  padding-top:1%;
+}
+
+.right_block{
+  width:100%;
+}
+/*ABOUT MEENDS*/
+} /*Mobile PORTRAIT ENDS*/
