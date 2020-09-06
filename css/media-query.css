@@ -96,6 +96,11 @@
     font-size:15px;
     padding-top:5%;
   }
+
+  .intro h4{
+    padding-left:4%;
+  }
+
 }/*IPAD PORTRAIT ENDS*/
 
 /* 
@@ -372,6 +377,10 @@
 
 .right_block{
   width:100%;
+}
+
+.intro h4{
+  padding-left:5%;
 }
 /*ABOUT MEENDS*/
 } /*Mobile PORTRAIT ENDS*/

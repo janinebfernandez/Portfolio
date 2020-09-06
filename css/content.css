@@ -344,6 +344,17 @@ html, body{
 }
 
 /***************/
+/**PHOTOGRAPHY**/
+/***************/
+.portrait_img{
+    width:60%!important;
+}
+
+.portrait_icon{
+    margin-top:-20%;
+}
+
+/***************/
 /*****FINAL*****/
 /***************/
 .final_project{
