@@ -48,7 +48,7 @@ html, body{
   }
   
   .social_media ul li img:hover{
-    filter: invert(80%);
+    filter:invert(85%);
   }
   
   /**********************/
@@ -107,13 +107,17 @@ html, body{
     margin: 0 auto;
     position: relative;
 }
-  
-  div#profession {
-    margin-top: 2em;
+
+
+  #profession h1{
+    background: linear-gradient(to right, rgb(0, 200, 255) , yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   #profession h3{
       padding:0;
+      font-size:15px;
   }
 
 
@@ -137,7 +141,7 @@ html, body{
     margin: 0;
     font-size:2em;
     position:relative;
-    box-shadow: 2px 2px 5px 2px rgba(0,0,0,.4)
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,.2)
 }
 
 .intro h2, .intro h3, .intro h4, .intro p{
@@ -146,7 +150,11 @@ html, body{
 }
 
 .intro h2{
+    width:50%;
     padding-top:10%;
+    background: linear-gradient(to right, rgb(0, 200, 255) , yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .intro h3{
@@ -198,7 +206,7 @@ html, body{
     overflow: hidden;
     position:relative;
     text-align:center;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.2);
 }
 
 .block_1 ul li:hover{
@@ -211,29 +219,29 @@ html, body{
 /*STRIPED TITLE*/
 .block_1_title_div{
     width:100%;
-    background-color:white;
     position:relative;
-    padding:1%;
-    margin-bottom:5%;
-    background-image:repeating-linear-gradient(
-        45deg,
-        #edf2f8 5px,
-        #edf2f8 20px,
-        transparent 20px,
-        transparent 40px
-    );
+    padding:.5%;
+    margin-bottom:1%;
+}
+
+.white_text{
+    color:white;
+}
+
+.bck_gradient{
+    border:1px solid rgb(204, 204, 204);
+    padding:1% 10%;
 }
 
 .block_1_title{
     font-size: 25px;
     font-weight: 700;
-    background-color: white;
     text-align: center;
     width: 20%;
     margin: 0 auto;
-    border: solid 1px #d7dfe9;
-    color: #d7dfe9;
-    text-shadow: 1px 1px 1px #000;
+    background: linear-gradient(to right, rgb(0, 200, 255) , yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /*STRIPED TITLE ENDS*/
@@ -291,6 +299,7 @@ html, body{
 /*BLOCK TEXT OVERLAY*/
 .sq_block:hover{
     opacity:1;
+    filter:contrast(110%);
 }
 
 .block_text{
@@ -300,11 +309,11 @@ html, body{
 }
 
 .block_text p{
-    font-size: 17px;
-    color: black;
-    background-color: rgba(255,255,255,0.6);
+    font-size: 13px;
+    background-color:rgba(255, 255, 255, .85);
     display: inline-block;
-    padding:2px;
+    padding: 5px 15px;
+    color:black;
 }
 /*BLOCK TEXT OVERLAY ENDS*/
 
