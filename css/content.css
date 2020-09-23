@@ -150,7 +150,6 @@ html, body{
 }
 
 .intro h2{
-    width:50%;
     padding-top:10%;
     background: linear-gradient(to right, rgb(0, 200, 255) , yellow);
     -webkit-background-clip: text;
@@ -218,9 +217,9 @@ html, body{
 
 /*STRIPED TITLE*/
 .block_1_title_div{
-    width:100%;
+    width:97%;
     position:relative;
-    padding:.5%;
+    padding:0 1.5%;
     margin-bottom:1%;
 }
 
@@ -236,9 +235,9 @@ html, body{
 .block_1_title{
     font-size: 25px;
     font-weight: 700;
-    text-align: center;
+    /*text-align: center;*/
     width: 20%;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     background: linear-gradient(to right, rgb(0, 200, 255) , yellow);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

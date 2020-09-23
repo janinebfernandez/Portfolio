@@ -65,7 +65,7 @@
     font-size:15px;
   }
   .intro h3{
-    font-size:40px
+    font-size:30px
   }
 
   #profession h3{
@@ -270,8 +270,14 @@
     }
     /*FIXED ITEMS ENDS*/
 
+    /*SECTION TITLE*/
+    .block_1_title_div {
+      width: 80%;
+      padding: 1% 10%;
+    }
+
     /*INDEX PROFESSION*/
-  #index_content{
+    #index_content{
       width: 90%;
       text-align: center;
       padding: 30% 1% 1% 1%;
