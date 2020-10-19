@@ -470,11 +470,10 @@ section{
 }
 
 .section_des_left{
-    background-color: white;
     width: 68%;
-    height: 200px;
     float: left;
     padding:1%;
+    line-height: 25px;
 }
 
 .section_des_right{
@@ -487,6 +486,9 @@ section{
     overflow:hidden;
     font-size:12px;
     line-height:20px;
+}
+.section_des_right img{
+    width:100%;
 }
 
 .grey_block{
@@ -538,7 +540,10 @@ section{
 }
 
 .element_list{
-    text-align:center;
+    text-align: center;
+    position: relative;
+    float: left;
+    width: 100%;
 }
 
 .element_list li{
