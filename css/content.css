@@ -469,6 +469,18 @@ section{
     overflow: hidden;
 }
 
+.section_des{
+    position: relative;
+    min-height: 120px;
+    width: 100%;
+}
+
+.section_des_full{
+    width: 100%;
+    padding:1%;
+    line-height: 25px;
+}
+
 .section_des_left{
     width: 68%;
     float: left;
@@ -478,7 +490,7 @@ section{
 
 .section_des_right{
     padding:1%;
-    background-color:orange;
+    /*background-color:orange;*/
     width:28%;
     height:200px;
     float:right;
@@ -555,6 +567,15 @@ section{
     -webkit-text-fill-color: transparent;
 }
 
+.element_list img{
+    margin-top: 10px;
+    width: 30%;
+}
+
+.responsive_design{
+    width:100%;
+    margin:auto;
+}
 
 /**PERSONAL**/
 .persona_img img{
@@ -580,6 +601,10 @@ section{
     padding-top:10px;
 }
 
+.min_height_box{
+    min-height:250px;
+}
+
 .persona_bio p{
     margin-bottom:20px;
     line-height:17px;
@@ -597,4 +622,5 @@ section{
     background-color:rgb(65, 214, 255);
     padding:2px;
     border-radius:5px;
+    min-height: 200px;
 }
