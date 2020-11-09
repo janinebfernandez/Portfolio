@@ -28,7 +28,7 @@
   }
   
   .sidenav a:hover {
-    color: rgba(0,0,0,1);
+    color: rgb(0,0,0);
   }
   
   .sidenav .closebtn {

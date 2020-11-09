@@ -41,7 +41,7 @@
   
   /* The Close Button */
   .close {
-    color: lightgray;
+    color: #818181;;
     position: absolute;
     top: 90px;
     right: 6%;
@@ -52,7 +52,7 @@
   
   .close:hover,
   .close:focus {
-    color: #999;
+    color: rgb(0,0,0);
     text-decoration: none;
     cursor: pointer;
   }

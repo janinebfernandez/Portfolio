@@ -101,6 +101,45 @@
     padding-left:4%;
   }
 
+  /*UXUI DESIGN - MAIN PAGE*/
+  .left_block {
+    width: 95%;
+  }
+
+  .right_block {
+    width: 95%;
+  }
+
+  .right_block_text p{
+    font-size:20px;
+    line-height:30px;
+  }
+  /*UXUI DESIGN - MAIN PAGE - ENDS*/
+
+  /*UXUI DESIGN - PROJECT*/
+  .back_circle{
+    margin: 15% 0 0 10%;
+  }
+
+  .section_des_right img{
+    margin-top:20px;
+  }
+
+  .border_span{
+    min-width: inherit;
+    width:85%;
+  }
+
+  .section_des_right img {
+    margin-top: 55px;
+  }
+
+  .element_list li {
+    padding: .5% 1%;
+    width:25%;
+  }
+  /*UXUI DESIGN - PROJECT - ENDS*/
+
 }/*IPAD PORTRAIT ENDS*/
 
 /* 
@@ -163,6 +202,20 @@
       width: 30%;
     }
   
+    /*UXUI DESIGN - PROJECT*/
+    .back_circle{
+      margin: 12% 0 0 10%;
+    }
+
+    .section_des_right img {
+      margin-top: 25px;
+    }
+
+    .element_list li {
+      padding: .5% 1%;
+    }
+
+    /*UXUI DESIGN - PROJECT - ENDS*/
 }/*IPAD LANDSCAPE*/
 
 /* 
@@ -239,6 +292,89 @@
 .right_block{
   width:100%;
 }
+
+
+/*UXUI DESIGN - MAIN PAGE*/
+.block_1_link{
+  font-size:25px;
+}
+
+.right_block {
+  width: 95%;
+}
+
+.right_block_text {
+  height: 110px!important;
+}
+
+.block_content {
+  margin-bottom: 0;
+}
+/*UXUI DESIGN - MAIN PAGE - ENDS*/
+
+/*UXUI DESIGN - PROJECT*/
+.back_circle{
+  margin: 10% 0 0 10%;
+}
+
+.border_span{
+  min-width: inherit;
+}
+
+.section_des_right img {
+  margin-top: 30px;
+}
+
+.block_sec_1, .block_sec_2, .block_sec_3 {
+  width: 95%;
+}
+
+.min_height_box {
+  min-height: 0;
+}
+
+.section_des_left {
+  width: 99%;
+}
+
+.section_des_right {
+  float: left!important;
+}
+
+.section_des_right img {
+  margin-top: 0;
+}
+
+.research_img {
+  width: 50%!important;
+}
+
+.prototype_icon {
+  width: 50%;
+}
+
+.block_sec_1, .block_sec_2, .block_sec_3 {
+  width: 27%;
+}
+
+.element_list li{
+  width:25%;
+}
+
+.bio_block li{
+  font-size:10px;
+}
+
+.final_img{
+  width:100%;
+}
+
+.final_img img{
+  width:90%;
+}
+
+
+/*UXUI DESIGN - PROJECT - ENDS*/
 }/*Mobile LANDSCAPE DONE*/
 
 /* 
@@ -382,11 +518,107 @@
 }
 
 .right_block{
-  width:100%;
+  width:90%;
 }
 
 .intro h4{
   padding-left:5%;
 }
-/*ABOUT MEENDS*/
+/*ABOUT ME ENDS*/
+
+
+/*UXUI DESIGN - MAIN PAGE*/
+.right_block_text{
+  padding:15px;
+  height:120px!important;
+}
+
+.block_link{
+  text-align:center;
+  bottom:auto;
+  margin-top: 20px;
+}
+
+.block_1_link {
+  font-size: 30px;
+}
+
+.bck_gradient{
+  padding:1% 20%;
+}
+/*UXUI DESIGN - MAIN PAGE - ENDS*/
+
+/*UXUI DESIGN - PROJECT*/
+.back_circle{
+  margin: 5% 0 0 10%;
+}
+
+.border_span{
+  min-width: inherit;
+}
+
+.first_section{
+  padding-top:10%;
+}
+
+.section_des_left {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.section_des_right img {
+  margin-top: 0;
+}
+
+.section_des_right {
+  width:100%;
+  text-align: center;
+  margin-top:20px;
+}
+
+.section_des_right img {
+  width: 90%;
+}
+
+.block_1_title_div {
+  padding: 1% 5%;
+}
+
+.block_sec_1, .block_sec_2, .block_sec_3 {
+  width: 87%;
+  padding: 1% 1% 1% 5%;
+}
+
+.section_des_right img {
+  margin-top: 0;
+}
+
+.element_list li {
+  padding: .5% 3%;
+}
+
+.prototype_icon {
+  width: 80%;
+}
+
+.section_des_full {
+  width: 90%;
+  padding: 1% 1% 1% 5%;
+}
+
+.section_des_full h3{
+  font-size:25px;
+}
+/*UXUI DESIGN - PROJECT - ENDS*/
+
+
+
+
+
+
+
+/*UXUI DESIGN - MAIN PAGE*/
+/*UXUI DESIGN - MAIN PAGE - ENDS*/
+/*UXUI DESIGN - PROJECT*/
+/*UXUI DESIGN - PROJECT - ENDS*/
 } /*Mobile PORTRAIT ENDS*/
