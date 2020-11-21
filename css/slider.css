@@ -41,7 +41,7 @@
   
   /* The Close Button */
   .close {
-    color: #818181;;
+    color: black;
     position: absolute;
     top: 90px;
     right: 6%;
@@ -52,7 +52,7 @@
   
   .close:hover,
   .close:focus {
-    color: rgb(0,0,0);
+    color: #818181;
     text-decoration: none;
     cursor: pointer;
   }
@@ -68,7 +68,7 @@
   }
   
   /* Next & previous buttons */
-  .prev,
+  /*.prev,
   .next {
     cursor: pointer;
     position: absolute;
@@ -76,26 +76,73 @@
     width: auto;
     padding: 16px;
     margin-top: -50px;
-    color: lightgray;
+    color: black;
     font-weight: bold;
     font-size: 20px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
+  }*/
+
+  .prev, .next {
+    cursor: pointer;
+    position: fixed;
+    /* top: 60%; */
+    /* width: 500px; */
+    /* padding: 0 90px 0 20px; */
+    /* margin-top: -50px; */
+    color:rgb(107, 107, 107);
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    bottom: 0;
+    margin-bottom: 20px;
+    background-color: rgba(255,255,255,0.5);
   }
   
   /* Position the "next button" to the right */
-  .next {
-    right: 0;
+  
+  .next{
+    right:0;
     border-radius: 3px 0 0 3px;
+  }
+
+  a.prev {
+    width: 35%;
+    text-align: right;
+    padding-right:5%;
+  }
+
+  a.next {
+    width: 40%;
+    text-align: left;
+    padding-left:2%;
+  }
+
+  .next_2{
+    padding:0 15% 0 5%;
+    color:rgba(107, 107, 107, 0.8);
+  }
+
+  .prev_2{
+    padding:0 12% 0 5%;
+    color:rgba(107, 107, 107, 0.8);
+  }
+
+  .next_3,.prev_3{
+    color:rgba(107, 107, 107, 0.5);
   }
   
   /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
+  /*.prev:hover,
+  .next:hover, .next_2:hover, .next_3:hover {
+    /*background-color: rgba(0, 0, 0, 0.8);
+    color:#ffffff;;
+  }*/
   
   /* Number text (1/3 etc) */
   .numbertext {
