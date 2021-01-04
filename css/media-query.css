@@ -617,7 +617,12 @@
 
 
 
-
+/*UXUI DESIGN - BOOKME*/
+.section_des_left_split,.section_des_right_split {
+  width: 95%;
+  float:none;
+  margin-left:15px;
+}
 
 
 

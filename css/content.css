@@ -542,6 +542,35 @@ section{
     margin-top: -20px;
 }
 
+.section_des_left_split{
+    width: 48%;
+    float: left;
+    line-height: 20px;
+    font-size:12px;
+}
+
+.section_des_right_split{
+    width:48%;
+    float:right;
+    position:relative;
+    overflow:hidden;
+    font-size:12px;
+    line-height:20px;
+}
+
+.section_des_split{
+    padding:2%;
+}
+
+.section_des_right_split img{
+    width:50%;
+    margin:0 25%;
+}
+
+.section_des_left_split li, .section_des_right_split li{
+    font-size:16px;
+}
+
 .grey_block{
     background-color:rgb(248, 248, 248);
     padding:3% 0;
@@ -683,6 +712,10 @@ section{
 }
 
 /*iFRAME BookMe*/
+.section_des_left_split iframe{
+    width:100%;
+}
+
 #portfolio-pdf iframe{
     height:750px;
 }
@@ -694,4 +727,6 @@ section{
 #BookMe_workflow iframe{
     width:95%;
     height:800px;
+    margin-top:15px;
 }
+
