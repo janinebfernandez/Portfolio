@@ -79,12 +79,12 @@
 
   .block_1 ul li {
     width: 29%;
-    height: 140px;
+    height: 170px;
     margin: 1.5%;
   }
 
   .block_1_title{
-    width:30%;
+    width:100%;
   }
 
   .block_text p{
@@ -140,6 +140,11 @@
   }
   /*UXUI DESIGN - PROJECT - ENDS*/
 
+/*TYPOGRAPHY*/
+ img.hover-shadow.cursor {
+    margin-top: -20px;
+  }
+  
 }/*IPAD PORTRAIT ENDS*/
 
 /* 
@@ -193,13 +198,13 @@
     }
 
     .block_1 ul li {
-      width: 30%;
+      width: 40%;
       height: 170px;
       margin: 1.5%;
     }
   
     .block_1_title {
-      width: 30%;
+      width: 100%;
     }
   
     /*UXUI DESIGN - PROJECT*/
@@ -215,6 +220,9 @@
       padding: .5% 1%;
     }
 
+a.about_me{
+    padding-bottom: 30%;
+}
     /*UXUI DESIGN - PROJECT - ENDS*/
 }/*IPAD LANDSCAPE*/
 
@@ -250,16 +258,22 @@
 
    .block_1 ul li {
     width: 45%;
-    height: 140px;
+    height: 170px;
     margin: 2%;
   }
 
+  .block_text {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+}
+
   .block_1_title{
-    width:40%;
+    width:100%;
   }
 
   .block_text p{
-    font-size:30px;
+    font-size:20px;
   }
 
   .block_1_large ul li{
@@ -350,7 +364,7 @@
 }
 
 .research_img {
-  width: 50%!important;
+  width: 100%;
 }
 
 .prototype_icon {
@@ -362,7 +376,7 @@
 }
 
 .element_list li{
-  width:25%;
+  width:30%;
 }
 
 .bio_block li{
@@ -377,6 +391,18 @@
   width:90%;
 }
 
+.block_1_title_div{
+    padding: 1% 5%;
+    border: 1px solid rgb(204, 204, 204);
+    width: 88%;
+    text-align: center;
+}
+
+/*TYPOGRAPHY*/
+ img.hover-shadow.cursor {
+    margin-top: -20px;
+  }
+  
 
 /*UXUI DESIGN - PROJECT - ENDS*/
 }/*Mobile LANDSCAPE DONE*/
@@ -465,12 +491,16 @@
 
   .block_1 ul li {
     width: 80%;
-    height:140px;
+    height:170px;
     margin:5% 10%;
   }
   .block_1_title{
-    font-size:20px;
-    width:50%;
+    font-size:25px;
+    width:100%;
+  }
+
+  .block_text p {
+    font-size: 20px;
   }
 
   .block_1{
@@ -489,7 +519,7 @@
 
   /*POP UP SLIDER*/
   .mySlides{
-    margin-bottom:0;
+    margin-bottom:300px;
   }
 
   /*NAVIGATION START*/
@@ -586,6 +616,9 @@
 
 .block_1_title_div {
   padding: 1% 5%;
+  border: 1px solid rgb(204, 204, 204);
+  width: 85%;
+  text-align: center;
 }
 
 .block_sec_1, .block_sec_2, .block_sec_3 {
@@ -624,6 +657,10 @@
   margin-left:15px;
 }
 
+/*TYPOGRAPHY*/
+ img.hover-shadow.cursor {
+    margin-top: -23px;
+  }
 
 
 /*UXUI DESIGN - MAIN PAGE*/

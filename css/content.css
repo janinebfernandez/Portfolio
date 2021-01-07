@@ -38,6 +38,10 @@ html, body{
     width:100%;
     padding-top: 10%;
   }
+
+  img.hover-shadow.cursor {
+    margin-top: 0;
+  }
   
   /**********************/
   /*****SOCIAL MEDIA*****/
@@ -235,10 +239,12 @@ html, body{
 
 /*STRIPED TITLE*/
 .block_1_title_div{
-    width:97%;
+    width:30%;
     position:relative;
     padding:0 1.5%;
     margin:2% 0;
+    border: 1px solid rgb(204, 204, 204);
+    text-align:center;
 }
 
 .white_text{
@@ -246,7 +252,6 @@ html, body{
 }
 
 .bck_gradient{
-    border:1px solid rgb(204, 204, 204);
     padding:1% 10%;
 }
 
@@ -254,7 +259,7 @@ html, body{
     font-size: 25px;
     font-weight: 700;
     /*text-align: center;*/
-    width: 20%;
+    width: 100%;
     /*margin: 0 auto;*/
     background: linear-gradient(to right, rgb(0, 200, 255) , yellow);
     -webkit-background-clip: text;
@@ -479,7 +484,7 @@ section{
 }
 
 .first_section{
-    padding-top:3%;
+    padding-top:5%;
 }
 
 .section_block{
