@@ -473,7 +473,6 @@ a.about_me{
   
   .intro{
     height: auto;
-    padding:0 0 15% 0;
   }
 
   .intro p{
@@ -481,7 +480,7 @@ a.about_me{
   }
 
   .intro h2 {
-    padding: 15% 0 10% 0;
+    padding-top:15%;
   }
 
   .block_1 ul{
