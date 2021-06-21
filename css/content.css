@@ -159,20 +159,20 @@ html, body{
 .intro{
     width:100%;
     height: auto;
-    padding: 0 0 20% 0;
+    padding: 0 0 15% 0;
     margin: 0;
     font-size:2em;
     position:relative;
     box-shadow: 2px 2px 5px 2px rgba(0,0,0,.2)
 }
 
-.intro h2, .intro h3, .intro h4, .intro p{
+.intro h2, .intro h3, h5, .intro h4, .intro p{
     margin:0 8%;
     color:white;
 }
 
 .intro h2{
-    padding-top:10%;
+    padding-top:15%;
     background: linear-gradient(to right, rgb(0, 200, 255) , yellow);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -182,9 +182,26 @@ html, body{
     padding: 2% 0 1% 0;
 }
 
-.intro h4{
+.intro h{
     padding:5% 0;
     font-size:15px;
+}
+
+#aboutme_contact_block{
+    margin-top:150px;
+}
+
+h5{
+    margin-top:15px;
+    font-size:15px;
+}
+h5 img{
+    width:20px;
+    filter:invert(1);
+}
+
+h5 a{
+    color:white;
 }
 
 .intro p{
@@ -239,12 +256,12 @@ html, body{
 
 /*STRIPED TITLE*/
 .block_1_title_div{
-    width:30%;
+    width:auto;
     position:relative;
     padding:0 1.5%;
     margin:2% 0;
-    border: 1px solid rgb(204, 204, 204);
-    text-align:center;
+    /*border: 1px solid rgb(204, 204, 204);*/
+    /*text-align:center;*/
 }
 
 .white_text{
@@ -259,8 +276,8 @@ html, body{
     font-size: 25px;
     font-weight: 700;
     /*text-align: center;*/
-    width: 100%;
-    /*margin: 0 auto;*/
+    /*width: 100%;*/
+    margin: 0 auto;
     background: linear-gradient(to right, rgb(0, 200, 255) , yellow);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -336,6 +353,7 @@ html, body{
     display: inline-block;
     padding: 5px 15px;
     color:black;
+    border-radius: 25px 2px;
 }
 /*BLOCK TEXT OVERLAY ENDS*/
 
