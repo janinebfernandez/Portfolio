@@ -32,7 +32,7 @@
   /* Modal Content */
   .modal-content {
     position: relative;
-    background-color: #fefefe;
+    /*background-color: #fefefe;*/
     margin: auto;
     padding: 0;
     width: 90%;
@@ -112,7 +112,7 @@
   }
 
   a.prev {
-    width: 35%;
+    width: 30%;
     text-align: right;
   }
 
