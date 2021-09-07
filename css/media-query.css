@@ -103,7 +103,18 @@
   }
 
   .intro h4{
-    padding-left:4%;
+    padding-left:2em;
+    margin-top:-3em;
+  }
+  
+  
+  #profile_photo{
+    margin:.5em 0 0 2.5em;
+    width:25%;
+  }
+  
+  #aboutme_contact_block{
+    margin: -1em 0 0 .3em;
   }
 
   /*UXUI DESIGN - MAIN PAGE*/
@@ -212,6 +223,9 @@
       width: 100%;
     }
   
+    /*ABOUT ME*/
+
+   
     /*UXUI DESIGN - PROJECT*/
     .back_circle{
       margin: 12% 0 0 10%;
@@ -316,6 +330,20 @@ a.about_me{
   width:100%;
 }
 
+.intro h4{
+  padding-left:0;
+  margin-top:-2em;
+}
+
+
+#profile_photo{
+  margin:.5em 0 0 2em;
+  width:25%;
+}
+
+#aboutme_contact_block{
+  margin: -3em 0 0 .3em;
+}
 
 /*UXUI DESIGN - MAIN PAGE*/
 .block_1_link{
@@ -560,10 +588,33 @@ a.about_me{
 }
 
 .intro h4{
-  padding-left:5%;
+  padding-left:1.5em;
+}
+
+
+#profile_photo{
+  margin:.5em 0 0 1.5em;
+  width:75%;
+}
+
+#aboutme_contact_block{
+  margin: 0 0 0 .5em;
 }
 /*ABOUT ME ENDS*/
+.intro h4{
+  padding-left:0;
+  margin-top:-2em;
+}
 
+
+#profile_photo{
+  margin:.5em 0 0 2em;
+  width:25%;
+}
+
+#aboutme_contact_block{
+  margin: -3em 0 0 .3em;
+}
 
 /*UXUI DESIGN - MAIN PAGE*/
 .right_block_text{
