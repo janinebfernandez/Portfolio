@@ -8,7 +8,7 @@
 @media (min-width: 1281px) {
   
 .block_1 ul li {
-    height: 150px;
+    height: 175px;
 }
 
   
@@ -21,7 +21,9 @@
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   
-
+  .block_1 ul li {
+    height: 140px;
+}
   
 }/*LAPTOPS, DESKTOP ENDS*/
 
